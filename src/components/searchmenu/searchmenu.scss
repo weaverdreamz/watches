@@ -1,0 +1,2006 @@
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 480PX
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .defaultstyle{
+        display:none;
+    }
+    .remove-div{
+        background:rgb(215, 215, 221);
+        height:2.5rem;
+        position:absolute;
+        width:100%;
+        top:2.9rem;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        z-index:3;
+        animation-name:remove;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+
+        @keyframes remove{
+            0%{
+
+                height:2.5rem;
+
+            }
+            25%{
+                height:2rem;
+            }
+            50%{
+                height:1rem;
+               
+            }
+            100%{
+                height:0;
+                display:none;
+            }
+        }
+
+        .mainsearch{
+            width:80%;
+            margin:0 auto;
+            background:#fff;
+            border:0.2rem solid #fff;
+            border-radius:0.2rem;
+            position:relative;
+            height:1.5rem;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            flex-wrap:nowrap;
+            padding:0 0 0 1%;
+            align-items: center;
+            animation-name:hide;
+            animation-duration:0.5s;
+            animation-fill-mode:forwards;
+
+                @keyframes hide{
+
+                    0%{
+                        height:1.5rem;
+                    }
+
+                    25%{
+                        height:1rem;
+                    }
+                    50%{
+                        height:0.5rem;
+                        display:none;
+                    }
+                    100%{
+                        height:0;
+                        display:none;
+                    }
+
+                }
+
+
+            .searchicon{
+                width:5%;
+                display:flex;
+                flex-direction:row;
+                justify-content: center; 
+                align-items: center;
+                
+                              
+                img{
+                    width:100%;
+                    height:1rem;
+                    animation-name:shrinkimg;
+                    animation-duration:0.5s;
+                    animation-fill-mode:forwards;
+
+                        @keyframes shrinkimg{
+                            0%{
+                                height:1rem;
+                                width:100%;
+                            }
+                            25%{
+                                height:0.5rem;
+                                width:50%
+                            }
+                            50%{
+                                height:0;
+                                width:0;
+                            }
+                            100%{
+                                height:0;
+                                width:0;
+                                display:none;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .searchinput{
+                width:72%;
+                height:1.5rem;
+                animation-name:inputshrink;
+                animation-duration:0.5s;
+                animation-fill-mode: forwards;
+
+                @keyframes inputshrink{
+                    0%{
+                        height:1rem;
+                    }
+                    25%{
+                        height:0.7rem;
+                    }
+                    50%{
+                        height:0;
+                    }
+                    100%{
+                        height:0;
+                        display:none;
+                    }
+                }
+
+                input{
+                    display:block;
+                    height:1.5rem;
+                    font-size:0.8rem;
+                    animation-name:inshrink;
+                    animation-duration:0.5s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes inshrink{
+                        0%{
+                            height:1rem;
+                            font-size:0.7rem
+                        }
+                        25%{
+                            display:none;
+                            height:0.4rem;
+                            font-size:0.35rem
+                        }
+                        50%{
+                            display:none;
+                            height:0;
+                            font-size:0
+                        }
+                        100%{
+                            height:0;
+                            font-size:0;
+                            display:none;
+                        }
+                    }
+                }
+           
+            }
+
+                    
+                
+
+                    
+
+            .searchtext{
+                width:17%;
+                background:rgb(215, 215, 221);
+                text-align:center;
+                font-size:0.9rem;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-radius:0.2rem;
+                height:1rem;
+                border:0.2rem solid rgb(215, 215, 221);
+                font-weight:bold;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                animation-name:small;
+                animation-duration:0.5s;
+                animation-fill-mode: forwards;
+
+                    @keyframes small{
+
+                        0%{
+                            height:1rem;
+                            
+                        }
+
+                        25%{
+                            height:0.5rem;
+                            font-size:0.35rem;
+                        }
+
+                        50%{
+                            height:0;
+                            font-size:0;
+                        }
+                        100%{
+                            height:0;
+                            font-size:0;
+                            display:none;
+                        }
+                    }
+
+                &:hover{
+                    background:rgb(3, 163, 238);
+                    border:0.2rem solid rgb(3, 163, 238);
+                }
+            }
+
+    }
+
+
+        .searchmenu{
+            background:rgb(215, 215, 221);
+            height:2.5rem;
+            position:absolute;
+            width:100%;
+            top:2.9rem;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            z-index:3;
+            animation-name:creep;
+            animation-duration:0.6s;
+
+            @keyframes creep{
+                0%{
+                    height:1.7rem;
+                }
+                25%{
+                    height:1.9rem;
+                }
+                50%{
+                    height:2rem;
+                }
+                100%{
+                    height:2.5rem;
+                }
+            }
+    
+    
+            .mainsearch{
+                width:80%;
+                margin:0 auto;
+                background:#fff;
+                border:0.2rem solid #fff;
+                border-radius:0.2rem;
+                position:relative;
+                height:1.5rem;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                flex-wrap:nowrap;
+                padding:0 0 0 1%;
+                align-items: center;
+    
+                .searchicon{
+                    width:5%;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                                  
+                    img{
+                        width:100%;
+                        height:1rem;
+                        
+    
+    
+    
+                    }
+                }
+    
+                .searchinput{
+                    width:72%;
+                    height:1.5rem;
+                    
+                   
+                    
+    
+                }
+    
+                .searchtext{
+                    width:17%;
+                    background:rgb(215, 215, 221);
+                    text-align:center;
+                    font-size:0.9rem;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    border-radius:0.2rem;
+                    height:1rem;
+                    border:0.2rem solid rgb(215, 215, 221);
+                    font-weight:bold;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &:hover{
+                        background:rgb(3, 163, 238);
+                        border:0.2rem solid rgb(3, 163, 238);
+                    }
+                }
+    
+    
+                
+    
+            }
+    
+        }
+    }
+
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 481PX TILL 599PX
+
+@media only screen and (min-width:481px) and (max-width:599px){
+
+    .defaultstyle{
+        display:none;
+    }
+
+    .remove-div{
+
+        background:rgb(215, 215, 221);
+        height:3rem;
+        position:absolute;
+        width:100%;
+        top:3.5rem;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        z-index:3;
+        animation-name:remove;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+
+        @keyframes remove{
+            0%{
+
+                height:3rem;
+
+            }
+            25%{
+                height:2rem;
+            }
+            50%{
+                height:1rem;
+               
+            }
+            100%{
+                height:0;
+                display:none;
+            }
+        }
+
+        .mainsearch{
+            width:60%;
+            margin:0 auto;
+            background:#fff;
+            border:0.2rem solid #fff;
+            border-radius:0.2rem;
+            position:relative;
+            height:1.7rem;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            flex-wrap:nowrap;
+            padding:0 0 0 1%;
+            align-items: center;
+            animation-name:hide;
+            animation-duration:0.5s;
+            animation-fill-mode:forwards;
+
+                @keyframes hide{
+
+                    0%{
+                        height:1.5rem;
+                    }
+
+                    25%{
+                        height:1rem;
+                    }
+                    50%{
+                        height:0.5rem;
+                        display:none;
+                    }
+                    100%{
+                        height:0;
+                        display:none;
+                    }
+
+                }
+
+
+            .searchicon{
+                width:4.8%;
+                display:flex;
+                flex-direction:row;
+                justify-content: center; 
+                align-items: center;
+                
+                              
+                img{
+                    width:100%;
+                    height:1rem;
+                    animation-name:shrinkimg;
+                    animation-duration:0.5s;
+                    animation-fill-mode:forwards;
+
+                        @keyframes shrinkimg{
+                            0%{
+                                height:1rem;
+                                width:100%;
+                            }
+                            25%{
+                                height:0.6rem;
+                                width:50%
+                            }
+                            50%{
+                                height:0;
+                                width:0;
+                            }
+                            100%{
+                                height:0;
+                                width:0;
+                                display:none;
+                            }
+                        }
+    
+
+
+
+                }
+            }
+
+            .searchinput{
+                width:75%;
+                height:1.5rem;
+                animation-name:inputshrink;
+                animation-duration:0.5s;
+                animation-fill-mode: forwards;
+
+                    @keyframes inputshrink{
+                        0%{
+                            height:1.2rem;
+                        }
+                        25%{
+                            height:0.7rem;
+                        }
+                        50%{
+                            height:0
+                        }
+                        100%{
+                            height:0;
+                            display:none;
+                        }
+                    }
+
+                    input{
+                        display:block;
+                        height:1.5rem;
+                        font-size:0.8rem;
+                        animation-name:inshrink;
+                        animation-duration:0.5s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes inshrink{
+                            0%{
+                                height:1.2rem;
+                                font-size:0.7rem
+                            }
+                            25%{
+                                display:none;
+                                height:0.4rem;
+                                font-size:0.35rem
+                            }
+                            50%{
+                                display:none;
+                                height:0;
+                                font-size:0
+                            }
+                            100%{
+                                height:0;
+                                font-size:0;
+                                display:none;
+                            }
+                        }
+                    }
+               
+                
+
+            }
+
+            .searchtext{
+                width:15%;
+                background:rgb(215, 215, 221);
+                text-align:center;
+                font-size:0.9rem;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-radius:0.2rem;
+                height:1.2rem;
+                border:0.2rem solid rgb(215, 215, 221);
+                font-weight:bold;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                animation-name:small;
+                animation-duration:0.5s;
+                animation-fill-mode: forwards;
+
+                    @keyframes small{
+
+                        0%{
+                            height:1rem;
+                        }
+
+                        25%{
+                            height:0.7rem;
+                            font-size:0.35rem;
+                        }
+
+                        50%{
+                            height:0;
+                            font-size:0;
+                        }
+                        100%{
+                            height:0;
+                            font-size:0;
+                            display:none;
+                        }
+                    }
+    
+
+                &:hover{
+                    background:rgb(3, 163, 238);
+                    border:0.2rem solid rgb(3, 163, 238);
+                }
+            }
+
+
+            
+
+        }
+
+
+
+
+    }
+        .searchmenu{
+            background:rgb(215, 215, 221);
+            height:3rem;
+            position:absolute;
+            width:100%;
+            top:3.5rem;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            z-index:3;
+            animation-name:creep;
+            animation-duration:0.6s;
+
+            @keyframes creep{
+                0%{
+                    height:1.7rem;
+                }
+                25%{
+                    height:2rem;
+                }
+                50%{
+                    height:2.5rem;
+                }
+                100%{
+                    height:3rem;
+                }
+            }
+    
+            .mainsearch{
+                width:60%;
+                margin:0 auto;
+                background:#fff;
+                border:0.2rem solid #fff;
+                border-radius:0.2rem;
+                position:relative;
+                height:1.7rem;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                flex-wrap:nowrap;
+                padding:0 0 0 1%;
+                align-items: center;
+    
+                .searchicon{
+                    width:4.8%;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                                  
+                    img{
+                        width:100%;
+                        height:1rem;
+    
+    
+    
+                    }
+                }
+    
+                .searchinput{
+                    width:75%;
+                    height:1.5rem;
+                   
+                    
+    
+                }
+    
+                .searchtext{
+                    width:15%;
+                    background:rgb(215, 215, 221);
+                    text-align:center;
+                    font-size:0.9rem;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    border-radius:0.2rem;
+                    height:1.2rem;
+                    border:0.2rem solid rgb(215, 215, 221);
+                    font-weight:bold;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &:hover{
+                        background:rgb(3, 163, 238);
+                        border:0.2rem solid rgb(3, 163, 238);
+                    }
+                }
+    
+    
+                
+    
+            }
+    
+        }
+    }
+
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 600PX TILL 768PX
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .defaultstyle{
+        display:none;
+    }
+
+    .remove-div{
+
+        background:rgb(215, 215, 221);
+        height:3.3rem;
+        position:absolute;
+        width:100%;
+        top:4.4rem;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        z-index:3;
+        animation-name:remove;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+
+        @keyframes remove{
+            0%{
+
+                height:3.3rem;
+
+            }
+            25%{
+                height:2rem;
+            }
+            50%{
+                height:1rem;
+               
+            }
+            100%{
+                height:0;
+                display:none;
+            }
+
+        }
+
+        .mainsearch{
+            width:60%;
+            margin:0 auto;
+            background:#fff;
+            border:0.2rem solid #fff;
+            border-radius:0.2rem;
+            position:relative;
+            height:2rem;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            flex-wrap:nowrap;
+            padding:0 0 0 1%;
+            align-items: center;
+            animation-name:hide;
+            animation-duration:0.5s;
+            animation-fill-mode:forwards;
+
+                @keyframes hide{
+
+                    0%{
+                        height:1.5rem;
+                    }
+
+                    25%{
+                        height:0.7rem;
+                    }
+                    50%{
+                        height:0.5rem;
+                        display:none;
+                    }
+                    100%{
+                        height:0;
+                        display:none;
+                    }
+
+                }
+
+
+            .searchicon{
+                width:4.5%;
+                display:flex;
+                flex-direction:row;
+                justify-content: center; 
+                align-items: center;
+                
+                              
+                img{
+                    width:100%;
+                    height:1.2rem;
+                    animation-name:shrinkimg;
+                    animation-duration:0.5s;
+                    animation-fill-mode:forwards;
+
+                        @keyframes shrinkimg{
+                            0%{
+                                height:1.1rem;
+                                width:100%;
+                            }
+                            25%{
+                                height:0.7rem;
+                                width:50%
+                            }
+                            50%{
+                                height:0;
+                                width:0;
+                            }
+                            100%{
+                                height:0;
+                                width:0;
+                                display:none;
+                            }
+                        }
+    
+
+
+
+                }
+            }
+
+            .searchinput{
+                width:78%;
+                height:1.5rem;
+                animation-name:inputshrink;
+                animation-duration:0.5s;
+                animation-fill-mode: forwards;
+
+                    @keyframes inputshrink{
+                        0%{
+                            height:1.5rem;
+                        }
+                        25%{
+                            height:0.8rem;
+                        }
+                        50%{
+                            height:0
+                        }
+                        100%{
+                            height:0;
+                            display:none;
+                        }
+                    }
+
+                    input{
+                        display:block;
+                        height:1.5rem;
+                        font-size:0.8rem;
+                        animation-name:inshrink;
+                        animation-duration:0.5s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes inshrink{
+                            0%{
+                                height:1.5rem;
+                                font-size:0.8rem
+                            }
+                            25%{
+                                display:none;
+                                height:0.5rem;
+                                font-size:0.4rem
+                            }
+                            50%{
+                                display:none;
+                                height:0;
+                                font-size:0
+                            }
+                            100%{
+                                height:0;
+                                font-size:0;
+                                display:none;
+                            }
+                        }
+                    }
+               
+                
+
+            }
+
+            .searchtext{
+                width:12%;
+                background:rgb(215, 215, 221);
+                text-align:center;
+                font-size:0.9rem;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-radius:0.2rem;
+                height:1.5rem;
+                border:0.2rem solid rgb(215, 215, 221);
+                font-weight:bold;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                animation-name:small;
+                animation-duration:0.5s;
+                animation-fill-mode: forwards;
+
+                    @keyframes small{
+
+                        0%{
+                            height:1.5rem;
+                        }
+
+                        25%{
+                            height:0.8rem;
+                            font-size:0.5rem;
+                        }
+
+                        50%{
+                            height:0;
+                            font-size:0;
+                        }
+                        100%{
+                            height:0;
+                            font-size:0;
+                            display:none;
+                        }
+                    }
+    
+
+                &:hover{
+                    background:rgb(3, 163, 238);
+                    border:0.2rem solid rgb(3, 163, 238);
+                }
+            }
+
+
+            
+
+        }
+
+
+
+    }
+          
+    .searchmenu{
+        background:rgb(215, 215, 221);
+        height:3.3rem;
+        position:absolute;
+        width:100%;
+        top:4.4rem;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        z-index:3;
+        animation-name:creep;
+        animation-duration:0.6s;
+
+        @keyframes creep{
+            0%{
+                height:2rem;
+            }
+
+            25%{
+                height:2.5rem;
+            }
+            50%{
+                height:2.7rem;
+            }
+            100%{
+                height:3.3rem;
+            }
+        }
+
+        .mainsearch{
+            width:60%;
+            margin:0 auto;
+            background:#fff;
+            border:0.2rem solid #fff;
+            border-radius:0.2rem;
+            position:relative;
+            height:2rem;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            flex-wrap:nowrap;
+            padding:0 0 0 1%;
+            align-items: center;
+
+            .searchicon{
+                width:4.5%;
+                display:flex;
+                flex-direction:row;
+                justify-content: center; 
+                align-items: center;
+                
+                              
+                img{
+                    width:100%;
+                    height:1.2rem;
+
+
+
+                }
+            }
+
+            .searchinput{
+                width:78%;
+                height:1.5rem;
+               
+                
+
+            }
+
+            .searchtext{
+                width:12%;
+                background:rgb(215, 215, 221);
+                text-align:center;
+                font-size:0.9rem;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border-radius:0.2rem;
+                height:1.5rem;
+                border:0.2rem solid rgb(215, 215, 221);
+                font-weight:bold;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover{
+                    background:rgb(3, 163, 238);
+                    border:0.2rem solid rgb(3, 163, 238);
+                }
+            }
+
+
+            
+
+        }
+
+    }
+    }
+
+   
+
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL 1024PX
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    .defaultstyle{
+        display:none;
+    }
+
+    .remove-div{
+
+        background:rgb(215, 215, 221);
+            height:4.2rem;
+            position:absolute;
+            width:100%;
+            top:4.6rem;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            z-index:3;
+            animation-name:remove;
+            animation-duration:0.5s;
+            animation-fill-mode: forwards;
+
+            @keyframes remove{
+                0%{
+
+                    height:4.2rem;
+
+                }
+                25%{
+                    height:3rem;
+                }
+                50%{
+                    height:2rem;
+                   
+                }
+                100%{
+                    height:0;
+                    display:none;
+                }
+
+            }
+    
+            .mainsearch{
+                width:44%;
+                margin:0 auto;
+                background:#fff;
+                border:0.2rem solid #fff;
+                border-radius:0.2rem;
+                position:relative;
+                height:2.2rem;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                flex-wrap:nowrap;
+                padding:0 0 0 1%;
+                align-items: center;
+                animation-name:hide;
+                animation-duration:0.5s;
+                animation-fill-mode:forwards;
+
+                @keyframes hide{
+
+                    0%{
+                        height:2.2rem;
+                    }
+
+                    25%{
+                        height:2rem;
+                    }
+                    50%{
+                        height:1rem;
+                    }
+                    100%{
+                        height:0;
+                        display:none;
+                    }
+
+                }
+    
+                .searchicon{
+                    width:4.5%;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                                  
+                    img{
+                        width:100%;
+                        height:1.1rem;
+                        animation-name:shrinkimg;
+                        animation-duration:0.5s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes shrinkimg{
+                            0%{
+                                height:1.1rem;
+                                width:100%;
+                            }
+                            25%{
+                                height:0.7rem;
+                                width:50%
+                            }
+                            50%{
+                                height:0;
+                                width:0;
+                            }
+                            100%{
+                                height:0;
+                                width:0;
+                                display:none;
+                            }
+                        }
+    
+    
+    
+                    }
+                }
+    
+                .searchinput{
+                    width:78%;
+                    height:1.5rem;
+                    animation-name:inputshrink;
+                    animation-duration:0.5s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes inputshrink{
+                        0%{
+                            height:1.5rem;
+                        }
+                        25%{
+                            height:0.8rem;
+                        }
+                        50%{
+                            height:0
+                        }
+                        100%{
+                            height:0;
+                            display:none;
+                        }
+                    }
+
+                    input{
+                        display:block;
+                        height:1.5rem;
+                        font-size:0.8rem;
+                        animation-name:inshrink;
+                        animation-duration:0.5s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes inshrink{
+                            0%{
+                                height:1.5rem;
+                                font-size:0.8rem
+                            }
+                            25%{
+                                display:none;
+                                height:0.5rem;
+                                font-size:0.4rem
+                            }
+                            50%{
+                                display:none;
+                                height:0;
+                                font-size:0
+                            }
+                            100%{
+                                height:0;
+                                font-size:0;
+                                display:none;
+                            }
+                        }
+                    }
+
+                   
+                    
+    
+                }
+    
+                .searchtext{
+                    width:12%;
+                    background:rgb(215, 215, 221);
+                    text-align:center;
+                    font-size:0.9rem;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    border-radius:0.2rem;
+                    height:1.5rem;
+                    border:0.2rem solid rgb(215, 215, 221);
+                    font-weight:bold;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &:hover{
+                        background:rgb(3, 163, 238);
+                        border:0.2rem solid rgb(3, 163, 238);
+                    }
+                }
+    
+    
+                
+    
+            }
+    
+
+    }
+
+    
+
+        .searchmenu{
+            background:rgb(215, 215, 221);
+            height:4.2rem;
+            position:absolute;
+            width:100%;
+            top:4.6rem;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            animation-name:creep;
+            animation-duration:0.6s;
+            z-index:3;
+
+            @keyframes creep{
+                0%{
+                    height:1rem;
+                }
+                25%{
+                    height:2rem;
+                }
+                50%{
+                height:3rem;
+                }
+                100%{
+                    height:4.2rem;
+                }
+            }
+    
+            .mainsearch{
+                width:44%;
+                margin:0 auto;
+                background:#fff;
+                border:0.2rem solid #fff;
+                border-radius:0.2rem;
+                position:relative;
+                height:2.2rem;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                flex-wrap:nowrap;
+                padding:0 0 0 1%;
+                align-items: center;
+    
+                .searchicon{
+                    width:4.5%;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                                  
+                    img{
+                        width:100%;
+                        height:1.1rem;
+    
+    
+    
+                    }
+                }
+    
+                .searchinput{
+                    width:78%;
+                    height:1.5rem;
+                   
+                    
+    
+                }
+    
+                .searchtext{
+                    width:12%;
+                    background:rgb(215, 215, 221);
+                    text-align:center;
+                    font-size:0.9rem;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    border-radius:0.2rem;
+                    height:1.5rem;
+                    border:0.2rem solid rgb(215, 215, 221);
+                    font-weight:bold;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    animation-name:small;
+                    animation-duration:0.5s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes small{
+
+                        0%{
+                            height:1.5rem;
+                        }
+
+                        25%{
+                            height:0.8rem;
+                            font-size:0.5rem;
+                        }
+
+                        50%{
+                            height:0;
+                            font-size:0;
+                        }
+                        100%{
+                            height:0;
+                            font-size:0;
+                            display:none;
+                        }
+                    }
+    
+    
+                    &:hover{
+                        background:rgb(3, 163, 238);
+                        border:0.2rem solid rgb(3, 163, 238);
+                    }
+                }
+    
+    
+                
+    
+            }
+    
+        }
+    }
+
+   
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+    .defaultstyle{
+        display:none;
+    }
+
+    .remove-div{
+            background:rgb(215, 215, 221);
+            width:100%;
+            top:4.6rem;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            position:absolute;
+            z-index:3;
+            height:4.5rem;
+            animation-name:remove;
+            animation-duration:0.5s;
+            animation-fill-mode:forwards;
+
+            @keyframes remove{
+                0%{
+
+                    height:4.5rem;
+
+                }
+                25%{
+                    height:3rem;
+                }
+                50%{
+                    height:2rem;
+                   
+                }
+                100%{
+                    height:0;
+                    display:none;
+                }
+
+            }
+
+            .mainsearch{
+                width:44%;
+                margin:0 auto;
+                background:#fff;
+                border:0.2rem solid #fff;
+                border-radius:0.2rem;
+                position:relative;
+                height:2.5rem;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                flex-wrap:nowrap;
+                padding:0 0 0 1%;
+                align-items: center;
+                animation-name:hide;
+                animation-duration:0.5s;
+                animation-fill-mode:forwards;
+
+                @keyframes hide{
+
+                    0%{
+                        height:2.5rem;
+                    }
+
+                    25%{
+                        height:2rem;
+                    }
+                    50%{
+                        height:1rem;
+                    }
+                    100%{
+                        height:0;
+                        display:none;
+                    }
+
+                }
+    
+                .searchicon{
+                    width:4%;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                                  
+                    img{
+                        width:100%;
+                        height:1.4rem;
+                        animation-name:shrinkimg;
+                        animation-duration:0.5s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes shrinkimg{
+                            0%{
+                                height:1.4rem;
+                                width:100%;
+                            }
+                            25%{
+                                height:1rem;
+                                width:60%
+                            }
+                            50%{
+                                height:0;
+                                width:0;
+                            }
+                            100%{
+                                height:0;
+                                width:0;
+                                display:none;
+                            }
+                        }
+    
+    
+    
+                    }
+                }
+    
+                .searchinput{
+                    width:80%;
+                    height:1.7rem;
+                    animation-name:inputshrink;
+                    animation-duration:0.5s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes inputshrink{
+                        0%{
+                            height:1.7rem;
+                        }
+                        25%{
+                            height:1rem;
+                        }
+                        50%{
+                            height:0
+                        }
+                        100%{
+                            height:0;
+                            display:none;
+                        }
+                    }
+
+                    input{
+                        display:block;
+                        height:1.7rem;
+                        font-size:0.8rem;
+                        animation-name:inshrink;
+                        animation-duration:0.5s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes inshrink{
+                            0%{
+                                height:1.7rem;
+                                font-size:0.8rem
+                            }
+                            25%{
+                                display:none;
+                                height:0.7rem;
+                                font-size:0.4rem
+                            }
+                            50%{
+                                display:none;
+                                height:0;
+                                font-size:0
+                            }
+                            100%{
+                                height:0;
+                                font-size:0;
+                                display:none;
+                            }
+                        }
+
+                    }
+                   
+                    
+    
+                }
+    
+                .searchtext{
+                    width:10%;
+                    background:rgb(215, 215, 221);
+                    text-align:center;
+                    font-size:0.9rem;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    border-radius:0.2rem;
+                    height:1.7rem;
+                    border:0.2rem solid rgb(215, 215, 221);
+                    font-weight:bold;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    animation-name:small;
+                    animation-duration:0.5s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes small{
+
+                        0%{
+                            height:1.7rem;
+                        }
+
+                        25%{
+                            height:1rem;
+                            font-size:0.7rem;
+                        }
+
+                        50%{
+                            height:0;
+                            font-size:0;
+                        }
+                        100%{
+                            height:0;
+                            font-size:0;
+                            display:none;
+                        }
+                    }
+    
+                    &:hover{
+                        background:rgb(3, 163, 238);
+                        border:0.2rem solid rgb(3, 163, 238);
+                    }
+                }
+    
+    
+                
+    
+            }
+ 
+    }
+        .searchmenu{
+            background:rgb(215, 215, 221);
+            width:100%;
+            top:4.6rem;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            position:absolute;
+            z-index:3;
+            height:4.5rem;
+            animation-name:creep;
+            animation-duration:0.6s;
+
+            @keyframes creep{
+                0%{
+
+                    height:1rem;
+
+                }
+                25%{
+                    height:2rem;
+                }
+                50%{
+                    height:3rem;
+                }
+                100%{
+                    height:4.5rem;
+                }
+
+            }
+
+                                               
+                      
+            
+
+            .mainsearch{
+                width:44%;
+                margin:0 auto;
+                background:#fff;
+                border:0.2rem solid #fff;
+                border-radius:0.2rem;
+                position:relative;
+                height:2.5rem;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                flex-wrap:nowrap;
+                padding:0 0 0 1%;
+                align-items: center;
+    
+                .searchicon{
+                    width:4%;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                                  
+                    img{
+                        width:100%;
+                        height:1.4rem;
+    
+    
+    
+                    }
+                }
+    
+                .searchinput{
+                    width:80%;
+                    height:1.7rem;
+                   
+                    
+    
+                }
+    
+                .searchtext{
+                    width:10%;
+                    background:rgb(215, 215, 221);
+                    text-align:center;
+                    font-size:0.9rem;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    border-radius:0.2rem;
+                    height:1.7rem;
+                    border:0.2rem solid rgb(215, 215, 221);
+                    font-weight:bold;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &:hover{
+                        background:rgb(3, 163, 238);
+                        border:0.2rem solid rgb(3, 163, 238);
+                    }
+                }
+    
+    
+                
+    
+            }
+    
+        }
+    
+
+    
+
+
+    
+    
+
+ }
+
+    
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ...
+
+@media only screen and (min-width:1201px){
+
+    .defaultstyle{
+        display:none;
+    }
+
+    .remove-div{
+            background:rgb(215, 215, 221);
+            width:100%;
+            top:4.6rem;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            position:absolute;
+            z-index:3;
+            height:4.5rem;
+            animation-name:remove;
+            animation-duration:0.5s;
+            animation-fill-mode:forwards;
+
+            @keyframes remove{
+                0%{
+
+                    height:4.5rem;
+
+                }
+                25%{
+                    height:3rem;
+                }
+                50%{
+                    height:2rem;
+                   
+                }
+                100%{
+                    height:0;
+                    display:none;
+                }
+
+            }
+
+            .mainsearch{
+                width:44%;
+                margin:0 auto;
+                background:#fff;
+                border:0.2rem solid #fff;
+                border-radius:0.2rem;
+                position:relative;
+                height:2.5rem;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                flex-wrap:nowrap;
+                padding:0 0 0 1%;
+                align-items: center;
+                animation-name:hide;
+                animation-duration:0.5s;
+                animation-fill-mode:forwards;
+
+                @keyframes hide{
+
+                    0%{
+                        height:2.5rem;
+                    }
+
+                    25%{
+                        height:2rem;
+                    }
+                    50%{
+                        height:1rem;
+                    }
+                    100%{
+                        height:0;
+                        display:none;
+                    }
+
+                }
+    
+                .searchicon{
+                    width:4%;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                                  
+                    img{
+                        width:100%;
+                        height:1.4rem;
+                        animation-name:shrinkimg;
+                        animation-duration:0.5s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes shrinkimg{
+                            0%{
+                                height:1.4rem;
+                                width:100%;
+                            }
+                            25%{
+                                height:1rem;
+                                width:60%
+                            }
+                            50%{
+                                height:0;
+                                width:0;
+                            }
+                            100%{
+                                height:0;
+                                width:0;
+                                display:none;
+                            }
+                        }
+    
+    
+    
+                    }
+                }
+    
+                .searchinput{
+                    width:80%;
+                    height:1.7rem;
+                    animation-name:inputshrink;
+                    animation-duration:0.5s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes inputshrink{
+                        0%{
+                            height:1.7rem;
+                        }
+                        25%{
+                            height:1rem;
+                        }
+                        50%{
+                            height:0
+                        }
+                        100%{
+                            height:0;
+                            display:none;
+                        }
+                    }
+
+                    input{
+                        display:block;
+                        height:1.7rem;
+                        font-size:0.8rem;
+                        animation-name:inshrink;
+                        animation-duration:0.5s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes inshrink{
+                            0%{
+                                height:1.7rem;
+                                font-size:0.8rem
+                            }
+                            25%{
+                                display:none;
+                                height:0.7rem;
+                                font-size:0.4rem
+                            }
+                            50%{
+                                display:none;
+                                height:0;
+                                font-size:0
+                            }
+                            100%{
+                                height:0;
+                                font-size:0;
+                                display:none;
+                            }
+                        }
+
+                    }
+                   
+                    
+    
+                }
+    
+                .searchtext{
+                    width:10%;
+                    background:rgb(215, 215, 221);
+                    text-align:center;
+                    font-size:0.9rem;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    border-radius:0.2rem;
+                    height:1.7rem;
+                    border:0.2rem solid rgb(215, 215, 221);
+                    font-weight:bold;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    animation-name:small;
+                    animation-duration:0.5s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes small{
+
+                        0%{
+                            height:1.7rem;
+                        }
+
+                        25%{
+                            height:1rem;
+                            font-size:0.7rem;
+                        }
+
+                        50%{
+                            height:0;
+                            font-size:0;
+                        }
+                        100%{
+                            height:0;
+                            font-size:0;
+                            display:none;
+                        }
+                    }
+    
+                    &:hover{
+                        background:rgb(3, 163, 238);
+                        border:0.2rem solid rgb(3, 163, 238);
+                    }
+                }
+    
+    
+                
+    
+            }
+ 
+    }
+        .searchmenu{
+            background:rgb(215, 215, 221);
+            width:100%;
+            top:4.6rem;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            position:absolute;
+            z-index:3;
+            height:4.5rem;
+            animation-name:creep;
+            animation-duration:0.6s;
+
+            @keyframes creep{
+                0%{
+
+                    height:1rem;
+
+                }
+                25%{
+                    height:2rem;
+                }
+                50%{
+                    height:3rem;
+                }
+                100%{
+                    height:4.5rem;
+                }
+
+            }
+
+                                               
+                      
+            
+
+            .mainsearch{
+                width:44%;
+                margin:0 auto;
+                background:#fff;
+                border:0.2rem solid #fff;
+                border-radius:0.2rem;
+                position:relative;
+                height:2.5rem;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                flex-wrap:nowrap;
+                padding:0 0 0 1%;
+                align-items: center;
+    
+                .searchicon{
+                    width:4%;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center; 
+                    align-items: center;
+                    
+                                  
+                    img{
+                        width:100%;
+                        height:1.4rem;
+    
+    
+    
+                    }
+                }
+    
+                .searchinput{
+                    width:80%;
+                    height:1.7rem;
+                   
+                    
+    
+                }
+    
+                .searchtext{
+                    width:10%;
+                    background:rgb(215, 215, 221);
+                    text-align:center;
+                    font-size:0.9rem;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    border-radius:0.2rem;
+                    height:1.7rem;
+                    border:0.2rem solid rgb(215, 215, 221);
+                    font-weight:bold;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &:hover{
+                        background:rgb(3, 163, 238);
+                        border:0.2rem solid rgb(3, 163, 238);
+                    }
+                }
+    
+    
+                
+    
+            }
+    
+        }
+    
+
+    
+
+    
+}

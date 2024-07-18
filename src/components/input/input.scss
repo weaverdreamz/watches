@@ -1,0 +1,120 @@
+// /THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 480PX
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .input{
+        input[type='search']{
+
+            outline:none;
+            width:100%;
+            height:1.5rem;
+            font-size:0.8rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding:0 0 0 1%;
+            border:none;
+
+
+        }
+    }
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 481PX TILL 599PX
+
+@media only screen and (min-width:481px) and (max-width:599px){
+
+    .input{
+        input[type='search']{
+
+            outline:none;
+            width:100%;
+            height:1.5rem;
+            font-size:0.8rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding:0 0 0 1%;
+            border:none;
+
+
+        }
+    }
+
+
+}
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 600PX TILL 768PX
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .input{
+        input[type='search']{
+
+            outline:none;
+            width:100%;
+            height:1.5rem;
+            font-size:0.8rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding:0 0 0 1%;
+            border:none;
+
+
+        }
+    }
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL 1024PX
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .input{
+        input[type='search']{
+
+            outline:none;
+            width:100%;
+            height:1.5rem;
+            font-size:0.8rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding:0 0 0 1%;
+            border:none;
+
+
+        }
+    }
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+
+    .input{
+        input[type='search']{
+
+            outline:none;
+            width:100%;
+            height:1.7rem;
+            font-size:0.8rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding:0 0 0 1%;
+            border:none;
+
+
+        }
+    }
+
+
+}
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ...
+
+@media only screen and (min-width:1201px){
+    .input{
+        input[type='search']{
+
+            outline:none;
+            width:100%;
+            height:1.7rem;
+            font-size:0.8rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding:0 0 0 1%;
+            border:none;
+
+
+        }
+    }
+}

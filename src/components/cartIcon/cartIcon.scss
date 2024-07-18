@@ -1,0 +1,184 @@
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 480PX
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .carticon{
+        .cicon{
+            width:65%;
+            margin: -1rem 0 0 5%;
+            height:3rem;
+            
+            
+        }
+        .counter{
+            background:rgb(3, 163, 238);
+            font-size:0.75rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius:50%;
+            position:absolute;
+            width:3%;
+            height:0.9rem;
+            left:91%;
+            text-align:center;
+            font-weight:bold;
+            color:white;
+            border:0.2rem solid rgb(3, 163, 238);
+            top:0.2rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+    
+       } 
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 481PX TILL 599PX
+
+@media only screen and (min-width:481px) and (max-width:599px){
+
+    .carticon{
+        .cicon{
+            width:55%;
+            margin: -0.8rem 0 0 5%;
+            height:3.2rem;
+            
+            
+        }
+        .counter{
+            background:rgb(3, 163, 238);
+            font-size:0.8rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius:50%;
+            position:absolute;
+            left:91%;
+            width:3.5%;
+            top:0.4rem;
+            height:1.2rem;
+            text-align:center;
+            font-weight:bold;
+            color:white;
+            border:0.2rem solid rgb(3, 163, 238);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+    
+       } 
+
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 600PX TILL 768PX
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .carticon{
+        .cicon{
+            width:57%;
+            position:relative;
+            top:-0.7rem;
+            left:1%;
+            height:3.2rem;
+            
+            
+        }
+        .counter{
+            background:rgb(3, 163, 238);
+            font-size:0.8rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius:50%;
+            position:absolute;
+            top:0.42rem;
+            width:3%;
+            height:1.5rem;
+            left:89.2%;
+            text-align:center;
+            font-weight:bold;
+            color:white;
+            border:0.2rem solid rgb(3, 163, 238);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+    
+       } 
+}
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL 1024PX
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    .carticon{
+        .cicon{
+            width:8%;
+            margin:0.5rem 0 0 75%;
+            
+        }
+        .counter{
+            background:rgb(3, 163, 238);
+            font-size:0.8rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius:50%;
+            position:absolute;
+            width:1.4%;
+            height:1.1rem;
+            text-align:center;
+            font-weight:bold;
+            color:white;
+            border:0.2rem solid rgb(3, 163, 238);
+        }
+    
+       } 
+
+}
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+
+    .carticon{
+        .cicon{
+            width:8%;
+            margin:0.5rem 0 0 75%;
+            
+        }
+        .counter{
+            background:rgb(3, 163, 238);
+            font-size:0.8rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius:50%;
+            position:absolute;
+            width:1.4%;
+            height:1.2rem;
+            text-align:center;
+            font-weight:bold;
+            color:white;
+            border:0.2rem solid rgb(3, 163, 238);
+        }
+    
+       } 
+
+}
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ....
+@media only screen and (min-width:1201px){
+   .carticon{
+    .cicon{
+        width:8%;
+        margin:0.5rem 0 0 71%;
+        
+    }
+    .counter{
+        background:rgb(3, 163, 238);
+        font-size:0.8rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius:50%;
+        position:absolute;
+        width:1.4%;
+        height:1.2rem;
+        text-align:center;
+        font-weight:bold;
+        color:white;
+        border:0.2rem solid rgb(3, 163, 238);
+    }
+
+   } 
+
+}

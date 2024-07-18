@@ -1,0 +1,570 @@
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 480PX
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .products{
+        width:100%;
+        height:19.5rem;
+        margin:1.5rem 0 0 0;
+        border:0.1rem solid #222020;
+    
+
+        &:hover{
+            border:0.12rem solid rgb(156, 102, 1);
+        }
+        
+        .imgpa{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:11rem;
+            background:#000000;
+            width:100%;
+            
+           
+            img{
+                width:95%;
+                height:10rem;
+                transform:translateZ(0);
+                transition:all 0.4s ease-in-out;
+
+                &:hover{
+                    transform:scale(1.05);
+                }
+                
+    
+            }
+
+        }
+
+        
+        h5{
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0.3rem 0 0.3rem 3%;
+            font-size:0.75rem;
+            }
+            h6{
+
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding:0 0 0 3%;
+                font-size:0.7rem;
+
+            }
+            .title{
+                margin:0 2% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .ref{
+                margin:0 12% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .price{
+                margin:0 6.4% 0 0;
+                color:rgb(156, 102, 1);
+
+            }
+            .color{
+                margin:0 5.7% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .instock{
+                width:26%;
+                color:#ebe1e1;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border:0.1rem solid #008080;
+                font-weight:bold;
+                position:relative;
+                top:-15rem;
+                font-size:0.35rem;
+                margin:0 0 0 3%;
+                height:1.1rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                z-index:1;
+
+
+        }
+        
+        
+
+    }
+    .products:nth-child(3){
+        h5{
+            font-size:0.6rem;
+            margin:0.5rem 0 0.5rem 3%;
+            
+        }
+
+        
+    }
+
+
+}
+
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 481PX TILL 599PX
+
+@media only screen and (min-width:481px) and (max-width:599px){
+
+    .products{
+        width:100%;
+        height:22rem;
+        margin:1.5rem 0 0 0;
+        border:0.1rem solid #222020;
+
+        &:hover{
+            border:0.12rem solid rgb(156, 102, 1);
+        }
+        
+        .imgpa{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:14rem;
+            background:#000000;
+            width:100%;
+            
+           
+            img{
+                width:95%;
+                height:13rem;
+                transform:translateZ(0);
+                transition:all 0.4s ease-in-out;
+
+                &:hover{
+                    transform:scale(1.05);
+                }
+                
+    
+            }
+
+        }
+
+        
+        h5{
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0.3rem 0 0.3rem 3%;
+            font-size:0.7rem;
+            }
+            h6{
+
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding:0 0 0 3%;
+                font-size:0.7rem;
+
+            }
+            .title{
+                margin:0 4% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .ref{
+                margin:0 10% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .price{
+                margin:0 6.4% 0 0;
+                color:rgb(156, 102, 1);
+
+            }
+            .color{
+                margin:0 5.7% 0 0;
+                color:rgb(156, 102, 1);
+            }
+
+            .instock{
+                width:22%;
+                color:#ebe1e1;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border:0.1rem solid #008080;
+                font-weight:bold;
+                position:relative;
+                top:-17.5rem;
+                font-size:0.5rem;
+                margin:0 0 0 3%;
+                height:1rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+
+        }
+            
+
+    }
+
+
+}
+
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 600PX TILL 768PX
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .products{
+        width:100%;
+        height:27.3rem;
+        margin:1.5rem 0 0 0;
+        border:0.1rem solid #222020;
+        
+        
+
+        &:hover{
+            border:0.12rem solid rgb(156, 102, 1);
+        }
+        
+        .imgpa{
+            
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background:#000000;
+            height:19rem;
+            width:100%;
+           
+            img{
+                width:95%;
+                height:18rem;
+                transform:translateZ(0);
+                transition:all 0.4s ease-in-out;
+
+                &:hover{
+                    transform:scale(1.05);
+                }
+                
+    
+            }
+
+        }
+
+        
+        h5{
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0.3rem 0 0.3rem 3%;
+            }
+            h6{
+
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding:0 0 0 3%;
+                font-size:0.7rem;
+
+            }
+            .title{
+                margin:0 5% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .ref{
+                margin:0 10% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .price{
+                margin:0 6.4% 0 0;
+                color:rgb(156, 102, 1);
+
+            }
+            .color{
+                margin:0 5.7% 0 0;
+                color:rgb(156, 102, 1);
+            }
+
+            .instock{
+                width:21.5%;
+                color:#ebe1e1;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border:0.1rem solid #008080;
+                font-weight:bold;
+                position:relative;
+                top:-23.6rem;
+                font-size:0.6rem;
+                margin:0 0 0 3%;
+                height:1rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+
+        }
+
+    }
+
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL 1024PX
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    .products{
+        width:100%;
+        height:24rem;
+        margin:1rem 0 0 0;
+        border:0.1rem solid #222020;
+
+        &:hover{
+            border:0.12rem solid rgb(156, 102, 1);
+        }
+        
+        .imgpa{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:15rem;
+            background:#000000;
+            width:100%;
+            
+           
+            img{
+                width:95%;
+                height:14rem;
+                transform:translateZ(0);
+                transition:all 0.4s ease-in-out;
+
+                &:hover{
+                    transform:scale(1.05);
+                }
+                
+    
+            }
+
+        }
+
+        
+        h5{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0.3rem 0 0.3rem 3%;
+            font-size:0.6rem
+            }
+            h6{
+
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding:0 0 0 3%;
+                font-size:0.7rem;
+
+            }
+            .title{
+                margin:0 5% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .ref{
+                margin:0 10% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .price{
+                margin:0 6.4% 0 0;
+                color:rgb(156, 102, 1);
+
+            }
+            .color{
+                margin:0 5.7% 0 0;
+                color:rgb(156, 102, 1);
+            }
+
+            .instock{
+                width:25%;
+                color:#ebe1e1;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border:0.1rem solid #008080;
+                font-weight:bold;
+                position:relative;
+                top:-19.5rem;
+                font-size:0.5rem;
+                margin:0 0 0 3%;
+                height:1rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+
+        }
+
+    }
+
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+
+    .products{
+        width:100%;
+        height:25rem;
+        margin:1rem 0 0 0;
+        border:0.1rem solid #222020;
+
+        &:hover{
+            border:0.12rem solid rgb(156, 102, 1);
+        }
+        
+        .imgpa{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:16rem;
+            background:#000000;
+            width:100%;
+            
+           
+            img{
+                width:95%;
+                height:15rem;
+                transform:translateZ(0);
+                transition:all 0.4s ease-in-out;
+
+                &:hover{
+                    transform:scale(1.05);
+                }
+                
+    
+            }
+
+        }
+
+        
+        h5{
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0.3rem 0 0.3rem 3%;
+            font-size:0.8rem;
+            }
+            h6{
+
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding:0 0 0 3%;
+                font-size:0.7rem;
+
+            }
+            .title{
+                margin:0 5% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .ref{
+                margin:0 10% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .price{
+                margin:0 6.4% 0 0;
+                color:rgb(156, 102, 1);
+
+            }
+            .color{
+                margin:0 5.7% 0 0;
+                color:rgb(156, 102, 1);
+            }
+
+            .instock{
+                width:24%;
+                color:#ebe1e1;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border:0.1rem solid #008080;
+                font-weight:bold;
+                position:relative;
+                top:-21rem;
+                font-size:0.5rem;
+                margin:0 0 0 3%;
+                height:1rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+
+        }
+
+
+    }
+
+}
+
+   
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ...
+
+@media only screen and (min-width:1201px){
+
+    .products{
+        width:100%;
+        height:26rem;
+        margin:1rem 0 0 0;
+        border:0.1rem solid #222020;
+
+        &:hover{
+            border:0.12rem solid rgb(156, 102, 1);
+        }
+        
+        .imgpa{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:17rem;
+            background:#000000;
+            width:100%;
+            
+           
+            img{
+                width:95%;
+                height:16rem;
+                transform:translateZ(0);
+                transition:all 0.4s ease-in-out;
+
+                &:hover{
+                    transform:scale(1.05);
+                }
+                
+    
+            }
+
+        }
+
+        
+        h5{
+
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0.3rem 0 0.3rem 3%;
+            }
+            h6{
+
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding:0 0 0 3%;
+                font-size:0.7rem;
+
+            }
+            .title{
+                margin:0 5% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .ref{
+                margin:0 10% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .price{
+                margin:0 6.4% 0 0;
+                color:rgb(156, 102, 1);
+
+            }
+            .color{
+                margin:0 5.7% 0 0;
+                color:rgb(156, 102, 1);
+            }
+            .instock{
+                    width:23.5%;
+                    color:#ebe1e1;
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    border:0.1rem solid #008080;
+                    font-weight:bold;
+                    position:relative;
+                    top:-22rem;
+                    font-size:0.6rem;
+                    margin:0 0 0 4%;
+                    height:1rem;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+
+            }
+
+    }
+
+}

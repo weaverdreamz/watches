@@ -1,0 +1,70 @@
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ...
+
+@media only screen and (min-width:1201px){
+
+    .textbimage{
+        width:100%;
+        height:23rem;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        margin:4rem 0 0 0;
+
+        .textb{
+            width:40%;
+            height:23rem;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+
+            h1{
+                
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing:4px;
+            }
+
+            p{
+
+                width:80%;
+                text-align:center;
+                font-family:"Roboto", "sans-serif";
+                padding:1rem 0 0 0;
+                line-height:1.5rem;
+                font-size:0.9rem;
+                margin:0 0 1rem 0;
+
+
+            }
+
+           
+        }
+
+
+        .atext{
+            width:60%;
+            height:23rem;
+
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+    
+}
+
+
+        
+
+       
+
+           
+            
+        
+        
+
+        
+            
+
+        

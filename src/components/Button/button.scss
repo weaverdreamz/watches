@@ -1,0 +1,247 @@
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 480PX
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    .addtocart{
+        background:none;
+        border:none;
+        outline:none;
+        cursor:pointer;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:bold;
+        background:rgb(2, 96, 139);
+        border:0.2rem solid rgb(2, 96, 139);
+        width:90%;
+        border:none;
+        height:2rem;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        transition:all 0.50s ease-in-out;
+        padding:0 0.2rem 0 0.2rem;
+        position:relative;
+        top:-0.6rem;
+        color:#ebe1e1;
+        margin:0 auto;
+
+        &:hover{
+            background:rgb(2, 75, 109);
+            border:0.2rem solid rgb(2, 75, 109); 
+        }
+    
+}
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 481PX TILL 599PX
+
+@media only screen and (min-width:481px) and (max-width:599px){
+
+    .addtocart{
+        background:none;
+        border:none;
+        outline:none;
+        cursor:pointer;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:bold;
+        background:rgb(2, 96, 139);
+        border:0.2rem solid rgb(2, 96, 139);
+        width:90%;
+        border:none;
+        height:2rem;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        transition:all 0.50s ease-in-out;
+        padding:0 0.2rem 0 0.2rem;
+        position:relative;
+        top:-0.6rem;
+        color:#ebe1e1;
+        margin:0 auto;
+
+        &:hover{
+            background:rgb(2, 75, 109);
+            border:0.2rem solid rgb(2, 75, 109); 
+        }
+    
+}
+
+
+}
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 600PX TILL 768PX
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .buttons{
+
+        .addtocart{
+                background:none;
+                border:none;
+                outline:none;
+                cursor:pointer;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight:bold;
+                background:rgb(2, 96, 139);
+                border:0.2rem solid rgb(2, 96, 139);
+                width:90%;
+                border:none;
+                height:2.2rem;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                transition:all 0.50s ease-in-out;
+                padding:0 0.2rem 0 0.2rem;
+                position:relative;
+                top:-0.7rem;
+                color:#ebe1e1;
+                margin:0 auto;
+
+                &:hover{
+                    background:rgb(2, 75, 109);
+                    border:0.2rem solid rgb(2, 75, 109); 
+                }
+            
+        }
+
+    }
+
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WIDTH 769PX TILL 1024PX
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .buttons{
+
+        .addtocart{
+                background:none;
+                border:none;
+                outline:none;
+                cursor:pointer;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight:bold;
+                background:rgb(2, 96, 139);
+                border:0.2rem solid rgb(2, 96, 139);
+                width:90%;
+                border:none;
+                height:2rem;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                transition:all 0.50s ease-in-out;
+                padding:0 0.2rem 0 0.2rem;
+                position:relative;
+                top:-0.6rem;
+                color:#ebe1e1;
+                margin:0 auto;
+
+                &:hover{
+                    background:rgb(2, 75, 109);
+                    border:0.2rem solid rgb(2, 75, 109); 
+                }
+            
+        }
+
+        
+
+    }
+}
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+
+    .buttons{
+
+        .addtocart{
+                background:none;
+                border:none;
+                outline:none;
+                cursor:pointer;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight:bold;
+                background:rgb(2, 96, 139);
+                border:0.2rem solid rgb(2, 96, 139);
+                width:90%;
+                border:none;
+                height:2rem;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                transition:all 0.50s ease-in-out;
+                padding:0 0.2rem 0 0.2rem;
+                position:relative;
+                top:-0.55rem;
+                color:#ebe1e1;
+                margin:0 auto;
+
+                &:hover{
+                    background:rgb(2, 75, 109);
+                    border:0.2rem solid rgb(2, 75, 109); 
+                }
+            
+        }
+
+    }
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ...
+
+@media only screen and (min-width:1201px){
+
+    .buttons{
+
+        .addtocart{
+                background:none;
+                border:none;
+                outline:none;
+                cursor:pointer;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight:bold;
+                background:rgb(2, 96, 139);
+                border:0.2rem solid rgb(2, 96, 139);
+                width:90%;
+                border:none;
+                height:2rem;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                transition:all 0.50s ease-in-out;
+                padding:0 0.2rem 0 0.2rem;
+                position:relative;
+                top:-0.5rem;
+                color:#ebe1e1;
+                margin:0 auto;
+
+                &:hover{
+                    background:rgb(2, 75, 109);
+                    border:0.2rem solid rgb(2, 75, 109);
+                }
+            
+        }
+
+        .previewsbtn{
+
+                background:none;
+                border:none;
+                outline:none;
+                cursor:pointer;
+                background:rgb(3, 101, 212);
+                height:2.5rem;
+                padding:0 2.5rem 0 2.5rem;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                color:#fff;
+                transition:all 0.45s ease-in-out;
+                font-weight:bolder;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                &:hover{
+                    background:rgb(3, 63, 131);
+                }
+
+        }
+
+    }
+    
+}

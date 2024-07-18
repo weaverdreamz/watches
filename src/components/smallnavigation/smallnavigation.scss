@@ -1,0 +1,347 @@
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 480PX
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .smallnav{
+        width:90%;
+        margin:0.6rem auto 0 auto;
+        
+        .topmenu{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            .horizontals{
+                
+                width:10%;
+                height:3rem;
+                line-height:2px;
+                margin:0.3rem 0 0 0;
+                
+                
+                .tophorizontals{
+                    width:100%;
+                    height:1rem;
+                    border:none;
+                    border-bottom:0.2rem solid #000000;
+                    
+                }
+
+                .tophorizontals:nth-child(1){
+
+                    position:relative;
+                    top:-1rem;
+
+                }
+                .tophorizontals:nth-child(2){
+
+                    position:relative;
+                    top:-1.65rem;
+                    width:85%;
+
+                }
+                .tophorizontals:nth-child(3){
+
+                    position:relative;
+                    top:-2.3rem;
+                
+                }
+            }
+
+            .topmenulogo{
+                width:6.5%;
+                margin:0.3rem 0 0 0;
+                
+                
+
+                img{
+                    width:100%;
+                    height:1.45rem;
+                }
+    
+            }
+
+            .mobilemenuname{
+                width:45%;
+                margin:0.2rem 0 0 0;
+                
+               
+                
+                
+
+                h2{
+                text-align:center;
+                font-family:"Arvo", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                line-height:14px;
+                font-size:1rem;
+                
+
+                    p{
+                        font-style:italic;
+                        font-size:0.7rem;
+                        text-align:center;
+                    }
+                
+
+                }
+                
+
+            }
+
+            .mobilemenus{
+                width:15%;
+                display:flex;
+                flex-direction:row;
+                flex-wrap:nowrap;
+                justify-content: space-between;
+                margin:0.2rem 0 0 0;
+                justify-content:end;
+                
+            }
+
+
+
+
+
+        }
+    }
+    
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 481PX TILL 599PX
+
+@media only screen and (min-width:481px) and (max-width:599px){
+    .smallnav{
+        width:90%;
+        margin:0.5rem auto 0 auto;
+        background:#ffffff;
+        
+       
+
+        .topmenu{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            .horizontals{
+                
+                width:10%;
+                height:3rem;
+                line-height:2px;
+                margin:0.5rem 0 0 0;
+                
+                
+                .tophorizontals{
+                    width:100%;
+                    height:1rem;
+                    border:none;
+                    border-bottom:0.2rem solid #000000;
+                    
+                }
+
+                .tophorizontals:nth-child(1){
+
+                    position:relative;
+                    top:-1rem;
+
+                }
+                .tophorizontals:nth-child(2){
+
+                    position:relative;
+                    top:-1.55rem;
+                    width:85%;
+
+                }
+
+                .tophorizontals:nth-child(3){
+
+                    position:relative;
+                    top:-2.1rem;
+                
+                }
+            }
+
+            .topmenulogo{
+                width:5%;
+                margin:0.5rem 0 0 0;
+                
+                
+
+                img{
+                    width:100%;
+                    height:1.5rem;
+                }
+    
+            }
+
+            .mobilemenuname{
+                width:45%;
+                margin:0.2rem 0 0 0;
+               
+                
+                
+
+                h2{
+                text-align:center;
+                font-family:"Arvo", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                line-height:20px;
+                font-size:1.4rem;
+                
+
+                    p{
+                        font-style:italic;
+                        font-size:0.8rem;
+                        text-align:center;
+                    }
+                
+
+                }
+                
+
+            }
+
+            .mobilemenus{
+                
+                width:15%;
+                display:flex;
+                flex-direction:row;
+                flex-wrap:nowrap;
+                justify-content: space-between;
+                margin:0.2rem 0 0 0;
+                justify-content: end;
+                
+
+                
+            }
+
+
+
+
+
+        }
+    }
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 600PX TILL 768PX
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .smallnav{
+        width:85%;
+        margin:0.5rem auto 0 auto;
+        background:#ffffff;
+       
+
+        .topmenu{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            
+
+            .horizontals{
+                
+                width:10%;
+                height:3rem;
+                line-height:2px;
+                margin:0.5rem 0 0 0;
+                
+                
+                .tophorizontals{
+                    width:100%;
+                    height:1rem;
+                    border:none;
+                    border-bottom:0.2rem solid #000000;
+                    
+                }
+
+                .tophorizontals:nth-child(1){
+
+                    position:relative;
+                    top:-1rem;
+
+                }
+                .tophorizontals:nth-child(2){
+
+                    position:relative;
+                    top:-1.4rem;
+                    width:85%;
+
+                }
+
+                .tophorizontals:nth-child(3){
+
+                    position:relative;
+                    top:-1.8rem;
+                
+                }
+            }
+
+            .topmenulogo{
+                width:4%;
+                margin:0.7rem 0 0 0;
+                
+                
+
+                img{
+                    width:100%;
+                    height:1.6rem;
+                }
+    
+            }
+
+            .mobilemenuname{
+                width:50%;
+                margin:0.2rem 0 0 0;
+                
+                
+
+                h2{
+                text-align:center;
+                font-family:"Arvo", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                line-height:27px;
+                font-size:1.7rem;
+                
+
+                    p{
+                        font-style:italic;
+                        font-size:1rem;
+                        text-align:center
+                    }
+                
+
+                }
+                
+
+            }
+
+            .mobilemenus{
+                width:12%;
+                display:flex;
+                flex-direction:row;
+                flex-wrap:nowrap;
+                justify-content: space-between;
+                margin:0.2rem 0 0 0;
+                justify-content:end
+
+               
+            }
+
+
+
+
+
+        }
+    }
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL ...
+@media only screen and (min-width:769px){
+    .smallnav{
+        display:none;
+    }
+}

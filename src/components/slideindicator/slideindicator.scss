@@ -1,0 +1,195 @@
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 480PX
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .slideindicator{
+
+        .indicate{
+            border-radius:50%;
+            background:rgb(127, 182, 192);
+            border:0.3rem solid rgb(127, 182, 192);
+            width:1%;
+            margin: 0 0.5rem 0 0;
+            transition:all 0.40s ease-in-out;
+            
+            
+        }
+
+        .indicateblue{
+            background:rgb(3, 163, 238);
+            border:0.2rem solid rgb(3, 163, 238);
+            width:3%;
+            height:0.2rem;
+            margin: 0 0.5rem 0 0;
+            border-radius:50%;
+            transition:all 0.40s ease-in-out;
+            
+        }
+        
+    }
+
+
+}
+// /THIS IS THE STYLING FOR DEVICE WITH WIDTH 481PX TILL 599PX
+
+@media only screen and (min-width:481px) and (max-width:599px){
+
+    .slideindicator{
+
+        .indicate{
+            width:8%;
+            height:0.1rem;
+            border-radius:50%;
+            background:rgb(127, 182, 192);
+            border:0.2rem solid rgb(127, 182, 192);
+            margin: 0 0.5rem 0 0;
+            transition:all 0.40s ease-in-out;
+            
+        }
+
+        .indicateblue{
+            background:rgb(3, 163, 238);
+            border:0.2rem solid rgb(3, 163, 238);
+            width:8%;
+            height:0.3rem;
+            margin: 0 0.5rem 0 0;
+            border-radius:50%;
+            transition:all 0.40s ease-in-out;
+        }
+        
+    }
+
+}
+
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 600PX TILL 768PX
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .slideindicator{
+
+        .indicate{
+            width:15%;
+            height:0.25rem;
+            border-radius:50%;
+            background:rgb(127, 182, 192);
+            border:0.2rem solid rgb(127, 182, 192);
+            margin: 0 0.5rem 0 0;
+            transition:all 0.40s ease-in-out;
+            
+        }
+
+        .indicateblue{
+            background:rgb(3, 163, 238);
+            border:0.2rem solid rgb(3, 163, 238);
+            width:15%;
+            height:0.4rem;
+            margin: 0 0.5rem 0 0;
+            border-radius:50%;
+            transition:all 0.40s ease-in-out;
+        }
+        
+    }
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL 1024PX
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    .slideindicator{
+
+        .indicate{
+            width:20%;
+            height:0.2rem;
+            border-radius:50%;
+            background:rgb(127, 182, 192);
+            border:0.2rem solid rgb(127, 182, 192);
+            margin: 0 0.5rem 0 0;
+            transition:all 0.40s ease-in-out;
+            
+        }
+
+        .indicateblue{
+            background:rgb(3, 163, 238);
+            border:0.2rem solid rgb(3, 163, 238);
+            width:20%;
+            height:0.3rem;
+            margin: 0 0.5rem 0 0;
+            border-radius:50%;
+            transition:all 0.40s ease-in-out;
+        }
+        
+    }
+
+
+
+}
+
+
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+
+    .slideindicator{
+
+        .indicate{
+            width:20%;
+            height:0.2rem;
+            border-radius:50%;
+            background:rgb(127, 182, 192);
+            border:0.2rem solid rgb(127, 182, 192);
+            margin: 0 0.5rem 0 0;
+            transition:all 0.40s ease-in-out;
+            
+        }
+
+        .indicateblue{
+            background:rgb(3, 163, 238);
+            border:0.2rem solid rgb(3, 163, 238);
+            width:20%;
+            height:0.3rem;
+            margin: 0 0.5rem 0 0;
+            border-radius:50%;
+            transition:all 0.40s ease-in-out;
+        }
+        
+    }
+
+
+}
+
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ...
+
+@media only screen and (min-width:1201px){
+
+    .slideindicator{
+
+        .indicate{
+            width:25%;
+            height:0.3rem;
+            border-radius:50%;
+            background:rgb(127, 182, 192);
+            border:0.2rem solid rgb(127, 182, 192);
+            margin: 0 0.5rem 0 0;
+            transition:all 0.40s ease-in-out;
+            
+        }
+
+        .indicateblue{
+            background:rgb(3, 163, 238);
+            border:0.2rem solid rgb(3, 163, 238);
+            width:25%;
+            height:0.4rem;
+            margin: 0 0.6rem 0 0;
+            border-radius:50%;
+            transition:all 0.40s ease-in-out;
+        }
+        
+    }
+
+    
+
+
+
+}
