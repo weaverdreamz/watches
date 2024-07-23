@@ -15,8 +15,12 @@ import Products from '../../components/products/products.component';
 import { getOurProducts } from '../../backend/firebase';
 import { ourProductSelector } from '../../store/latestproduct/latestproductselector';
 import TextBImage from '../../components/categorietextbimg/textbeforeimage.component';
-import Rolexdisplay from '../../assets/rolexincase.webp';
-
+import Rolexdisplay from '../../assets/Rolexshop.webp';
+import MobilePreview from '../../components/mobilecategorypreview/mobileCategoryPreview.component';
+import Patekdisplay from '../../assets/patekinstock.avif';
+import ImageBText from '../../components/categorieimgbtext/imagebeforetext.component';
+import Richarddisplay from '../../assets/richardmilleincase.webp';
+import Cartierdisplay from '../../assets/cartierincase2.webp'
 
 const Home = ()=>{
 
@@ -114,6 +118,8 @@ const Home = ()=>{
 
         <div className='previews'>
 
+            <MobilePreview imageUrl={Rolexdisplay} textHeading="ROLEX" textParagraph='Enter the Patek Philippe universe to discover classic watches that suit any wrist.'/>
+
             <TextBImage imageUrl={Rolexdisplay} textHeading="ROLEX" textParagraph='Prestigious, high-precision timepieces, from Professional to Classic models to suit any wrist.'/>
 
             <div className='productpreview'>
@@ -135,6 +141,78 @@ const Home = ()=>{
               
 
             </div>
+
+            <MobilePreview imageUrl={Patekdisplay} textHeading="PATEK" textParagraph='Craftsmanship,timeless design, strategic scarcity is one of the key ways the brand has crafted its image and reputation.'/>
+
+            <ImageBText imageUrl={Patekdisplay} textHeading="PATEK" textParagraph='Craftsmanship,timeless design, strategic scarcity is one of the key ways the brand has crafted its image and reputation.'/>
+
+            <div className='productpreview'>
+                <div className='overfloww'>
+
+                    {
+                        available&&ourProduct['patek philippe'].filter((_,idx)=>idx<4)
+                        .map((patekproducts)=>{
+                            return <Products  className='productss' key={patekproducts['id']} product={patekproducts}/>
+                        })
+                    }
+
+
+
+              
+
+                </div>
+
+              
+
+            </div>
+
+            <MobilePreview imageUrl={Richarddisplay} textHeading="RICHARD" textParagraph='Unleash The Power Of Time On Your Wrist, experience The Luxury Of Fine Timepieces from Richard Mille.'/>
+
+            <TextBImage imageUrl={Richarddisplay} textHeading="RICHARD" textParagraph='Unleash The Power Of Time On Your Wrist, experience The Luxury Of Fine Timepieces from Richard Mille.'/>
+
+            <div className='productpreview'>
+                <div className='overfloww'>
+
+                    {
+                        available&&ourProduct['richard mille'].filter((_,idx)=>idx<4)
+                        .map((richardproducts)=>{
+                            return <Products  className='productss' key={richardproducts['id']} product={richardproducts}/>
+                        })
+                    }
+
+
+
+              
+
+                </div>
+
+              
+
+            </div>
+
+            <MobilePreview imageUrl={Cartierdisplay} textHeading="CARTIER" textParagraph='Discover The World Of Precision, Unleash Your Ultimate Accessory. Watches That Stand The Test Of Time.'/>
+
+            <ImageBText imageUrl={Cartierdisplay} textHeading="CARTIER" textParagraph='Discover The World Of Precision, Unleash Your Ultimate Accessory. Watches That Stand The Test Of Time.'/>
+
+            <div className='productpreview'>
+            <div className='overfloww'>
+
+            {
+                available&&ourProduct['cartier'].filter((_,idx)=>idx<4)
+                .map((cartierproducts)=>{
+                return <Products  className='productss' key={cartierproducts['id']} product={cartierproducts}/>
+                })
+            }
+
+
+
+  
+
+    </div>
+
+  
+
+</div>
 
            
 

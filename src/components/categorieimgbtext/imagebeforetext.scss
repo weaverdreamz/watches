@@ -1,18 +1,15 @@
-//THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 768PX
+/*THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 768PX*/
 
 @media only screen and (min-width:320px) and (max-width:768px){
-
-    .textbimage{
-        display:none;
+    .imagebtext{
+        display:none
     }
-
 }
 
 //THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL 1024PX
 
 @media only screen and (min-width:769px) and (max-width:1024px){
-
-    .textbimage{
+    .imagebtext{
 
         width:100%;
         height:20rem;
@@ -21,7 +18,18 @@
         flex-wrap: wrap;
         margin:4rem 0 0 0;
 
-        .textb{
+        .btext{
+
+            width:60%;
+            height:20rem;
+
+            img{
+                width:100%;
+                height:100%;
+            }
+
+        }
+        .aimg{
             width:40%;
             height:20rem;
             display:flex;
@@ -47,34 +55,16 @@
 
 
             }
-
-
         }
-
-        .atext{
-            width:60%;
-            height:20rem;
-
-            img{
-                width:100%;
-                height:100%;
-            }
-        }
-        
 
     }
-    
-
 }
-
-
 
 //THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX
 
 @media only screen and (min-width:1025px) and (max-width:1200px){
 
-    .textbimage{
-
+    .imagebtext{
         width:100%;
         height:21rem;
         display:flex;
@@ -82,7 +72,18 @@
         flex-wrap: wrap;
         margin:4rem 0 0 0;
 
-        .textb{
+        .btext{
+            width:60%;
+            height:21rem;
+
+            img{
+                width:100%;
+                height:100%;
+            }
+
+        }
+        .aimg{
+
             width:40%;
             height:21rem;
             display:flex;
@@ -109,30 +110,15 @@
 
             }
 
-
         }
-
-        .atext{
-            width:60%;
-            height:21rem;
-
-            img{
-                width:100%;
-                height:100%;
-            }
-        }
-        
-
     }
-    
-
 }
 
-//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ...
+//THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ....
 
 @media only screen and (min-width:1201px){
+    .imagebtext{
 
-    .textbimage{
         width:100%;
         height:22rem;
         display:flex;
@@ -140,7 +126,20 @@
         flex-wrap: wrap;
         margin:4rem 0 0 0;
 
-        .textb{
+        .btext{
+
+            width:60%;
+            height:22rem;
+
+            img{
+                width:100%;
+                height:100%;
+            }
+
+        }
+
+        .aimg{
+
             width:40%;
             height:22rem;
             display:flex;
@@ -171,30 +170,7 @@
         }
 
 
-        .atext{
-            width:60%;
-            height:22rem;
-
-            img{
-                width:100%;
-                height:100%;
-            }
         }
+
+
     }
-    
-}
-
-
-        
-
-       
-
-           
-            
-        
-        
-
-        
-            
-
-        

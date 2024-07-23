@@ -53,7 +53,7 @@
 
         .newarrivals{
             width:90%;
-            margin:3rem auto 0 auto;
+            margin:5rem auto 0 auto;
             
 
             h4{
@@ -86,6 +86,28 @@
 
 
         }
+
+        .productpreview{
+
+            width:90%;
+            margin:2rem auto 0 auto;
+            overflow-x:scroll;
+
+            &::-webkit-scrollbar{
+                display:none;
+            }
+
+            .overfloww{
+                width:175%;
+                margin:0 auto;
+                display:grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap:0.5rem;
+
+            }
+
+
+        }
     }
 }
 
@@ -96,11 +118,11 @@
     .home{
 
         position:relative;
-        top:5rem;
+        top:5.5rem;
 
         .newarrivals{
             width:90%;
-            margin:3rem auto 0 auto;
+            margin:5rem auto 0 auto;
             
 
             h4{
@@ -130,6 +152,30 @@
                 
             }
 
+            
+
+        }
+
+        .productpreview{
+
+            width:90%;
+            margin:2rem auto 0 auto;
+            overflow-x:scroll;
+
+            &::-webkit-scrollbar{
+                display:none;
+            }
+
+            .overfloww{
+                width:180%;
+                margin:0 auto;
+                display:grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap:0.5rem;
+
+            }
+
+
         }
     }
 
@@ -147,7 +193,7 @@
 
         .newarrivals{
             width:85%;
-            margin:3rem auto 0 auto;
+            margin:5.5rem auto 0 auto;
             
 
             h4{
@@ -176,6 +222,28 @@
             
                 
             } 
+            }
+
+            .productpreview{
+
+                width:85%;
+                margin:2rem auto 0 auto;
+                overflow-x:scroll;
+
+                &::-webkit-scrollbar{
+                    display:none;
+                }
+    
+                .overfloww{
+                    width:180%;
+                    margin:0 auto;
+                    display:grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-gap:1rem;
+    
+                }
+    
+    
             }
 
         }
@@ -213,6 +281,22 @@
 
         }
 
+        .productpreview{
+
+            width:96%;
+            margin:2rem auto 0 auto;
+
+            .overfloww{
+                margin:0 4%  0 4%;
+                display:grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap:1rem;
+
+            }
+
+
+        }
+
     }
 
 }
@@ -235,6 +319,22 @@
                 font-weight:bold;
                 margin:0 auto  0 4%;
             }
+
+            .overfloww{
+                margin:0 4%  0 4%;
+                display:grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap:1rem;
+
+            }
+
+
+        }
+
+        .productpreview{
+
+            width:96%;
+            margin:2rem auto 0 auto;
 
             .overfloww{
                 margin:0 4%  0 4%;
@@ -284,7 +384,7 @@
         .productpreview{
 
             width:96%;
-            margin:1.5rem auto 0 auto;
+            margin:2rem auto 0 auto;
 
             .overfloww{
                 margin:0 4%  0 4%;
