@@ -20,7 +20,9 @@ import MobilePreview from '../../components/mobilecategorypreview/mobileCategory
 import Patekdisplay from '../../assets/patekinstock.avif';
 import ImageBText from '../../components/categorieimgbtext/imagebeforetext.component';
 import Richarddisplay from '../../assets/richardmilleincase.webp';
-import Cartierdisplay from '../../assets/cartierincase2.webp'
+import Cartierdisplay from '../../assets/cartierincase2.webp';
+import { Link } from 'react-router-dom';
+
 
 const Home = ()=>{
 
@@ -118,9 +120,9 @@ const Home = ()=>{
 
         <div className='previews'>
 
-            <MobilePreview imageUrl={Rolexdisplay} textHeading="ROLEX" textParagraph='Enter the Patek Philippe universe to discover classic watches that suit any wrist.'/>
+            <MobilePreview imageUrl={Rolexdisplay} textHeading="ROLEX" textParagraph='Enter the Rolex universe to discover classic watches that suit any wrist.'/>
 
-            <TextBImage imageUrl={Rolexdisplay} textHeading="ROLEX" textParagraph='Prestigious, high-precision timepieces, from Professional to Classic models to suit any wrist.'/>
+            <TextBImage imageUrl={Rolexdisplay} textHeading="ROLEX" textParagraph='Enter the Rolex universe to discover classic watches that suit any wrist.'/>
 
             <div className='productpreview'>
                 <div className='overfloww'>
@@ -144,7 +146,7 @@ const Home = ()=>{
 
             <MobilePreview imageUrl={Patekdisplay} textHeading="PATEK" textParagraph='Craftsmanship,timeless design, strategic scarcity is one of the key ways the brand has crafted its image and reputation.'/>
 
-            <ImageBText imageUrl={Patekdisplay} textHeading="PATEK" textParagraph='Craftsmanship,timeless design, strategic scarcity is one of the key ways the brand has crafted its image and reputation.'/>
+            <ImageBText imageUrl={Patekdisplay} textHeading="PATEK" textParagraph='Craftsmanship,  timeless design, strategic scarcity is one of the key ways the brand has crafted its image and reputation.'/>
 
             <div className='productpreview'>
                 <div className='overfloww'>
@@ -219,6 +221,27 @@ const Home = ()=>{
 
 
         </div>
+
+        <div className="footer">
+
+            <div className="footermenu">
+                <Link className='footmenu' to=''>About us</Link>
+                <Link className='footmenu' to=''>Contact</Link>
+                <Link className='footmenu' to=''>Rolex</Link>
+                <Link className='footmenu' to=''>Patek Philippe</Link>
+                <Link className='footmenu' to=''>Richard Mille</Link>
+                <Link className='footmenu' to=''>Cartier</Link>
+
+            </div>
+
+            <div className='footercopyright'>
+                <p>&copy;Yourswatch-All rights reserved - Photos Reserved Rights</p>
+
+            </div>
+
+        </div>
+
+
 
     </div>
 
