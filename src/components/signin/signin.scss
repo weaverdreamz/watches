@@ -1,3 +1,559 @@
+/*THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL 1024PX*/
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    .default{
+        display:none;
+    }
+
+    .removesignin{
+
+        position:absolute;
+        top:-2rem;
+        left:0;
+        height:1000%;
+        width:100%;
+        background:#00000071;
+        z-index:2000;
+        display:block;
+        animation-name:shutdown;
+        animation-duration:0.30s;
+        animation-fill-mode: forwards;
+
+        @keyframes shutdown{
+            from{
+                display:block;
+            }
+            to{
+                display:none;
+
+            }
+        }
+
+
+        
+
+        .signinback{
+            background:white;
+            position:relative;
+            height:28rem;
+            width:50%;
+            border-radius:0.3rem;
+            margin:0 auto;
+            top:8.5rem;
+            animation-name:movedown;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+
+
+            @keyframes movedown{
+
+                from{
+                    top:8.5rem;
+                }
+                to{
+                    top:45rem;
+                }
+            }
+
+            .mainsignin{
+                width:85%;
+                margin:0 auto;
+                display:flex;
+                justify-content:space-between;
+                
+                .signtext{
+                    margin:1.5rem 0 0 0;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:1rem;
+    
+                    p{
+                        margin:0.5rem 0 0 0;
+                        font-size:0.85rem;
+                        color:#292424;
+                    }
+    
+                }
+                .signinclose{
+                    margin:1.5rem 0 0 0;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:1.4rem;
+                }
+    
+            }
+
+            .contents{
+                width:85%;
+                margin:2rem auto 0;
+
+                form{
+                        fieldset{
+                            border:none;
+                            border:0.13rem solid rgb(215, 215, 221);
+                            border-radius:0.5rem;
+                            height:3rem;
+                            margin:0 0 1rem 0;
+                            transition:all 0.45s ease-in-out;
+
+                            &:hover{
+                                border:0.17rem solid rgb(3, 163, 238);
+                            }
+
+                            legend{
+                                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size:0.75rem;
+                                padding:0 0.2rem 0 0.4rem;
+                                font-weight:bold;
+
+                                
+                            }
+                            
+                            
+                        }
+
+                        h4{
+                            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align:center;
+                            font-size:0.9rem;
+                            color:#292424;
+                            font-weight:500;
+                            font-size:0.8rem;
+
+                        }
+                    }
+                }
+
+                hr{
+
+                    border:0.1rem solid rgb(215, 215, 221);
+                    margin:2rem 0 0 0;
+
+                }
+                .signupsection{
+                    width:85%;
+                    margin:1rem auto 0 auto;
+                    display:flex;
+                    justify-content:space-between;
+                    align-items: center;
+
+                    h4{
+                        font-size:0.85rem;
+                        color:#292424;
+                        font-weight:500;
+                    }
+                }
+
+
+
+        }
+    }
+
+
+
+    .displaysignin{
+        position:absolute;
+        top:-2rem;
+        left:0;
+        height:1000%;
+        width:100%;
+        background:#00000071;
+        z-index:2000;
+
+        .signinback{
+            background:white;
+            position:relative;
+            height:28rem;
+            width:50%;
+            border-radius:0.3rem;
+            margin:0 auto;
+            top:45rem;
+            animation-name:movetop;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+
+
+            @keyframes movetop{
+
+                from{
+                    top:45rem;
+                }
+                to{
+                    top:8.5rem;
+                }
+            }
+
+            .mainsignin{
+                width:85%;
+                margin:0 auto;
+                display:flex;
+                justify-content:space-between;
+                
+                .signtext{
+                    margin:1.5rem 0 0 0;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:1rem;
+    
+                    p{
+                        margin:0.5rem 0 0 0;
+                        font-size:0.85rem;
+                        color:#292424;
+                    }
+    
+                }
+                .signinclose{
+                    margin:1.5rem 0 0 0;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:1.4rem;
+                }
+    
+            }
+
+            .contents{
+                width:85%;
+                margin:2rem auto 0;
+
+                form{
+                        fieldset{
+                            border:none;
+                            border:0.13rem solid rgb(215, 215, 221);
+                            border-radius:0.5rem;
+                            height:3rem;
+                            margin:0 0 1rem 0;
+                            transition:all 0.45s ease-in-out;
+
+                            &:hover{
+                                border:0.17rem solid rgb(3, 163, 238);
+                            }
+
+                            legend{
+                                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size:0.75rem;
+                                padding:0 0.2rem 0 0.4rem;
+                                font-weight:bold;
+
+                                
+                            }
+                            
+                            
+                        }
+
+                        h4{
+                            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align:center;
+                            font-size:0.9rem;
+                            color:#292424;
+                            font-weight:500;
+                            font-size:0.8rem;
+
+                        }
+                    }
+                }
+
+                hr{
+
+                    border:0.1rem solid rgb(215, 215, 221);
+                    margin:2rem 0 0 0;
+
+                }
+                .signupsection{
+                    width:85%;
+                    margin:1rem auto 0 auto;
+                    display:flex;
+                    justify-content:space-between;
+                    align-items: center;
+
+                    h4{  
+                        font-size:0.85rem;
+                        color:#292424;
+                        font-weight:500;
+                    }
+                }
+
+           
+        }
+        
+    }
+ 
+
+}
+
+/*THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX*/
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+    .default{
+        display:none;
+    }
+
+    .removesignin{
+
+        position:absolute;
+        top:-2rem;
+        left:0;
+        height:1000%;
+        width:100%;
+        background:#00000071;
+        z-index:2000;
+        display:block;
+        animation-name:shutdown;
+        animation-duration:0.30s;
+        animation-fill-mode: forwards;
+
+        @keyframes shutdown{
+            from{
+                display:block;
+            }
+            to{
+                display:none;
+
+            }
+        }
+
+
+        
+
+        .signinback{
+            background:white;
+            position:relative;
+            height:32rem;
+            width:50%;
+            border-radius:0.3rem;
+            margin:0 auto;
+            top:7rem;
+            animation-name:movedown;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+
+
+            @keyframes movedown{
+
+                from{
+                    top:7rem;
+                }
+                to{
+                    top:45rem;
+                }
+            }
+
+            .mainsignin{
+                width:85%;
+                margin:0 auto;
+                display:flex;
+                justify-content:space-between;
+                
+                .signtext{
+                    margin:2.5rem 0 0 0;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:1rem;
+    
+                    p{
+                        margin:0.5rem 0 0 0;
+                        font-size:0.85rem;
+                        color:#292424;
+                    }
+    
+                }
+                .signinclose{
+                    margin:2.5rem 0 0 0;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:1.4rem;
+                }
+    
+            }
+
+            .contents{
+                width:85%;
+                margin:2.5rem auto 0;
+
+                form{
+                        fieldset{
+                            border:none;
+                            border:0.13rem solid rgb(215, 215, 221);
+                            border-radius:0.5rem;
+                            height:3.5rem;
+                            margin:0 0 1rem 0;
+                            transition:all 0.45s ease-in-out;
+
+                            &:hover{
+                                border:0.17rem solid rgb(3, 163, 238);
+                            }
+
+                            legend{
+                                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size:0.75rem;
+                                padding:0 0.2rem 0 0.4rem;
+                                font-weight:bold;
+
+                                
+                            }
+                            
+                            
+                        }
+
+                        h4{
+                            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align:center;
+                            font-size:0.9rem;
+                            color:#292424;
+                            font-weight:500;
+                            font-size:0.8rem;
+
+                        }
+                    }
+                }
+
+                hr{
+
+                    border:0.1rem solid rgb(215, 215, 221);
+                    margin:2.5rem 0 0 0;
+
+                }
+                .signupsection{
+                    width:85%;
+                    margin:1rem auto 0 auto;
+                    display:flex;
+                    justify-content:space-between;
+                    align-items: center;
+
+                    h4{
+                        font-size:0.85rem;
+                        color:#292424;
+                        font-weight:500;
+                    }
+                }
+
+
+
+        }
+    }
+
+
+
+    .displaysignin{
+        position:absolute;
+        top:-2rem;
+        left:0;
+        height:1000%;
+        width:100%;
+        background:#00000071;
+        z-index:2000;
+
+        .signinback{
+            background:white;
+            position:relative;
+            height:32rem;
+            width:50%;
+            border-radius:0.3rem;
+            margin:0 auto;
+            top:45rem;
+            animation-name:movetop;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+
+
+            @keyframes movetop{
+
+                from{
+                    top:45rem;
+                }
+                to{
+                    top:7rem;
+                }
+            }
+
+            .mainsignin{
+                width:85%;
+                margin:0 auto;
+                display:flex;
+                justify-content:space-between;
+                
+                .signtext{
+                    margin:2.5rem 0 0 0;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:1rem;
+    
+                    p{
+                        margin:0.5rem 0 0 0;
+                        font-size:0.85rem;
+                        color:#292424;
+                    }
+    
+                }
+                .signinclose{
+                    margin:2.5rem 0 0 0;
+                    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size:1.4rem;
+                }
+    
+            }
+
+            .contents{
+                width:85%;
+                margin:2.5rem auto 0;
+
+                form{
+                        fieldset{
+                            border:none;
+                            border:0.13rem solid rgb(215, 215, 221);
+                            border-radius:0.5rem;
+                            height:3.5rem;
+                            margin:0 0 1rem 0;
+                            transition:all 0.45s ease-in-out;
+
+                            &:hover{
+                                border:0.17rem solid rgb(3, 163, 238);
+                            }
+
+                            legend{
+                                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size:0.75rem;
+                                padding:0 0.2rem 0 0.4rem;
+                                font-weight:bold;
+
+                                
+                            }
+                            
+                            
+                        }
+
+                        h4{
+                            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align:center;
+                            font-size:0.9rem;
+                            color:#292424;
+                            font-weight:500;
+                            font-size:0.8rem;
+
+                        }
+                    }
+                }
+
+                hr{
+
+                    border:0.1rem solid rgb(215, 215, 221);
+                    margin:2.5rem 0 0 0;
+
+                }
+                .signupsection{
+                    width:85%;
+                    margin:1rem auto 0 auto;
+                    display:flex;
+                    justify-content:space-between;
+                    align-items: center;
+
+                    h4{  
+                        font-size:0.85rem;
+                        color:#292424;
+                        font-weight:500;
+                    }
+                }
+
+           
+        }
+        
+    }
+ 
+}
+
 /*THIS IS THE STYLING FOR DEVICE WITH WIDTH 1201PX TILL ...*/
 
 @media only screen and (min-width:1201px){
