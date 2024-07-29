@@ -1,0 +1,5 @@
+export const SIGNIN_ACTION_TYPES = {
+
+    DISPLAY_SIGNIN:"DISPLAY_SIGNIN"
+
+}

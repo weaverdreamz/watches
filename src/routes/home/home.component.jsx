@@ -144,7 +144,7 @@ const Home = ()=>{
 
             </div>
 
-            <MobilePreview imageUrl={Patekdisplay} textHeading="PATEK" textParagraph='Craftsmanship,timeless design, strategic scarcity is one of the key ways the brand has crafted its image and reputation.'/>
+            <MobilePreview imageUrl={Patekdisplay} textHeading="PATEK" textParagraph='Craftsmanship, timeless design, strategic scarcity is one of the key ways the brand has crafted its image and reputation.'/>
 
             <ImageBText imageUrl={Patekdisplay} textHeading="PATEK" textParagraph='Craftsmanship,  timeless design, strategic scarcity is one of the key ways the brand has crafted its image and reputation.'/>
 

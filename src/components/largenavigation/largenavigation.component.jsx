@@ -6,8 +6,10 @@ import Search from '../../assets/search.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { searchSelector } from '../../store/search/searchselector';
 import { setSearch } from '../../store/search/searchaction';
-import { signinSelector } from '../../store/signin/signinselector';
-import { yoursSignin } from '../../store/signin/sigininactions';
+import Signin from '../signin/signin.component';
+import { signInSelector } from '../../store/signin/signin.selector';
+import { SetSignIn } from '../../store/signin/signin.action';
+
 
 
 
@@ -15,7 +17,11 @@ import { yoursSignin } from '../../store/signin/sigininactions';
 const LargeNavigation = ()=>{
     const displaySearch = useSelector(searchSelector);
     const dispatch = useDispatch();
-    const mysignin = useSelector(signinSelector);
+    const displaySignin = useSelector(signInSelector);
+    
+
+    const signInNames = ["default", "displaysignin", "removesignin"]
+    
 
     const displayHandler = ()=>{
         if(displaySearch<=1){
@@ -27,9 +33,9 @@ const LargeNavigation = ()=>{
        
     }
 
-    const mySignIn = ()=>{
-        dispatch(yoursSignin(2));
-        alert(yoursSignin)
+    const signInHandler = ()=>{
+        dispatch(SetSignIn(1))
+
     }
 
        
@@ -46,7 +52,7 @@ const LargeNavigation = ()=>{
                 </h3>
                 <div className='navmenu'>
                     <div className='menus'>
-                    <img src={Log} alt='login' onClick={mySignIn}/>
+                    <img src={Log} alt='login' onClick={signInHandler}/>
 
                         </div>
                         <div className='menus'>
@@ -74,6 +80,8 @@ const LargeNavigation = ()=>{
                     RICHARD MILLE
                 </div>
             </div>
+
+            <Signin className={signInNames[displaySignin]}/>
 
         </div>
     )

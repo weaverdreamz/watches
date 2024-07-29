@@ -1,19 +1,20 @@
-import { SIGNIN_ACTION_TYPES } from "./signintype";
+import { SIGNIN_ACTION_TYPES } from "./signin.type";
 
 const INITIAL_STATE = {
-    signinValue:0
+    visibleSignIn:0
 }
 
 export const signinReducer = (state=INITIAL_STATE, action={})=>{
-    const {type, payload} = action
+
+    const {type, payload} = action;
 
     switch(type){
         case SIGNIN_ACTION_TYPES.DISPLAY_SIGNIN:
             return{
                 ...state,
-                signinValue:payload
+                visibleSignIn:payload
             }
-            
+        
         default:
             return state
     }

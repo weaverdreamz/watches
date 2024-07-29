@@ -5,13 +5,12 @@ import './navigation.scss';
 import Searchmenu from '../../components/searchmenu/searchmenu.component';
 import { useSelector } from 'react-redux';
 import { searchSelector } from '../../store/search/searchselector';
-import { signinSelector } from '../../store/signin/signinselector';
+
 
 
 
 const Navigation = ()=>{
 
-    const displaySignin = useSelector(signinSelector);
     const displaySearch = useSelector(searchSelector);
     const searchclass = ['defaultstyle', 'remove-div', 'searchmenu']
     
