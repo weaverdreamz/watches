@@ -6,9 +6,9 @@ import Search from '../../assets/search.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { searchSelector } from '../../store/search/searchselector';
 import { setSearch } from '../../store/search/searchaction';
-import Signin from '../signin/signin.component';
-import { signInSelector } from '../../store/signin/signin.selector';
 import { SetSignIn } from '../../store/signin/signin.action';
+import SmallMenu from '../smallmenu/smallmenu.component';
+import { mobileMenuSelector } from '../../store/mobilemenu/mobilemenu.selector'; 
 
 
 
@@ -17,10 +17,9 @@ import { SetSignIn } from '../../store/signin/signin.action';
 const LargeNavigation = ()=>{
     const displaySearch = useSelector(searchSelector);
     const dispatch = useDispatch();
-    const displaySignin = useSelector(signInSelector);
-    
+    const decideMenu = useSelector(mobileMenuSelector);
 
-    const signInNames = ["default", "displaysignin", "removesignin"]
+    const menuNames = ['firstName', 'middleName', 'lastName'];  
     
 
     const displayHandler = ()=>{
@@ -81,7 +80,9 @@ const LargeNavigation = ()=>{
                 </div>
             </div>
 
-            <Signin className={signInNames[displaySignin]}/>
+            <SmallMenu className={menuNames[decideMenu]}/>
+
+            
 
         </div>
     )

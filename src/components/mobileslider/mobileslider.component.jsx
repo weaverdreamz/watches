@@ -1,15 +1,17 @@
 import './mobileslider.scss';
 import {useState, useEffect} from 'react';
 import Rolex from '../../assets/rolex datejust custom 2500ctw diamond 41mm watch.jpg';
+import Rolexes from '../../assets/ROLEXES.jpg'
 import Patek from '../../assets/Patek Philippe, reference 1938P.jpg';
 import Richard from '../../assets/Richard Mille RM66 Flying Tourbillon.webp';
 import Cartier from '../../assets/Ballon Blanc de Cartier in steel.jpg';
+import Cartiers from '../../assets/CARTIERS.jpg'
 import SlideIndicator from '../slideindicator/slideindicator.component';
 
 const MobileSlider = ()=>{
 
     const [mywatch, setMyWatch] = useState(0);
-    const watches = [Rolex,  Patek, Richard, Cartier];
+    const watches = [Rolexes,  Patek, Richard, Cartiers];
     const watchheading = ['ROLEX', 'PATEK', 'RICHARD', 'CARTIER'];
     const watchtext = ['The Rolex collection offers a wide range of prestigious, high-precision timepieces, from Professional to Classic models to suit any wrist.', ' Enter the Patek Philippe universe to discover watches that suit any wrist.' ,'Discover, Step Up Your Wrist Game, Unleash The Power Of Time On Your Wrist, experience The Luxury Of Fine Timepieces from Richard Mille.',  'Discover The World Of Precision, Unleash Your Ultimate Accessory. Watches That Stand The Test Of Time.' ];
 

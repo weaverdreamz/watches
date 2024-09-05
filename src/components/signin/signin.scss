@@ -1,3 +1,1777 @@
+/*THIS IS THE STYLING FOR DEVICE WITH WIDTH 320PX TILL 480PX*/
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    .default {
+            display: none;
+        }
+    
+        .removesignin {
+    
+            position: absolute;
+            cursor: pointer;
+            top: -10rem;
+            left: 0;
+            height: 103.5%;
+            width: 100%;
+            background: #00000071;
+            z-index: 2000;
+            display: block;
+            animation-name: shutdown;
+            animation-duration: 0.30s;
+            animation-fill-mode: forwards;
+    
+            @keyframes shutdown {
+                from {
+                    display: block;
+                }
+    
+                to {
+                    display: none;
+    
+                }
+            }
+
+                        .notShow {
+                            display: none;
+            
+                        }
+            
+                        .regnow {
+                            display: block;
+                            background: white;
+                            position: fixed;
+                            height: 55rem;
+                            width: 100%;
+                            border-radius: 0.7rem;
+                            left: 0;
+                            top: 400rem;
+                            animation-name: regdown;
+                            animation-duration: 1.5s;
+                            animation-fill-mode: forwards;
+                            
+                            
+                            
+                            @keyframes regdown {
+                            
+                                    from {
+                                        top: 4rem;
+                                    }
+                            
+                                    to {
+                                        top: 400rem;
+                                    }
+                                }
+            
+                            .regfixwidth {
+            
+                                width: 85%;
+                                margin: 0 auto;
+            
+                                .reghead {
+                                    display: flex;
+                                    justify-content: space-between;
+            
+                                    .regtophead {
+                                        width: 80%;
+            
+                                        h3 {
+            
+                                            margin: 1.5rem 0 0 0;
+                                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                            font-size: 1rem;
+            
+                                            p {
+                                                margin: 1rem 0 0 0;
+                                                font-size: 0.65rem;
+                                                color: #292424;
+                                            }
+            
+            
+            
+                                        }
+                                    }
+            
+                                    .regClose {
+            
+                                        margin: 1.5rem 0 0 0;
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 1.4rem;
+            
+            
+                                    }
+            
+            
+                                }
+            
+                                form {
+            
+                                    margin: 2rem auto 0;
+            
+                                    .doublefield {
+            
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        grid-gap: 0.5rem;
+            
+                                        fieldset {
+            
+                                            border: none;
+                                            border: 0.13rem solid rgb(215, 215, 221);
+                                            border-radius: 0.5rem;
+                                            height: 2.5rem;
+                                            margin: 0 0 0.5rem 0;
+                                            transition: all 0.45s ease-in-out;
+            
+                                            &:hover {
+                                                border: 0.17rem solid rgb(3, 163, 238);
+                                            }
+            
+                                            legend {
+                                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                                font-size: 0.75rem;
+                                                padding: 0 0.2rem 0 0.4rem;
+                                                font-weight: bold;
+            
+            
+                                            }
+            
+            
+                                        }
+            
+            
+            
+                                    }
+            
+                                    .gender {
+                                        margin: 1rem 0 2rem 0;
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 0.8rem;
+                                        font-weight: bold;
+                                    }
+            
+            
+                                }
+            
+            
+            
+                            }
+            
+                            hr {
+            
+                                border: 0.1rem solid rgb(215, 215, 221);
+                                margin: 1rem 0 0 0;
+            
+                            }
+            
+                            .signinsection {
+                                width: 85%;
+                                margin: 1rem auto 0 auto;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-direction: column;
+            
+                                h4 {
+                                    font-size: 0.85rem;
+                                    color: #292424;
+                                    font-weight: 500;
+                                    margin: 0 0 1.5rem 0;
+                                }
+                            }
+            
+            
+                        }
+    
+    
+    
+    
+            .signinback {
+                background: white;
+                position: relative;
+                height: 55rem;
+                width: 100%;
+                border-radius: 0.7rem;
+                left: 0;
+                top: 4rem;
+                animation-name: movedown;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+    
+    
+    
+                @keyframes movedown {
+    
+                    from {
+                        top: 4rem;
+                    }
+    
+                    to {
+                        top: 400rem;
+                    }
+                }
+    
+                .mainsignin {
+                    width: 85%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .signtext {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1rem;
+    
+                        p {
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.85rem;
+                            color: #292424;
+                        }
+    
+                    }
+    
+                    .signinclose {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+                    }
+    
+                }
+    
+                .contents {
+                    width: 85%;
+                    margin: 2rem auto 0;
+    
+                    form {
+                        fieldset {
+                            border: none;
+                            border: 0.13rem solid rgb(215, 215, 221);
+                            border-radius: 0.5rem;
+                            height: 3rem;
+                            margin: 0 0 1rem 0;
+                            transition: all 0.45s ease-in-out;
+    
+                            &:hover {
+                                border: 0.17rem solid rgb(3, 163, 238);
+                            }
+    
+                            legend {
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.75rem;
+                                padding: 0 0.2rem 0 0.4rem;
+                                font-weight: bold;
+    
+    
+                            }
+    
+    
+                        }
+    
+                        h4 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align: center;
+                            font-size: 1rem;
+                            color: #292424;
+                            font-weight: 500;
+                            font-size: 0.8rem;
+    
+                        }
+                    }
+                }
+    
+                hr {
+    
+                    border: 0.1rem solid rgb(215, 215, 221);
+                    margin: 2rem 0 0 0;
+    
+                }
+    
+                .signupsection {
+                    width: 85%;
+                    margin: 0.7rem auto 0 auto;
+                    display: flex;
+                    flex-direction:column;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    h4 {
+                        font-size: 0.85rem;
+                        color: #292424;
+                        font-weight: 500;
+                        margin:0 0 1rem 0;
+                    }
+                }
+    
+    
+    
+            }
+        }
+    
+    
+    
+        .displaysignin {
+            position: absolute;
+            cursor: pointer;
+            top: -10rem;
+            left: 0;
+            height: 103.5%;
+            width: 100%;
+            background: #00000071;
+            z-index: 2000;
+
+            .notShow {
+                    display: none;
+            
+                }
+            
+                .regnow {
+                    display: block;
+                    background: white;
+                    position: fixed;
+                    height: 55rem;
+                    width: 100%;
+                    border-radius: 0.7rem;
+                    left: 0;
+                    top: 400rem;
+                    animation-name: reganime;
+                    animation-duration: 1.5s;
+                    animation-fill-mode: forwards;
+                    
+                    
+                    @keyframes reganime {
+                    
+                        from {
+                            top: 400rem;
+                        }
+                    
+                        to {
+                            top: 4rem;
+                        }
+                    }
+            
+                    .regfixwidth {
+            
+                        width: 85%;
+                        margin: 0 auto;
+            
+                        .reghead {
+                            display: flex;
+                            justify-content: space-between;
+            
+                            .regtophead {
+                                width: 80%;
+            
+                                h3 {
+            
+                                    margin: 1.5rem 0 0 0;
+                                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                    font-size: 1rem;
+                                    
+                                p {
+                                    margin:1rem 0 0 0;
+                                    font-size: 0.65rem;
+                                    color: #292424;
+                                }
+            
+            
+            
+                                }
+                            }
+            
+                            .regClose {
+            
+                                margin: 1.5rem 0 0 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 1.4rem;
+                                    
+            
+                            }
+            
+            
+                        }
+            
+                        form {
+            
+                            margin: 2rem auto 0;
+            
+                            .doublefield {
+            
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap: 0.5rem;
+            
+                                fieldset {
+            
+                                    border: none;
+                                    border: 0.13rem solid rgb(215, 215, 221);
+                                    border-radius: 0.5rem;
+                                    height: 2.5rem;
+                                    margin: 0 0 0.5rem 0;
+                                    transition: all 0.45s ease-in-out;
+                                    
+                                        &:hover {
+                                            border: 0.17rem solid rgb(3, 163, 238);
+                                        }
+                                    
+                                        legend {
+                                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                            font-size: 0.75rem;
+                                            padding: 0 0.2rem 0 0.4rem;
+                                            font-weight: bold;
+                                    
+                                    
+                                        }
+            
+            
+                                }
+            
+            
+            
+                            }
+            
+                            .gender {
+                                margin: 1rem 0 2rem 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.8rem;
+                                font-weight: bold;
+                            }
+            
+            
+                        }
+            
+            
+            
+                    }
+            
+                    hr {
+            
+                        border: 0.1rem solid rgb(215, 215, 221);
+                        margin: 1rem 0 0 0;
+            
+                    }
+            
+                    .signinsection {
+                        width: 85%;
+                        margin: 1rem auto 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-direction:column;
+            
+                        h4 {
+                            font-size: 0.85rem;
+                            color: #292424;
+                            font-weight: 500;
+                            margin:0 0 1.5rem 0;
+                        }
+                    }
+            
+            
+                }
+
+
+
+            
+            .signinback {
+                background: white;
+                position: fixed;
+                height: 55rem;
+                width: 100%;
+                border-radius: 0.7rem;
+                left: 0;
+                top: 400rem;
+                animation-name: movetop;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+    
+    
+                @keyframes movetop {
+    
+                    from {
+                        top: 400rem;
+                    }
+    
+                    to {
+                        top: 4rem;
+                    }
+                }
+    
+                .mainsignin {
+                    width: 85%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .signtext {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1rem;
+    
+                        p {
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.85rem;
+                            color: #292424;
+                        }
+    
+                    }
+    
+                    .signinclose {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+                    }
+    
+                }
+    
+                .contents {
+                    width: 85%;
+                    margin: 2rem auto 0;
+    
+                    form {
+                        fieldset {
+                            border: none;
+                            border: 0.13rem solid rgb(215, 215, 221);
+                            border-radius: 0.5rem;
+                            height: 2.5rem;
+                            margin: 0 0 1rem 0;
+                            transition: all 0.45s ease-in-out;
+    
+                            &:hover {
+                                border: 0.17rem solid rgb(3, 163, 238);
+                            }
+    
+                            legend {
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.75rem;
+                                padding: 0 0.2rem 0 0.4rem;
+                                font-weight: bold;
+    
+    
+                            }
+    
+    
+                        }
+    
+                        h4 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align: center;
+                            font-size: 1rem;
+                            color: #292424;
+                            font-weight: 500;
+                            font-size: 0.8rem;
+    
+                        }
+                    }
+                }
+    
+                hr {
+    
+                    border: 0.1rem solid rgb(215, 215, 221);
+                    margin: 2rem 0 0 0;
+    
+                }
+    
+                .signupsection {
+                    width: 85%;
+                    margin: 0.7rem auto 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    h4 {
+                        font-size: 0.85rem;
+                        color: #292424;
+                        font-weight: 500;
+                        margin:0 0 1rem 0;
+                    }
+                }
+    
+    
+            }
+    
+        }
+}
+
+
+
+/*THIS IS THE STYLING FOR DEVICE WITH WIDTH 481PX TILL 599PX*/
+
+@media only screen and (min-width:481px) and (max-width:599px){
+
+    .default {
+            display: none;
+        }
+    
+        .removesignin {
+    
+            position: absolute;
+            cursor: pointer;
+            top: -10rem;
+            left: 0;
+            height: 103.5%;
+            width: 100%;
+            background: #00000071;
+            z-index: 2000;
+            display: block;
+            animation-name: shutdown;
+            animation-duration: 0.30s;
+            animation-fill-mode: forwards;
+    
+            @keyframes shutdown {
+                from {
+                    display: block;
+                }
+    
+                to {
+                    display: none;
+    
+                }
+            }
+
+            .notShow {
+                    display: none;
+
+                }
+
+            .regnow {
+                display:block;
+                background: white;
+                position: relative;
+                height: 42.5rem;
+                width: 100%;
+                border-radius: 0.75rem;
+                left: 0;
+                top: 16rem;
+                animation-name: regdown;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+    
+    
+    
+                @keyframes regdown {
+    
+                    from {
+                        top: 16rem;
+                    }
+    
+                    to {
+                        top: 400rem;
+                    }
+                }
+    
+    
+              
+                
+            
+                .regfixwidth {
+            
+                    width: 85%;
+                    margin: 0 auto;
+            
+                    .reghead {
+                        display: flex;
+                        justify-content: space-between;
+            
+                    .regtophead {
+                        width: 80%;
+            
+                        h3 {
+            
+                            margin: 2.5rem 0 0 0;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 1.2rem;
+    
+                        p {
+                            margin: 1.5rem 0 0 0;
+                            font-size: 0.6rem;
+                            color: #292424;
+                           
+                        }
+            
+            
+            
+                        }
+                        }
+            
+                        .regClose {
+            
+                        margin: 2.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+            
+                        }
+            
+            
+                        }
+            
+                        form {
+            
+                            margin: 2rem auto 0;
+            
+                            .doublefield {
+            
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap: 0.5rem;
+            
+                                fieldset {
+            
+                                    border: none;
+                                    border: 0.13rem solid rgb(215, 215, 221);
+                                    border-radius: 0.5rem;
+                                    height: 2.5rem;
+                                    margin: 0 0 0.3rem 0;
+                                    transition: all 0.45s ease-in-out;
+    
+                                    &:hover {
+                                        border: 0.17rem solid rgb(3, 163, 238);
+                                    }
+    
+                                    legend {
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 0.75rem;
+                                        padding: 0 0.2rem 0 0.4rem;
+                                        font-weight: bold;
+    
+    
+                            }
+            
+            
+                                }
+            
+            
+            
+                            }
+            
+                            .gender {
+                                margin: 1.3rem 0 2rem 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.85rem;
+                                font-weight: bold;
+                            }
+            
+            
+                        }
+            
+            
+            
+                    }
+            
+                    hr {
+            
+                        border: 0.1rem solid rgb(215, 215, 221);
+                        margin: 2.5rem 0 0 0;
+            
+                    }
+            
+                    .signinsection {
+                        width: 85%;
+                        margin: 2rem auto 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+            
+                        h4 {
+                            font-size: 0.85rem;
+                            color: #292424;
+                            font-weight: 500;
+                        }
+                    }
+            
+            
+                }
+                
+    
+    
+    
+    
+            .signinback {
+                background: white;
+                position: relative;
+                height: 42.5rem;
+                width: 100%;
+                border-radius: 0.75rem;
+                left: 0;
+                top: 16rem;
+                animation-name: movedown;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+    
+    
+    
+                @keyframes movedown {
+    
+                    from {
+                        top: 16rem;
+                    }
+    
+                    to {
+                        top: 400rem;
+                    }
+                }
+    
+                .mainsignin {
+                    width: 85%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .signtext {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1rem;
+    
+                        p {
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.85rem;
+                            color: #292424;
+                        }
+    
+                    }
+    
+                    .signinclose {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+                    }
+    
+                }
+    
+                .contents {
+                    width: 85%;
+                    margin: 2rem auto 0;
+    
+                    form {
+                        fieldset {
+                            border: none;
+                            border: 0.13rem solid rgb(215, 215, 221);
+                            border-radius: 0.5rem;
+                            height: 3rem;
+                            margin: 0 0 1rem 0;
+                            transition: all 0.45s ease-in-out;
+    
+                            &:hover {
+                                border: 0.17rem solid rgb(3, 163, 238);
+                            }
+    
+                            legend {
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.75rem;
+                                padding: 0 0.2rem 0 0.4rem;
+                                font-weight: bold;
+    
+    
+                            }
+    
+    
+                        }
+    
+                        h4 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align: center;
+                            font-size: 1rem;
+                            color: #292424;
+                            font-weight: 500;
+                            font-size: 0.8rem;
+    
+                        }
+                    }
+                }
+    
+                hr {
+    
+                    border: 0.1rem solid rgb(215, 215, 221);
+                    margin: 2.5rem 0 0 0;
+    
+                }
+    
+                .signupsection {
+                    width: 85%;
+                    margin: 2rem auto 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    h4 {
+                        font-size: 0.85rem;
+                        color: #292424;
+                        font-weight: 500;
+                    }
+                }
+    
+    
+    
+            }
+        }
+    
+    
+    
+        .displaysignin {
+            position: absolute;
+            cursor: pointer;
+            top: -10rem;
+            left: 0;
+            height: 103.5%;
+            width: 100%;
+            background: #00000071;
+            z-index: 2000;
+
+
+            
+
+            .notShow {
+                    display: none;
+
+                }
+            
+                .regnow {
+                display:block;
+                background: white;
+                position: fixed;
+                height: 42.5rem;
+                width: 100%;
+                border-radius: 0.75rem;
+                left: 0;
+                top: 400rem;
+                animation-name: reganime;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+    
+    
+                @keyframes reganime{
+    
+                    from {
+                        top: 400rem;
+                    }
+    
+                    to {
+                        top: 16rem;
+                    }
+                }
+                
+            
+                .regfixwidth {
+            
+                    width: 85%;
+                    margin: 0 auto;
+            
+                    .reghead {
+                        display: flex;
+                        justify-content: space-between;
+            
+                    .regtophead {
+                        width: 80%;
+            
+                        h3 {
+            
+                            margin: 2.5rem 0 0 0;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 1.2rem;
+    
+                        p {
+                            margin: 1.5rem 0 0 0;
+                            font-size: 0.6rem;
+                            color: #292424;
+                           
+                        }
+            
+            
+            
+                        }
+                        }
+            
+                        .regClose {
+            
+                        margin: 2.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+            
+                        }
+            
+            
+                        }
+            
+                        form {
+            
+                            margin: 2rem auto 0;
+            
+                            .doublefield {
+            
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap: 0.5rem;
+            
+                                fieldset {
+            
+                                    border: none;
+                                    border: 0.13rem solid rgb(215, 215, 221);
+                                    border-radius: 0.5rem;
+                                    height: 2.5rem;
+                                    margin: 0 0 0.3rem 0;
+                                    transition: all 0.45s ease-in-out;
+    
+                                    &:hover {
+                                        border: 0.17rem solid rgb(3, 163, 238);
+                                    }
+    
+                                    legend {
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 0.75rem;
+                                        padding: 0 0.2rem 0 0.4rem;
+                                        font-weight: bold;
+    
+    
+                            }
+            
+            
+                                }
+            
+            
+            
+                            }
+            
+                            .gender {
+                                margin: 1.3rem 0 2rem 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.85rem;
+                                font-weight: bold;
+                            }
+            
+            
+                        }
+            
+            
+            
+                    }
+            
+                    hr {
+            
+                        border: 0.1rem solid rgb(215, 215, 221);
+                        margin: 2.5rem 0 0 0;
+            
+                    }
+            
+                    .signinsection {
+                        width: 85%;
+                        margin: 2rem auto 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+            
+                        h4 {
+                            font-size: 0.85rem;
+                            color: #292424;
+                            font-weight: 500;
+                        }
+                    }
+            
+            
+                }
+
+    
+            .signinback {
+                background: white;
+                position: fixed;
+                height: 42.5rem;
+                width: 100%;
+                border-radius: 0.75rem;
+                left: 0;
+                top: 400rem;
+                animation-name: movetop;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+    
+    
+                @keyframes movetop {
+    
+                    from {
+                        top: 400rem;
+                    }
+    
+                    to {
+                        top: 16rem;
+                    }
+                }
+    
+                .mainsignin {
+                    width: 85%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .signtext {
+                        margin: 2.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1rem;
+    
+                        p {
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.85rem;
+                            color: #292424;
+                        }
+    
+                    }
+    
+                    .signinclose {
+                        margin: 2.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+                    }
+    
+                }
+    
+                .contents {
+                    width: 85%;
+                    margin: 2rem auto 0;
+    
+                    form {
+                        fieldset {
+                            border: none;
+                            border: 0.13rem solid rgb(215, 215, 221);
+                            border-radius: 0.5rem;
+                            height: 2.5rem;
+                            margin: 0 0 1rem 0;
+                            transition: all 0.45s ease-in-out;
+    
+                            &:hover {
+                                border: 0.17rem solid rgb(3, 163, 238);
+                            }
+    
+                            legend {
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.75rem;
+                                padding: 0 0.2rem 0 0.4rem;
+                                font-weight: bold;
+    
+    
+                            }
+    
+    
+                        }
+    
+                        h4 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align: center;
+                            font-size: 1rem;
+                            color: #292424;
+                            font-weight: 500;
+                            font-size: 0.8rem;
+    
+                        }
+                    }
+                }
+    
+                hr {
+    
+                    border: 0.1rem solid rgb(215, 215, 221);
+                    margin: 2.5rem 0 0 0;
+    
+                }
+    
+                .signupsection {
+                    width: 85%;
+                    margin: 2rem auto 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    h4 {
+                        font-size: 0.85rem;
+                        color: #292424;
+                        font-weight: 500;
+                    }
+                }
+    
+    
+            }
+    
+        }
+
+}
+
+
+/*THIS IS THE STYLING FOR DEVICE WITH WIDTH 600PX TILL 768PX */
+
+@media only screen and (min-width:600px) and (max-width:768px){
+    .default {
+            display: none;
+        }
+    
+        .removesignin {
+    
+            position: absolute;
+            cursor: pointer;
+            top: -10rem;
+            left: 0;
+            height: 103.5%;
+            width: 100%;
+            background: #00000071;
+            z-index: 2000;
+            display: block;
+            animation-name: shutdown;
+            animation-duration: 0.30s;
+            animation-fill-mode: forwards;
+    
+            @keyframes shutdown {
+                from {
+                    display: block;
+                }
+    
+                to {
+                    display: none;
+    
+                }
+            }
+
+                        .notShow {
+                            display: none;
+                        }
+            
+                        .regnow {
+                            display: block;
+                            background: white;
+                            position: relative;
+                            height: 31rem;
+                            width: 100%;
+                            border-radius: 0.7rem;
+                            left: 0;
+                            top: 33.1rem;
+                            animation-name: regdown;
+                            animation-duration: 1.5s;
+                            animation-fill-mode: forwards;
+                
+    
+    
+                            @keyframes regdown {
+    
+                                from {
+                                        top: 33.1rem;
+                                }
+    
+                                to {
+                                        top: 400rem;
+                                    }
+                }
+    
+            
+                            .regfixwidth {
+            
+                                width: 85%;
+                                margin: 0 auto;
+            
+                                .reghead {
+                                    display: flex;
+                                    justify-content: space-between;
+            
+                                    .regtophead {
+                                        width: 80%;
+            
+                                        h3 {
+            
+                                            margin: 1.5rem 0 0 0;
+                                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                            font-size: 1.1rem;
+            
+                                        }
+            
+                                        p {
+                                            margin: 0.5rem 0 0 0;
+                                            font-size: 0.85rem;
+                                            color: #292424;
+                                        }
+            
+            
+            
+                                    }
+            
+                                    .regClose {
+            
+                                        margin: 1.5rem 0 0 0;
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 1.4rem;
+            
+                                    }
+            
+            
+                                }
+            
+                                form {
+            
+                                    margin: 2.5rem auto 0;
+            
+                                    .doublefield {
+            
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        grid-gap: 0.5rem;
+            
+                                        fieldset {
+            
+                                            border: none;
+                                            border: 0.13rem solid rgb(215, 215, 221);
+                                            border-radius: 0.5rem;
+                                            height: 3rem;
+                                            margin: 0 0 0.5rem 0;
+                                            transition: all 0.45s ease-in-out;
+            
+                                            &:hover {
+                                                border: 0.17rem solid rgb(3, 163, 238);
+                                            }
+            
+                                            legend {
+            
+                                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                                font-size: 0.75rem;
+                                                padding: 0 0.2rem 0 0.4rem;
+                                                font-weight: bold;
+                                            }
+            
+            
+                                        }
+            
+            
+            
+                                    }
+            
+                                    .gender {
+                                        margin: 1.3rem 0 2rem 0;
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 0.85rem;
+                                        font-weight: bold;
+                                    }
+            
+            
+                                }
+            
+            
+            
+                            }
+            
+                            hr {
+            
+                                border: 0.1rem solid rgb(215, 215, 221);
+                                margin: 2.5rem 0 0 0;
+            
+                            }
+            
+                            .signinsection {
+                                width: 85%;
+                                margin: 2rem auto 0 auto;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+            
+                                h4 {
+                                    font-size: 0.85rem;
+                                    color: #292424;
+                                    font-weight: 500;
+                                }
+                            }
+            
+            
+                        }
+    
+    
+    
+    
+            .signinback {
+                background: white;
+                position: relative;
+                height: 31rem;
+                width: 100%;
+                border-radius: 0.7rem;
+                left: 0;
+                top: 33.1rem;
+                animation-name: movedown;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+                
+    
+    
+                @keyframes movedown {
+    
+                    from {
+                        top: 33.1rem;
+                    }
+    
+                    to {
+                        top: 400rem;
+                    }
+                }
+    
+                .mainsignin {
+                    width: 85%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .signtext {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1rem;
+    
+                        p {
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.85rem;
+                            color: #292424;
+                        }
+    
+                    }
+    
+                    .signinclose {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+                    }
+    
+                }
+    
+                .contents {
+                    width: 85%;
+                    margin: 2.5rem auto 0;
+    
+                    form {
+                        fieldset {
+                            border: none;
+                            border: 0.13rem solid rgb(215, 215, 221);
+                            border-radius: 0.5rem;
+                            height: 3rem;
+                            margin: 0 0 1rem 0;
+                            transition: all 0.45s ease-in-out;
+    
+                            &:hover {
+                                border: 0.17rem solid rgb(3, 163, 238);
+                            }
+    
+                            legend {
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.75rem;
+                                padding: 0 0.2rem 0 0.4rem;
+                                font-weight: bold;
+    
+    
+                            }
+    
+    
+                        }
+    
+                        h4 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align: center;
+                            font-size: 1rem;
+                            color: #292424;
+                            font-weight: 500;
+                            font-size: 0.8rem;
+    
+                        }
+                    }
+                }
+    
+                hr {
+    
+                    border: 0.1rem solid rgb(215, 215, 221);
+                    margin: 2.5rem 0 0 0;
+    
+                }
+    
+                .signupsection {
+                    width: 85%;
+                    margin: 1.5rem auto 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    h4 {
+                        font-size: 0.85rem;
+                        color: #292424;
+                        font-weight: 500;
+                    }
+                }
+    
+    
+    
+            }
+        }
+    
+    
+    
+        .displaysignin {
+            position: absolute;
+            cursor: pointer;
+            top: -10rem;
+            left: 0;
+            height: 103.5%;
+            width: 100%;
+            background: #00000071;
+            z-index: 2000;
+
+
+            .notShow {
+                    display: none;
+                }
+            
+                .regnow {
+                display:block;
+                background: white;
+                position: fixed;
+                height: 31rem;
+                width: 100%;
+                border-radius: 0.7rem;
+                left: 0;
+                top: 400rem;
+                animation-name: reganime;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+    
+    
+                @keyframes reganime {
+    
+                    from {
+                        top: 400rem;
+                    }
+    
+                    to {
+                        top: 33.1rem;
+                    }
+                }
+            
+                    .regfixwidth {
+            
+                        width: 85%;
+                        margin: 0 auto;
+            
+                        .reghead {
+                            display: flex;
+                            justify-content: space-between;
+            
+                            .regtophead {
+                                width: 80%;
+            
+                                h3 {
+            
+                                    margin: 1.5rem 0 0 0;
+                                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                    font-size: 1.1rem;
+            
+                                }
+            
+                                p {
+                                    margin: 0.5rem 0 0 0;
+                                    font-size: 0.85rem;
+                                    color: #292424;
+                                }
+            
+            
+            
+                            }
+            
+                            .regClose {
+            
+                                margin: 1.5rem 0 0 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 1.4rem;
+            
+                            }
+            
+            
+                        }
+            
+                        form {
+            
+                            margin: 2.5rem auto 0;
+            
+                            .doublefield {
+            
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap: 0.5rem;
+            
+                                fieldset {
+            
+                                    border: none;
+                                    border: 0.13rem solid rgb(215, 215, 221);
+                                    border-radius: 0.5rem;
+                                    height: 3rem;
+                                    margin: 0 0 0.5rem 0;
+                                    transition: all 0.45s ease-in-out;
+            
+                                    &:hover {
+                                        border: 0.17rem solid rgb(3, 163, 238);
+                                    }
+            
+                                    legend {
+            
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 0.75rem;
+                                        padding: 0 0.2rem 0 0.4rem;
+                                        font-weight: bold;
+                                    }
+            
+            
+                                }
+            
+            
+            
+                            }
+            
+                            .gender {
+                                margin: 1.3rem 0 2rem 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.85rem;
+                                font-weight: bold;
+                            }
+            
+            
+                        }
+            
+            
+            
+                    }
+            
+                    hr {
+            
+                        border: 0.1rem solid rgb(215, 215, 221);
+                        margin: 2.5rem 0 0 0;
+            
+                    }
+            
+                    .signinsection {
+                        width: 85%;
+                        margin: 2rem auto 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+            
+                        h4 {
+                            font-size: 0.85rem;
+                            color: #292424;
+                            font-weight: 500;
+                        }
+                    }
+            
+            
+                }
+    
+            .signinback {
+                background: white;
+                position: fixed;
+                height: 31rem;
+                width: 100%;
+                border-radius: 0.7rem;
+                left: 0;
+                top: 400rem;
+                animation-name: movetop;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+    
+    
+                @keyframes movetop {
+    
+                    from {
+                        top: 400rem;
+                    }
+    
+                    to {
+                        top: 33.1rem;
+                    }
+                }
+    
+                .mainsignin {
+                    width: 85%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .signtext {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1rem;
+    
+                        p {
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.85rem;
+                            color: #292424;
+                        }
+    
+                    }
+    
+                    .signinclose {
+                        margin: 1.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+                    }
+    
+                }
+    
+                .contents {
+                    width: 85%;
+                    margin: 2.5rem auto 0;
+    
+                    form {
+                        fieldset {
+                            border: none;
+                            border: 0.13rem solid rgb(215, 215, 221);
+                            border-radius: 0.5rem;
+                            height: 3rem;
+                            margin: 0 0 1rem 0;
+                            transition: all 0.45s ease-in-out;
+    
+                            &:hover {
+                                border: 0.17rem solid rgb(3, 163, 238);
+                            }
+    
+                            legend {
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.75rem;
+                                padding: 0 0.2rem 0 0.4rem;
+                                font-weight: bold;
+    
+    
+                            }
+    
+    
+                        }
+    
+                        h4 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            text-align: center;
+                            font-size: 1rem;
+                            color: #292424;
+                            font-weight: 500;
+                            font-size: 0.8rem;
+    
+                        }
+                    }
+                }
+    
+                hr {
+    
+                    border: 0.1rem solid rgb(215, 215, 221);
+                    margin: 2.5rem 0 0 0;
+    
+                }
+    
+                .signupsection {
+                    width: 85%;
+                    margin: 1.5rem auto 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    h4 {
+                        font-size: 0.85rem;
+                        color: #292424;
+                        font-weight: 500;
+                    }
+                }
+    
+    
+            }
+    
+        }
+}
+
+
 /*THIS IS THE STYLING FOR DEVICE WITH WIDTH 769PX TILL 1024PX*/
 
 @media only screen and (min-width:769px) and (max-width:1024px){
@@ -9,9 +1783,10 @@
     .removesignin{
 
         position:absolute;
-        top:-2rem;
+        cursor:pointer;
+        top:-10rem;
         left:0;
-        height:1000%;
+        height:103.5%;
         width:100%;
         background:#00000071;
         z-index:2000;
@@ -30,26 +1805,169 @@
             }
         }
 
+.notShow {
+    display: none;
+}
 
-        
+.regnow {
+    display: block;
+    background: white;
+    position: relative;
+    height: 27.5rem;
+    width: 60%;
+    border-radius: 0.3rem;
+    left: 20%;
+    top: 7rem;
+    animation-name: regdown;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+
+    @keyframes regdown {
+
+        from {
+            top: 7rem;
+        }
+
+        to {
+            top: 45rem;
+        }
+    }
+
+    .regfixwidth {
+
+        width: 85%;
+        margin: 0 auto;
+
+        .reghead {
+            display: flex;
+            justify-content: space-between;
+
+            .regtophead {
+                width: 80%;
+
+                h3 {
+
+                    margin: 1.5rem 0 0 0;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 1.1rem;
+
+                }
+
+                p {
+                    margin: 0.5rem 0 0 0;
+                    font-size: 0.85rem;
+                    color: #292424;
+                }
+
+
+
+            }
+
+            .regClose {
+
+                margin: 1.5rem 0 0 0;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 1.4rem;
+
+            }
+
+
+        }
+
+        form {
+
+            margin: 2rem auto 0;
+
+            .doublefield {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 0.5rem;
+
+                fieldset {
+
+                    border: none;
+                    border: 0.13rem solid rgb(215, 215, 221);
+                    border-radius: 0.5rem;
+                    height: 3rem;
+                    margin: 0 0 0.5rem 0;
+                    transition: all 0.45s ease-in-out;
+
+                    &:hover {
+                        border: 0.17rem solid rgb(3, 163, 238);
+                    }
+
+                    legend {
+
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 0.75rem;
+                        padding: 0 0.2rem 0 0.4rem;
+                        font-weight: bold;
+                    }
+
+
+                }
+
+
+
+            }
+
+            .gender {
+                margin: 1.3rem 0 2rem 0;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 0.85rem;
+                font-weight: bold;
+            }
+
+
+        }
+
+
+
+    }
+
+    hr {
+
+        border: 0.1rem solid rgb(215, 215, 221);
+        margin: 1.7rem 0 0 0;
+
+    }
+
+    .signinsection {
+        width: 85%;
+        margin: 0.7rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+            font-size: 0.85rem;
+            color: #292424;
+            font-weight: 500;
+        }
+    }
+
+
+}
 
         .signinback{
             background:white;
             position:relative;
-            height:28rem;
-            width:50%;
+            height:27.5rem;
+            width:60%;
             border-radius:0.3rem;
-            margin:0 auto;
-            top:8.5rem;
+            left:20%;
+            top:7rem;
             animation-name:movedown;
-            animation-duration: 1s;
+            animation-duration: 1.5s;
             animation-fill-mode: forwards;
 
 
             @keyframes movedown{
 
                 from{
-                    top:8.5rem;
+                    top:7rem;
                 }
                 to{
                     top:45rem;
@@ -131,7 +2049,7 @@
                 }
                 .signupsection{
                     width:85%;
-                    margin:1rem auto 0 auto;
+                    margin:0.5rem auto 0 auto;
                     display:flex;
                     justify-content:space-between;
                     align-items: center;
@@ -152,20 +2070,172 @@
 
     .displaysignin{
         position:absolute;
-        top:-2rem;
+        cursor:pointer;
+        top:-10rem;
         left:0;
-        height:1000%;
+        height:103.5%;
         width:100%;
         background:#00000071;
         z-index:2000;
 
+
+
+        .notShow {
+            display: none;
+        }
+        
+            .regnow {
+                display: block;
+                background: white;
+                position: relative;
+                height: 27.5rem;
+                width: 60%;
+                border-radius: 0.3rem;
+                left: 20%;
+                top: 45rem;
+                animation-name: reganime;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+        
+        
+                @keyframes reganime {
+        
+                from {
+                        top: 45rem;
+                    }
+                
+                    to {
+                        top: 7rem;
+                    }
+                }
+        
+                .regfixwidth {
+        
+                    width: 85%;
+                    margin: 0 auto;
+        
+                    .reghead {
+                        display: flex;
+                        justify-content: space-between;
+        
+                        .regtophead {
+                            width: 80%;
+        
+                            h3 {
+
+                                margin: 1.5rem 0 0 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 1.1rem;
+        
+                            }
+        
+                            p {
+                                margin: 0.5rem 0 0 0;
+                                font-size: 0.85rem;
+                                color: #292424;
+                            }
+        
+        
+        
+                        }
+        
+                        .regClose {
+        
+                            margin: 1.5rem 0 0 0;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 1.4rem;
+        
+                        }
+        
+        
+                    }
+        
+                    form {
+        
+                        margin: 2rem auto 0;
+        
+                        .doublefield {
+        
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-gap: 0.5rem;
+                        
+                        fieldset {
+
+                            border: none;
+                            border: 0.13rem solid rgb(215, 215, 221);
+                            border-radius: 0.5rem;
+                            height: 3rem;
+                            margin: 0 0 0.5rem 0;
+                            transition: all 0.45s ease-in-out;
+
+                            &:hover {
+                                border: 0.17rem solid rgb(3, 163, 238);
+                            }
+
+                        legend {
+
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 0.75rem;
+                            padding: 0 0.2rem 0 0.4rem;
+                            font-weight: bold;
+                        }
+        
+        
+                }
+        
+        
+        
+                        }
+        
+                        .gender {
+                            margin: 1.3rem 0 2rem 0;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 0.85rem;
+                            font-weight: bold;
+                        }
+        
+        
+                    }
+        
+        
+        
+                }
+        
+                hr {
+        
+                    border: 0.1rem solid rgb(215, 215, 221);
+                    margin: 1.7rem 0 0 0;
+        
+                }
+        
+                .signinsection {
+                    width: 85%;
+                    margin: 0.7rem auto 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    h4 {
+                            font-size: 0.85rem;
+                            color: #292424;
+                            font-weight: 500;
+                        }
+                }
+        
+        
+            }
+
+
+
+
         .signinback{
             background:white;
             position:relative;
-            height:28rem;
-            width:50%;
+            height:27.5rem;
+            width:60%;
             border-radius:0.3rem;
-            margin:0 auto;
+            left:20%;
             top:45rem;
             animation-name:movetop;
             animation-duration: 1.5s;
@@ -178,7 +2248,7 @@
                     top:45rem;
                 }
                 to{
-                    top:8.5rem;
+                    top:7rem;
                 }
             }
 
@@ -257,7 +2327,7 @@
                 }
                 .signupsection{
                     width:85%;
-                    margin:1rem auto 0 auto;
+                    margin:0.5rem auto 0 auto;
                     display:flex;
                     justify-content:space-between;
                     align-items: center;
@@ -280,6 +2350,8 @@
 /*THIS IS THE STYLING FOR DEVICE WITH WIDTH 1025PX TILL 1200PX*/
 
 @media only screen and (min-width:1025px) and (max-width:1200px){
+
+   
     .default{
         display:none;
     }
@@ -287,9 +2359,10 @@
     .removesignin{
 
         position:absolute;
-        top:-2rem;
+        cursor:pointer;
+        top:-10rem;
         left:0;
-        height:1000%;
+        height:103.5%;
         width:100%;
         background:#00000071;
         z-index:2000;
@@ -309,30 +2382,184 @@
         }
 
 
+        .notShow {
+            display: none;
+        }
+
+            .regnow {
+                display: block;
+                background: white;
+                position: relative;
+                height: 30rem;
+                width: 50%;
+                border-radius: 0.3rem;
+                left: 25%;
+                top: 6.7rem;
+                animation-name: regdown;
+                animation-duration: 1s;
+                
+                
+                
+                    @keyframes regdown {
+                
+                        from {
+                            top: 6.7rem;
+                        }
+                
+                        to {
+                            top: 45rem;
+                        }
+                    }
+
+                .regfixwidth {
+            
+                    width: 85%;
+                    margin: 0 auto;
+            
+                    .reghead {
+                        display: flex;
+                        justify-content: space-between;
+            
+                        .regtophead{
+                            width: 65%;
+            
+                            h3{
+            
+                                margin: 2.5rem 0 0 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 1.2rem;
+            
+                            }
+
+                            p{
+                                margin: 0.5rem 0 0 0;
+                                font-size: 0.85rem;
+                                color: #292424;
+                            }
+                        
+                                
+                                                 
+                        }
+            
+                        .regClose {
+            
+                            margin: 2.5rem 0 0 0;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 1.4rem;
+            
+                            }
+            
+            
+                         }
+            
+                    form {
+            
+                         margin: 2rem auto 0;
+            
+                        .doublefield{
+            
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-gap: 0.5rem;
+            
+            
+                            fieldset {
+                                border: none;
+                                border: 0.13rem solid rgb(215, 215, 221);
+                                border-radius: 0.5rem;
+                                height: 3.5rem;
+                                margin: 0 0 0.2rem 0;
+                                transition: all 0.45s ease-in-out;
+                                width: 100%;
+            
+                                &:hover {
+                                    border: 0.17rem solid rgb(3, 163, 238);
+                                }
+            
+                                legend {
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 0.75rem;
+                                        padding: 0 0.2rem 0 0.4rem;
+                                        font-weight: bold;
+            
+            
+                                        }
+            
+            
+                                       }
+            
+            
+            
+                                   }
+            
+                                   .gender {
+                                       margin: 1.5rem 0 2rem 0;
+                                       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                       font-size: 0.85rem;
+                                       font-weight: bold;
+                                   }
+            
+            
+                               }
+            
+            
+            
+                           }
+            
+                           hr {
+            
+                               border: 0.1rem solid rgb(215, 215, 221);
+                               margin: 2rem 0 0 0;
+            
+                           }
+            
+                           .signinsection {
+                               width: 85%;
+                               margin: 1rem auto 0 auto;
+                               display: flex;
+                               justify-content: space-between;
+                               align-items: center;
+            
+                               h4 {
+                                   font-size: 0.85rem;
+                                   color: #292424;
+                                   font-weight: 500;
+                               }
+                           }
+
+
+            }
+
+
+
+
+
         
 
         .signinback{
             background:white;
             position:relative;
-            height:32rem;
+            height:30rem;
             width:50%;
             border-radius:0.3rem;
-            margin:0 auto;
-            top:7rem;
+            left:25%;
+            top:6.7rem;
             animation-name:movedown;
             animation-duration: 1s;
-            animation-fill-mode: forwards;
+            
 
 
             @keyframes movedown{
 
                 from{
-                    top:7rem;
+                    top:6.7rem;
                 }
+                
                 to{
                     top:45rem;
                 }
             }
+            
 
             .mainsignin{
                 width:85%;
@@ -362,7 +2589,7 @@
 
             .contents{
                 width:85%;
-                margin:2.5rem auto 0;
+                margin:2rem auto 0;
 
                 form{
                         fieldset{
@@ -404,12 +2631,12 @@
                 hr{
 
                     border:0.1rem solid rgb(215, 215, 221);
-                    margin:2.5rem 0 0 0;
+                    margin:1.5rem 0 0 0;
 
                 }
                 .signupsection{
                     width:85%;
-                    margin:1rem auto 0 auto;
+                    margin:0.5rem auto 0 auto;
                     display:flex;
                     justify-content:space-between;
                     align-items: center;
@@ -428,22 +2655,183 @@
 
 
 
+
+
+
     .displaysignin{
         position:absolute;
-        top:-2rem;
+        cursor:pointer;
+        top:-10rem;
         left:0;
-        height:1000%;
+        height:103.5%;
         width:100%;
         background:#00000071;
         z-index:2000;
 
+        &::-webkit-scrollbar {
+                display: none;
+            }
+
+        .notShow {
+            display: none;
+        }
+
+            .regnow {
+                display: block;
+                background: white;
+                position: fixed;
+                height: 30rem;
+                width: 50%;
+                left: 25%;
+                border-radius: 0.3rem;
+                top: 45rem;
+                animation-name: reganime;
+                animation-duration: 1.5s;
+                animation-fill-mode: forwards;
+        
+        
+                @keyframes reganime {
+        
+                    from {
+                            top: 45rem;
+                        }
+                    
+                    to {
+                            top: 6.7rem;
+                        }
+                }
+
+                .regfixwidth {
+            
+                    width: 85%;
+                    margin: 0 auto;
+            
+                    .reghead {
+                        display: flex;
+                        justify-content: space-between;
+            
+                        .regtophead{
+                            width: 65%;
+            
+                            h3{
+            
+                                margin: 2.5rem 0 0 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 1.2rem;
+            
+                            }
+
+                            p{
+                                margin: 0.5rem 0 0 0;
+                                font-size: 0.85rem;
+                                color: #292424;
+                            }
+                        
+                                
+                                                 
+                        }
+            
+                        .regClose {
+            
+                            margin: 2.5rem 0 0 0;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 1.4rem;
+            
+                            }
+            
+            
+                         }
+            
+                    form {
+            
+                         margin: 2rem auto 0;
+            
+                        .doublefield{
+            
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-gap: 0.5rem;
+            
+            
+                            fieldset {
+                                border: none;
+                                border: 0.13rem solid rgb(215, 215, 221);
+                                border-radius: 0.5rem;
+                                height: 3.5rem;
+                                margin: 0 0 0.2rem 0;
+                                transition: all 0.45s ease-in-out;
+                                width: 100%;
+            
+                                &:hover {
+                                    border: 0.17rem solid rgb(3, 163, 238);
+                                }
+            
+                                legend {
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 0.75rem;
+                                        padding: 0 0.2rem 0 0.4rem;
+                                        font-weight: bold;
+            
+            
+                                        }
+            
+            
+                                       }
+            
+            
+            
+                                   }
+            
+                                   .gender {
+                                       margin: 1.5rem 0 2rem 0;
+                                       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                       font-size: 0.85rem;
+                                       font-weight: bold;
+                                   }
+            
+            
+                               }
+            
+            
+            
+                           }
+            
+                           hr {
+            
+                               border: 0.1rem solid rgb(215, 215, 221);
+                               margin: 2rem 0 0 0;
+            
+                           }
+            
+                           .signinsection {
+                               width: 85%;
+                               margin: 1rem auto 0 auto;
+                               display: flex;
+                               justify-content: space-between;
+                               align-items: center;
+            
+                               h4 {
+                                   font-size: 0.85rem;
+                                   color: #292424;
+                                   font-weight: 500;
+                               }
+                           }
+
+
+            }
+
+
+
+        
+            
+
         .signinback{
             background:white;
-            position:relative;
-            height:32rem;
+            position:fixed;
+            height:30rem;
             width:50%;
+            left:25%;
             border-radius:0.3rem;
-            margin:0 auto;
             top:45rem;
             animation-name:movetop;
             animation-duration: 1.5s;
@@ -456,7 +2844,7 @@
                     top:45rem;
                 }
                 to{
-                    top:7rem;
+                    top:6.7rem;
                 }
             }
 
@@ -488,7 +2876,7 @@
 
             .contents{
                 width:85%;
-                margin:2.5rem auto 0;
+                margin:2rem auto 0;
 
                 form{
                         fieldset{
@@ -530,12 +2918,12 @@
                 hr{
 
                     border:0.1rem solid rgb(215, 215, 221);
-                    margin:2.5rem 0 0 0;
+                    margin:1.5rem 0 0 0;
 
                 }
                 .signupsection{
                     width:85%;
-                    margin:1rem auto 0 auto;
+                    margin:0.5rem auto 0 auto;
                     display:flex;
                     justify-content:space-between;
                     align-items: center;
@@ -564,9 +2952,10 @@
     .removesignin{
 
         position:absolute;
-        top:-2rem;
+        top:-10rem;
+        cursor:pointer;
         left:0;
-        height:1000%;
+        height:103.5%;
         width:100%;
         background:#00000071;
         z-index:2000;
@@ -574,6 +2963,12 @@
         animation-name:shutdown;
         animation-duration:0.30s;
         animation-fill-mode: forwards;
+        
+        &::-webkit-scrollbar {
+                display: none;
+            }
+
+
 
         @keyframes shutdown{
             from{
@@ -585,6 +2980,155 @@
             }
         }
 
+                .notShow {
+                    display: none;
+                }
+        
+                .regnow {
+                    display: block;
+                    background: white;
+                    position: relative;
+                    height: 32rem;
+                    width: 45%;
+                    border-radius: 0.3rem;
+                    left: 27%;
+                    top: 6.5rem;
+                    animation-name: regdown;
+                    animation-duration: 1s;
+                    
+                    
+                    
+                        @keyframes regdown {
+                    
+                            from {
+                                top: 6.5rem;
+                            }
+                    
+                            to {
+                                top: 45rem;
+                            }
+                        }
+
+                    .regfixwidth {
+        
+                        width: 85%;
+                        margin: 0 auto;
+        
+                        .reghead {
+                            display: flex;
+                            justify-content: space-between;
+        
+                            .regtophead {
+                                width: 70%;
+        
+                                h3 {
+        
+                                    margin: 2.5rem 0 0 0;
+                                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                    font-size: 1.25rem;
+        
+                                }
+        
+                                p {
+                                    margin: 0.5rem 0 0 0;
+                                    font-size: 0.85rem;
+                                    color: #292424;
+                                    width: 70%;
+        
+                                }
+                            }
+        
+                            .regClose {
+        
+                                margin: 2.5rem 0 0 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 1.4rem;
+        
+                            }
+        
+        
+                        }
+        
+                        form {
+        
+                            margin: 2rem auto 0;
+        
+                            .doublefield {
+        
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap: 0.5rem;
+        
+        
+                                fieldset {
+                                    border: none;
+                                    border: 0.13rem solid rgb(215, 215, 221);
+                                    border-radius: 0.5rem;
+                                    height: 3.5rem;
+                                    margin: 0 0 0.2rem 0;
+                                    transition: all 0.45s ease-in-out;
+                                    width: 100%;
+        
+                                    &:hover {
+                                        border: 0.17rem solid rgb(3, 163, 238);
+                                    }
+        
+                                    legend {
+                                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                        font-size: 0.75rem;
+                                        padding: 0 0.2rem 0 0.4rem;
+                                        font-weight: bold;
+        
+        
+                                    }
+        
+        
+                                }
+        
+        
+        
+                            }
+        
+                            .gender {
+                                margin: 1.5rem 0 2rem 0;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                font-size: 0.85rem;
+                                font-weight: bold;
+                            }
+        
+        
+                        }
+        
+        
+        
+                    }
+        
+                    hr {
+        
+                        border: 0.1rem solid rgb(215, 215, 221);
+                        margin: 1rem 0 0 0;
+        
+                    }
+        
+                    .signinsection {
+
+                        width: 85%;
+                        margin: 1.2rem auto 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    
+                        h4 {
+                                font-size: 0.85rem;
+                                color: #292424;
+                                font-weight: 500;
+                                margin: 0.2rem 0 0 0;
+                            }
+                        }
+        
+        
+                }
+
 
         
 
@@ -594,17 +3138,17 @@
             height:32rem;
             width:45%;
             border-radius:0.3rem;
-            margin:0 auto;
-            top:7.5rem;
+            left:27%;
+            top:6.5rem;
             animation-name:movedown;
             animation-duration: 1s;
-            animation-fill-mode: forwards;
+            
 
 
             @keyframes movedown{
 
                 from{
-                    top:7.5rem;
+                    top:6.5rem;
                 }
                 to{
                     top:45rem;
@@ -707,20 +3251,173 @@
 
     .displaysignin{
         position:absolute;
-        top:-2rem;
+        cursor:pointer;
+        top:-10rem;
         left:0;
-        height:1000%;
+        height:103.5%;
         width:100%;
         background:#00000071;
         z-index:2000;
+        
+        &::-webkit-scrollbar{
+            display:none;
+        }
+
+        .notShow{
+            display:none;
+        }
+
+        .regnow {
+            display:block;
+            background: white;
+            position: fixed;
+            height: 32rem;
+            width: 45%;
+            border-radius: 0.3rem;
+            left: 27%;
+            top: 6.5rem;
+            animation-name: reganime;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+            
+            
+                @keyframes reganime {
+            
+                    from {
+                        top: 45rem;
+                    }
+            
+                    to {
+                        top: 6.5rem;
+                    }
+                }
+
+            .regfixwidth{
+
+                width:85%;
+                margin:0 auto;
+
+                .reghead{
+                    display:flex;
+                    justify-content: space-between;
+
+                    .regtophead{
+                        width:70%;
+
+                        h3{
+
+                            margin: 2.5rem 0 0 0;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 1.25rem;
+
+                        }
+
+                        p{
+                                margin: 0.5rem 0 0 0;
+                                font-size: 0.85rem;
+                                color: #292424;
+                                width:70%;
+
+                        }
+                    }
+
+                    .regClose{
+
+                        margin: 2.5rem 0 0 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 1.4rem;
+
+                    }
+
+
+                }
+
+                form{
+
+                    margin: 2rem auto 0;
+
+                    .doublefield{
+                        
+                        display:grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap:0.5rem;
+
+
+                        fieldset {
+                                border: none;
+                                border: 0.13rem solid rgb(215, 215, 221);
+                                border-radius: 0.5rem;
+                                height: 3.5rem;
+                                margin: 0 0 0.2rem 0;
+                                transition: all 0.45s ease-in-out;
+                                width:100%;
+                        
+                                &:hover {
+                                    border: 0.17rem solid rgb(3, 163, 238);
+                                }
+                        
+                                legend {
+                                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                    font-size: 0.75rem;
+                                    padding: 0 0.2rem 0 0.4rem;
+                                    font-weight: bold;
+                        
+                        
+                                }
+                        
+                        
+                            }
+
+                        
+
+                    }
+                    .gender{
+                        margin:1.5rem 0 2rem 0;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 0.85rem;
+                        font-weight: bold;
+                    }
+
+
+                }
+
+
+
+            }
+            hr {
+            
+                    border: 0.1rem solid rgb(215, 215, 221);
+                    margin: 1.5rem 0 0 0;
+            
+                }
+
+            .signinsection {
+                width: 85%;
+                margin: 1.2rem auto 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                h4 {
+                    font-size: 0.85rem;
+                    color: #292424;
+                    font-weight: 500;
+                    margin:0.2rem 0 0 0;
+                    }
+                }
+                
+        
+        }
+
+
 
         .signinback{
             background:white;
-            position:relative;
+            position:fixed;
             height:32rem;
             width:45%;
             border-radius:0.3rem;
-            margin:0 auto;
+            left:27%;
             top:45rem;
             animation-name:movetop;
             animation-duration: 1.5s;
@@ -733,7 +3430,7 @@
                     top:45rem;
                 }
                 to{
-                    top:7.5rem;
+                    top:6.5rem;
                 }
             }
 

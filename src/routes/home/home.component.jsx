@@ -1,4 +1,6 @@
 import './home.scss';
+import Rolexes from '../../assets/ROLEXES.jpg';
+import Cartiers from '../../assets/CARTIERS.jpg';
 import Rolex from '../../assets/rolex datejust custom 2500ctw diamond 41mm watch.jpg';
 import Patek from '../../assets/Patek Philippe, reference 1938P.jpg';
 import Cartier from '../../assets/Ballon Blanc de Cartier in steel.jpg';
@@ -22,6 +24,9 @@ import ImageBText from '../../components/categorieimgbtext/imagebeforetext.compo
 import Richarddisplay from '../../assets/richardmilleincase.webp';
 import Cartierdisplay from '../../assets/cartierincase2.webp';
 import { Link } from 'react-router-dom';
+import { signInSelector } from '../../store/signin/signin.selector';
+import Signin from '../../components/signin/signin.component';
+
 
 
 const Home = ()=>{
@@ -29,6 +34,10 @@ const Home = ()=>{
     const dispatch = useDispatch();
     const myLatestProduct = useSelector(latestProductSelector);
     const ourProduct = useSelector(ourProductSelector);
+
+    const signInNames = ["default", "displaysignin", "removesignin"];
+    const displaySignin = useSelector(signInSelector);
+    
     useEffect(()=>{
         const mynewProduct = async()=>{
             const gotnewProduct = await grabNewProduct();
@@ -45,6 +54,8 @@ const Home = ()=>{
     
     const available = myLatestProduct['newest arrival'];
 
+    
+
   
     
     
@@ -54,11 +65,11 @@ const Home = ()=>{
     //THIS CODE STARTING FROM HERE IS FOR IMAGE SLIDER FOR DEVICE WITH WIDTH 769PX TILL ...
 
     const [mywatch, setMyWatch] = useState(0)
-    const watches = [Rolex, Richard];
+    const watches = [Rolexes, Richard];
     const watchheading = ['ROLEX', 'RICHARD MILLE'];
     const watchtext = ['The Rolex collection offers a wide range of prestigious, high-precision timepieces, from Professional to Classic models to suit any wrist.', 'Discover, Step Up Your Wrist Game, Unleash The Power Of Time On Your Wrist, experience The Luxury Of Fine Timepieces from Richard Mille.'];
 
-    const watchess = [Patek, Cartier];
+    const watchess = [Patek, Cartiers];
     const watchheadings = ['PATEK PHILIPPE', 'CARTIER'];
     const watchtexts = [' Enter the Patek Philippe universe to discover watches that suit any wrist.', 'Discover The World Of Precision, Unleash Your Ultimate Accessory. Watches That Stand The Test Of Time.']
 
@@ -76,6 +87,7 @@ const Home = ()=>{
         
 
         <div className='home'>
+
         <div className='imageSlider'>
             <SliderContainers images={watches[mywatch]} altenate={watchheading[mywatch]} headtwo={watchheading[mywatch]} para={watchtext[mywatch]}/>
             <SliderContainers images={watchess[mywatch]} altenate={watchheadings[mywatch]} headtwo={watchheadings[mywatch]} para={watchtexts[mywatch]}/>
@@ -87,12 +99,18 @@ const Home = ()=>{
                 <SlideIndicator className={mywatch===1?'indicateblue':'indicate'}/>
             
 
-            </div>            
+            </div>
+            
+
+            <Signin className={signInNames[displaySignin]}/>           
             
         </div>
 
         <div className='smallImageSlider'>
+            <Signin className={signInNames[displaySignin]}/>
+            
             <MobileSlider/>
+            
               
         </div>
 
@@ -241,7 +259,7 @@ const Home = ()=>{
 
         </div>
 
-
+        
 
     </div>
 

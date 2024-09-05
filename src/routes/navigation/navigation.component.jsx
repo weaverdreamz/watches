@@ -9,10 +9,18 @@ import { searchSelector } from '../../store/search/searchselector';
 
 
 
+
+
+
 const Navigation = ()=>{
 
     const displaySearch = useSelector(searchSelector);
-    const searchclass = ['defaultstyle', 'remove-div', 'searchmenu']
+
+  
+    const searchclass = ['defaultstyle', 'remove-div', 'searchmenu'];
+
+    
+    
     
     
     return(
@@ -23,8 +31,11 @@ const Navigation = ()=>{
             <Searchmenu className={searchclass[displaySearch]}/>
             <LargeNavigation/>
             <SmallNavigation/>
+            
+            
 
             </div>
+            
            
             <Outlet/>
            
