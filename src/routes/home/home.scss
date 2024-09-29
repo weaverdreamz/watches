@@ -54,6 +54,7 @@
         .newarrivals{
             width:90%;
             margin:5rem auto 0 auto;
+            background:white;
             
 
             h4{
@@ -65,6 +66,7 @@
             .newproducts{
                 width:100%;
                 overflow-x:scroll;
+                background:white;
 
                 &::-webkit-scrollbar{
                     display:none;
@@ -77,6 +79,7 @@
                     display:grid;
                     grid-template-columns:repeat(4, 1fr);
                     grid-gap:0.5rem;
+                    background:white;
 
                 }
             
@@ -162,6 +165,7 @@
         .newarrivals{
             width:90%;
             margin:5rem auto 0 auto;
+            background:white;
             
 
             h4{
@@ -173,6 +177,7 @@
             .newproducts{
                 width:100%;
                 overflow-x:scroll;
+                background:white;
 
                 &::-webkit-scrollbar{
                     display:none;
@@ -185,6 +190,7 @@
                     display:grid;
                     grid-template-columns:repeat(4, 1fr);
                     grid-gap:0.5rem;
+                    background:white;
 
                 }
             
@@ -271,6 +277,7 @@
         .newarrivals{
             width:85%;
             margin:5.5rem auto 0 auto;
+            background:white;
             
 
             h4{
@@ -282,6 +289,7 @@
             .newproducts{
                 width:100%;
                 overflow-x:scroll;
+                background:white;
 
                 &::-webkit-scrollbar{
                     display:none;
@@ -294,6 +302,7 @@
                     display:grid;
                     grid-template-columns:repeat(4, 1fr);
                     grid-gap:1rem;
+                    background:white;
 
                 }
             

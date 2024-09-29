@@ -8,7 +8,12 @@ import { searchSelector } from '../../store/search/searchselector';
 import { setSearch } from '../../store/search/searchaction';
 import { SetSignIn } from '../../store/signin/signin.action';
 import SmallMenu from '../smallmenu/smallmenu.component';
-import { mobileMenuSelector } from '../../store/mobilemenu/mobilemenu.selector'; 
+import { mobileMenuSelector } from '../../store/mobilemenu/mobilemenu.selector';
+import YoursCart from '../yourscart/yourscart.component';
+import { setViewCart } from '../../store/viewcart/viewcart.action';
+import { viewCartSelector } from '../../store/viewcart/viewcart.selector';
+
+
 
 
 
@@ -18,9 +23,9 @@ const LargeNavigation = ()=>{
     const displaySearch = useSelector(searchSelector);
     const dispatch = useDispatch();
     const decideMenu = useSelector(mobileMenuSelector);
-
-    const menuNames = ['firstName', 'middleName', 'lastName'];  
-    
+    const decideCart = useSelector(viewCartSelector);
+    const menuNames = ['firstName', 'middleName', 'lastName'];
+    const cartNames = ['firstCart', 'middleCart', 'lastCart'];
 
     const displayHandler = ()=>{
         if(displaySearch<=1){
@@ -35,6 +40,10 @@ const LargeNavigation = ()=>{
     const signInHandler = ()=>{
         dispatch(SetSignIn(1))
 
+    }
+
+    const cartHandler = ()=>{
+        dispatch(setViewCart(1))
     }
 
        
@@ -54,7 +63,7 @@ const LargeNavigation = ()=>{
                     <img src={Log} alt='login' onClick={signInHandler}/>
 
                         </div>
-                        <div className='menus'>
+                        <div className='menus' onClick={cartHandler}>
                             <CartIcon/>
                             
                         </div>
@@ -80,7 +89,10 @@ const LargeNavigation = ()=>{
                 </div>
             </div>
 
+            
+          
             <SmallMenu className={menuNames[decideMenu]}/>
+            <YoursCart className={cartNames[decideCart]} dir='rtl'/>
 
             
 

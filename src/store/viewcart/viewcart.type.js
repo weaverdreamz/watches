@@ -1,0 +1,3 @@
+export const VIEWCART_ACTION_TYPES = {
+    VIEW_CART:"VIEW_CART"
+}

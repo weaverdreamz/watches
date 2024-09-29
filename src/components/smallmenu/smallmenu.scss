@@ -8,6 +8,7 @@
     
         .middleName {
             height: 5000px;
+            display:block;
             width: 100%;
             background: rgb(3, 163, 238);
             position: absolute;
@@ -15,12 +16,12 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyshow;
-            animation-duration: 1s;
+            animation-duration: 0.60s;
             color: #fff;
     
             @keyframes easyshow {
                 from {
-                    width: 0;
+                    width: 0%;
                 }
     
                 to {
@@ -30,7 +31,7 @@
     
             .menuwidth {
     
-                width: 90%;
+                width: 95%;
                 margin: 0 auto;
     
                 hr {
@@ -69,7 +70,7 @@
     
                         text-align: right;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         font-weight: 300;
     
                     }
@@ -126,6 +127,7 @@
                         color: #fff;
                         border-radius: 0.2rem;
                         transition: all 0.45s ease-in-out;
+                        
     
                         &:hover {
                             border: 0.2rem solid #443f3f;
@@ -150,7 +152,7 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyhide;
-            animation-duration: 1s;
+            animation-duration: 0.50s;
             animation-fill-mode: forwards;
             color: #fff;
     
@@ -160,19 +162,33 @@
                 }
     
                 to {
-                    width: 100%;
+                    width: 0%;
                     display: none;
                 }
             }
     
                    .menuwidth {
         
-                       width: 90%;
-                       margin: 0 auto;
+                       width: 95%;
+                       margin: 0 auto;                       
+                       
         
                        hr {
                            border-color: rgb(190, 245, 242);
                            margin: 0.8rem 0 0.8rem 0;
+                           width:100%;
+                           animation-name:hrule;
+                           animation-duration:0.35s;
+                           animation-fill-mode: forwards;
+
+                           @keyframes hrule{
+                            from{
+                                width:100%;
+                            }
+                            to{
+                                width:0%;
+                            }
+                           }
                        }
         
                        .mobilehead {
@@ -189,15 +205,39 @@
                                font-weight: 600;
                                width: 70%;
                                padding: 0 0 0 15%;
-        
-        
-        
+                               animation-name:textclose;
+                               animation-duration:0.35s;
+                               animation-fill-mode: forwards;
+
+                               @keyframes textclose{
+
+                                from{
+                                    font-size:1rem;
+                                }
+                                to{
+                                    font-size:0rem;
+                                }
+                               }
+                                                     
         
         
                                p {
                                    font-style: italic;
                                    font-size: 0.7rem;
                                    text-align: center;
+                                   animation-name:ptext;
+                                   animation-duration: 0.35s;
+                                   animation-fill-mode: forwards;
+
+                                   @keyframes ptext{
+                                    from{
+                                        font-size:0.7rem;
+                                    }
+
+                                    to{
+                                        font-size:0rem;
+                                    }
+                                   }
         
                                }
                            }
@@ -206,8 +246,22 @@
         
                                text-align: right;
                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                               font-size: 1rem;
+                               font-size: 1.2rem;
                                font-weight: 300;
+                               animation-name:close;
+                               animation-duration:0.35s;
+                               animation-fill-mode:forwards;
+
+
+                               @keyframes close{
+
+                                from{
+                                    font-size:1.2rem;
+                                }
+                                to{
+                                    font-size:0rem;
+                                }
+                               }
         
                            }
         
@@ -221,6 +275,19 @@
                                font-size: 0.9rem;
                                margin: 0 0 0 4%;
                                font-style: italic;
+                               animation-name:menus;
+                               animation-duration:0.35s;
+                               animation-fill-mode: forwards;
+
+                               @keyframes menus{
+
+                                from{
+                                    font-size:0.9rem
+                                }
+                                to{
+                                    font-size:0rem;
+                                }
+                               }
                            }
                        }
         
@@ -242,6 +309,22 @@
                                color: #fff;
                                border-radius: 0.2rem;
                                transition: all 0.45s ease-in-out;
+                               animation-name:signtext;
+                               animation-duration:0.35s;
+                               animation-fill-mode:forwards;
+
+
+                               @keyframes signtext{
+
+                                from{
+                                    font-size:0.8rem;
+                                    width:100%;
+                                }
+                                to{
+                                    font-size:0rem;
+                                    width:0%;
+                                }
+                               }
         
                                &:hover {
                                    border: 0.2rem solid #4d4a4a;
@@ -263,6 +346,20 @@
                                color: #fff;
                                border-radius: 0.2rem;
                                transition: all 0.45s ease-in-out;
+                               animation-name:regtext;
+                               animation-duration:0.35s;
+                               animation-fill-mode:forwards;
+
+                               @keyframes regtext{
+                                from{
+                                    font-size:0.8rem;
+                                    width:100%;
+                                }
+                                to{
+                                    font-size:0rem;
+                                    width:0%;
+                                }
+                               }
         
                                &:hover {
                                    border: 0.2rem solid #443f3f;
@@ -289,6 +386,7 @@
     
         .middleName {
             height: 5000px;
+            display:block;
             width: 100%;
             background: rgb(3, 163, 238);
             position: absolute;
@@ -296,12 +394,12 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyshow;
-            animation-duration: 1s;
+            animation-duration: 0.60s;
             color: #fff;
     
             @keyframes easyshow {
                 from {
-                    width: 0;
+                    width: 0%;
                 }
     
                 to {
@@ -350,7 +448,7 @@
     
                         text-align: right;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        font-size: 1.4rem;
+                        font-size: 1.2rem;
                         font-weight: 300;
     
                     }
@@ -431,7 +529,7 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyhide;
-            animation-duration: 1s;
+            animation-duration: 0.50s;
             animation-fill-mode: forwards;
             color: #fff;
     
@@ -441,7 +539,7 @@
                 }
     
                 to {
-                    width: 100%;
+                    width: 0%;
                     display: none;
                 }
             }
@@ -454,6 +552,20 @@
                 hr {
                     border-color: rgb(190, 245, 242);
                     margin: 1.2rem 0 1.2rem 0;
+                    width:100%;
+                    animation-name:hrule;
+                    animation-duration:0.35s;
+                    animation-fill-mode:forwards;
+
+                    @keyframes hrule{
+
+                        from{
+                            width:100%;
+                        }
+                        to{
+                            width:0%;
+                        }
+                    }
                 }
     
                 .mobilehead {
@@ -470,6 +582,18 @@
                         font-weight: 600;
                         width: 70%;
                         padding: 0 0 0 15%;
+                        animation-name:htext;
+                        animation-duration:0.35s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes htext{
+                            from{
+                                font-size:1.4rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
     
     
     
@@ -479,6 +603,19 @@
                             font-style: italic;
                             font-size: 0.8rem;
                             text-align: center;
+                            animation-name:ptext;
+                            animation-duration:0.35s;
+                            animation-fill-mode:forwards;
+
+
+                            @keyframes ptext{
+                                from{
+                                    font-size:0.8rem;
+                                }
+                                to{
+                                    font-size:0rem;
+                                }
+                            }
     
                         }
                     }
@@ -487,8 +624,22 @@
     
                         text-align: right;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        font-size: 1.4rem;
+                        font-size: 1.3rem;
                         font-weight: 300;
+                        animation-name:closetext;
+                        animation-duration:0.35s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes closetext{
+
+                            from{
+                                font-size:1.3rem;
+                            }
+
+                            to{
+                                font-size:0rem;
+                            }
+                        }
     
                     }
     
@@ -502,6 +653,19 @@
                         font-size: 1.2rem;
                         margin: 0 0 0 4%;
                         font-style: italic;
+                        animation-name:menus;
+                        animation-duration:0.35s;
+                        animation-fill-mode:forwards;
+
+
+                        @keyframes menus{
+                            from{
+                                font-size:1.2rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
                     }
                 }
     
@@ -523,6 +687,18 @@
                         color: #fff;
                         border-radius: 0.2rem;
                         transition: all 0.45s ease-in-out;
+                        animation-name:signtext;
+                        animation-duration:0.35s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes signtext{
+                            from{
+                                font-size:1.2rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
     
                         &:hover {
                             border: 0.2rem solid #4d4a4a;
@@ -544,6 +720,18 @@
                         color: #fff;
                         border-radius: 0.2rem;
                         transition: all 0.45s ease-in-out;
+                        animation-name:regtext;
+                        animation-duration:0.35s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes regtext{
+                            from{
+                                font-size:1.2rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
     
                         &:hover {
                             border: 0.2rem solid #443f3f;
@@ -571,18 +759,19 @@
     .middleName{
         height:5000px;
         width:100%;
+        display:block;
         background:rgb(3, 163, 238);
         position:absolute;
         left:0;
         top:-2rem;
         z-index:2005;
         animation-name:easyshow;
-        animation-duration:1s;
+        animation-duration:0.60s;
         color:#fff;
 
         @keyframes easyshow{
             from{
-                width:0;
+                width:0%;
             }
             
             to{
@@ -631,7 +820,7 @@
 
                     text-align:right;
                     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                    font-size:1.7rem;
+                    font-size:1.4rem;
                     font-weight:300;
                     
                 }
@@ -643,7 +832,7 @@
                 h3{
                     font-family: "Arvo", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     font-weight:500;
-                    font-size:1.5rem;
+                    font-size:1.4rem;
                     margin:0 0 0 4%;
                     font-style: italic;
                 }
@@ -712,13 +901,13 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyhide;
-            animation-duration: 1s;
+            animation-duration: 0.50s;
             animation-fill-mode: forwards;
             color: #fff;
         
             @keyframes easyhide {
                 from {
-                    width: 100%;
+                    width: 0%;
                 }
         
                 to {
@@ -735,6 +924,19 @@
                 hr {
                     border-color: rgb(190, 245, 242);
                     margin: 1.5rem 0 1.5rem 0;
+                    width:100%;
+                    animation-name:hrule;
+                    animation-duration:0.35s;
+                    animation-fill-mode:forwards;
+
+                    @keyframes hrule{
+                        from{
+                            width:100%;
+                        }
+                        to{
+                            width:0%;
+                        }
+                    }
                 }
         
                 .mobilehead {
@@ -751,15 +953,37 @@
                         font-weight: 600;
                         width: 70%;
                         padding: 0 0 0 15%;
-        
-        
-        
+                        animation-name:headtext;
+                        animation-duration:0.35s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes headtext{
+                            from{
+                                font-size:1.7rem;
+
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
         
         
                         p {
                             font-style: italic;
                             font-size: 1rem;
                             text-align: center;
+                            animation-name:ptext;
+                            animation-duration:0.35s;
+                            animation-fill-mode:forwards;
+
+                            @keyframes ptext{
+                                from{
+                                    font-size: 1rem;
+                                }
+                                to{
+                                    font-size: 0rem;
+                                }
+                            }
         
                         }
                     }
@@ -768,8 +992,20 @@
         
                         text-align: right;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        font-size: 1.7rem;
+                        font-size: 1.4rem;
                         font-weight: 300;
+                        animation-name:closetext;
+                        animation-duration:0.35s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes closetext{
+                            from{
+                                font-size:1.4rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
         
                     }
         
@@ -783,6 +1019,20 @@
                         font-size: 1.5rem;
                         margin: 0 0 0 4%;
                         font-style: italic;
+                        animation-name:htext;
+                        animation-duration:0.35s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes htext{
+
+                            from{
+                                font-size:1.5rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
+
                     }
                 }
         
@@ -804,6 +1054,19 @@
                         color: #fff;
                         border-radius: 0.2rem;
                         transition: all 0.45s ease-in-out;
+                        animation-name:signtext;
+                        animation-duration:0.35s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes signtext{
+
+                            from{
+                                font-size:1.5rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
         
                         &:hover {
                             border: 0.2rem solid #4d4a4a;
@@ -825,6 +1088,18 @@
                         color: #fff;
                         border-radius: 0.2rem;
                         transition: all 0.45s ease-in-out;
+                        animation-name:regtext;
+                        animation-duration:0.35s;
+                        animation-fill-mode:forwards;
+
+                        @keyframes regtext{
+                            from{
+                                font-size:1.5rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
         
                         &:hover {
                             border: 0.2rem solid #443f3f;
@@ -856,12 +1131,12 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyshow;
-            animation-duration: 1s;
+            animation-duration: 0.60s;
             color: #fff;
     
             @keyframes easyshow {
                 from {
-                    width: 0;
+                    width: 0%;
                 }
     
                 to {
@@ -910,7 +1185,7 @@
     
                         text-align: right;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        font-size: 1.2rem;
+                        font-size: 1.3rem;
                         font-weight: 300;
     
                     }
@@ -994,7 +1269,7 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyhide;
-            animation-duration: 1s;
+            animation-duration: 0.50s;
             animation-fill-mode: forwards;
             color: #fff;
     
@@ -1004,7 +1279,7 @@
                 }
     
                 to {
-                    width: 100%;
+                    width:0%;
                     display: none;
                 }
 
@@ -1019,6 +1294,19 @@
                             hr {
                                 border-color: rgb(190, 245, 242);
                                 margin: 0.9rem 0 0.9rem 0;
+                                width:100%;
+                                animation-name:hrule;
+                                animation-duration:0.35s;
+                                animation-fill-mode:forwards;
+
+                                @keyframes hrule{
+                                    from{
+                                        width:100%;
+                                    }
+                                    to{
+                                        width:0%;
+                                    }
+                                }
                             }
             
                             .mobilehead {
@@ -1035,6 +1323,18 @@
                                     font-weight: 600;
                                     width: 70%;
                                     padding: 0 0 0 15%;
+                                    animation-name:headtext;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes headtext{
+                                        from{
+                                            font-size:2rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
             
             
             
@@ -1044,6 +1344,19 @@
                                         font-style: italic;
                                         font-size: 1rem;
                                         text-align: center;
+                                        animation-name:ptext;
+                                        animation-duration:0.35s;
+                                        animation-fill-mode:forwards;
+
+                                        @keyframes ptext{
+
+                                            from{
+                                                font-size:1rem;
+                                            }
+                                            to{
+                                                font-size:0rem;
+                                            }
+                                        }
             
                                     }
                                 }
@@ -1052,8 +1365,20 @@
             
                                     text-align: right;
                                     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                    font-size: 1.2rem;
+                                    font-size: 1.3rem;
                                     font-weight: 300;
+                                    animation-name:closetext;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes closetext{
+                                        from{
+                                            font-size:1.2rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
             
                                 }
             
@@ -1067,6 +1392,18 @@
                                     font-size: 1rem;
                                     margin: 0 0 0 4%;
                                     font-style: italic;
+                                    animation-name:menus;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes menus{
+                                        from{
+                                            font-size:1rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
                                 }
                             }
             
@@ -1091,6 +1428,18 @@
                                     color: #fff;
                                     border-radius: 0.2rem;
                                     transition: all 0.45s ease-in-out;
+                                    animation-name:signtext;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes signtext{
+                                        from{
+                                            font-size:1rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
             
                                     &:hover {
                                         border: 0.2rem solid #4d4a4a;
@@ -1112,6 +1461,18 @@
                                     color: #fff;
                                     border-radius: 0.2rem;
                                     transition: all 0.45s ease-in-out;
+                                    animation-name:regtext;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes regtext{
+                                        from{
+                                            font-size:1rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
             
                                     &:hover {
                                         border: 0.2rem solid #443f3f;
@@ -1145,12 +1506,12 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyshow;
-            animation-duration: 1s;
+            animation-duration: 0.60s;
             color: #fff;
     
             @keyframes easyshow {
                 from {
-                    width: 0;
+                    width: 0%;
                 }
     
                 to {
@@ -1283,7 +1644,7 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyhide;
-            animation-duration: 1s;
+            animation-duration: 0.50s;
             animation-fill-mode: forwards;
             color: #fff;
     
@@ -1293,7 +1654,7 @@
                 }
     
                 to {
-                    width: 100%;
+                    width: 0%;
                     display: none;
                 }
             }
@@ -1306,6 +1667,20 @@
                             hr {
                                 border-color: rgb(190, 245, 242);
                                 margin: 0.9rem 0 0.9rem 0;
+                                width:100%;
+                                animation-name:hrule;
+                                animation-duration:0.35s;
+                                animation-fill-mode:forwards;
+
+
+                                @keyframes hrule{
+                                    from{
+                                        width:100%;
+                                    }
+                                    to{
+                                        width:0%;
+                                    }
+                                }
                             }
             
                             .mobilehead {
@@ -1322,6 +1697,19 @@
                                     font-weight: 600;
                                     width: 70%;
                                     padding: 0 0 0 15%;
+                                    animation-name:headtext;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes headtext{
+
+                                        from{
+                                            font-size:2rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
             
             
             
@@ -1331,6 +1719,20 @@
                                         font-style: italic;
                                         font-size: 1rem;
                                         text-align: center;
+                                        animation-name:ptext;
+                                        animation-duration:0.35s;
+                                        animation-fill-mode:forwards;
+
+                                        @keyframes ptext{
+                                            from{
+
+                                                font-size:1rem;
+
+                                            }
+                                            to{
+                                                font-size:0rem;
+                                            }
+                                        }
             
                                     }
                                 }
@@ -1341,6 +1743,18 @@
                                     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                                     font-size: 1.2rem;
                                     font-weight: 300;
+                                    animation-name:closetext;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes closetext{
+                                        from{
+                                            font-size:1.2rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
             
                                 }
             
@@ -1354,6 +1768,19 @@
                                     font-size: 1rem;
                                     margin: 0 0 0 4%;
                                     font-style: italic;
+                                    animation-name:menus;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes menus{
+
+                                        from{
+                                            font-size:1rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
                                 }
                             }
             
@@ -1378,6 +1805,19 @@
                                     color: #fff;
                                     border-radius: 0.2rem;
                                     transition: all 0.45s ease-in-out;
+                                    animation-name:signtext;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes signtext{
+
+                                        from{
+                                            font-size:1rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
             
                                     &:hover {
                                         border: 0.2rem solid #4d4a4a;
@@ -1399,6 +1839,18 @@
                                     color: #fff;
                                     border-radius: 0.2rem;
                                     transition: all 0.45s ease-in-out;
+                                    animation-name:regtext;
+                                    animation-duration:0.35s;
+                                    animation-fill-mode:forwards;
+
+                                    @keyframes regtext{
+                                        from{
+                                            font-size:1rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
             
                                     &:hover {
                                         border: 0.2rem solid #443f3f;
@@ -1431,12 +1883,12 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyshow;
-            animation-duration: 1s;
+            animation-duration: 0.60s;
             color: #fff;
     
             @keyframes easyshow {
                 from {
-                    width: 0;
+                    width: 0%;
                 }
     
                 to {
@@ -1569,7 +2021,7 @@
             top: -2rem;
             z-index: 2005;
             animation-name: easyhide;
-            animation-duration: 1s;
+            animation-duration: 0.50s;
             animation-fill-mode: forwards;
             color: #fff;
     
@@ -1579,7 +2031,7 @@
                 }
     
                 to {
-                    width: 100%;
+                    width: 0%;
                     display: none;
                 }
             }
@@ -1592,6 +2044,19 @@
                        hr {
                            border-color: rgb(190, 245, 242);
                            margin: 0.9rem 0 0.9rem 0;
+                           width:100%;
+                           animation-name:hrule;
+                           animation-duration:0.35s;
+                           animation-fill-mode:forwards;
+
+                           @keyframes hrule{
+                            from{
+                                width:100%;
+                            }
+                            to{
+                                width:0%;
+                            }
+                           }
                        }
         
                        .mobilehead {
@@ -1608,6 +2073,18 @@
                                font-weight: 600;
                                width: 70%;
                                padding: 0 0 0 15%;
+                               animation-name:headtext;
+                               animation-duration:0.35s;
+                               animation-fill-mode:forwards;
+
+                               @keyframes headtext{
+                                from{
+                                    font-size:2rem;
+                                }
+                                to{
+                                    font-size:0rem;
+                                }
+                               }
         
         
         
@@ -1617,6 +2094,18 @@
                                    font-style: italic;
                                    font-size: 1rem;
                                    text-align: center;
+                                   animation-name:ptext;
+                                   animation-duration:0.35s;
+                                   animation-fill-mode:forwards;
+
+                                   @keyframes ptext{
+                                    from{
+                                        font-size:1rem;
+                                    }
+                                    to{
+                                        font-size:0rem;
+                                    }
+                                   }
         
                                }
                            }
@@ -1627,6 +2116,19 @@
                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                                font-size: 1.2rem;
                                font-weight: 300;
+                               animation-name:closetext;
+                               animation-duration:0.35s;
+                               animation-fill-mode:forwards;
+
+                               @keyframes closetext{
+
+                                from{
+                                    font-size:1.2rem;
+                                }
+                                to{
+                                    font-size:0rem
+                                }
+                               }
         
                            }
         
@@ -1640,6 +2142,19 @@
                                font-size: 1rem;
                                margin: 0 0 0 4%;
                                font-style: italic;
+                               animation-name:menus;
+                               animation-duration:0.35s;
+                               animation-fill-mode:forwards;
+
+                               @keyframes menus{
+
+                                from{
+                                    font-size:1rem;
+                                }
+                                to{
+                                    font-size:0rem;
+                                }
+                               }
                            }
                        }
         
@@ -1664,6 +2179,19 @@
                                color: #fff;
                                border-radius: 0.2rem;
                                transition: all 0.45s ease-in-out;
+                               animation-name:signtext;
+                               animation-duration:0.35s;
+                               animation-fill-mode:forwards;
+
+                               @keyframes signtext{
+
+                                from{
+                                    font-size:1rem;
+                                }
+                                to{
+                                    font-size:0rem;
+                                }
+                               }
         
                                &:hover {
                                    border: 0.2rem solid #4d4a4a;
@@ -1685,6 +2213,18 @@
                                color: #fff;
                                border-radius: 0.2rem;
                                transition: all 0.45s ease-in-out;
+                               animation-name:regtext;
+                               animation-duration:0.35s;
+                               animation-fill-mode:forwards;
+
+                               @keyframes regtext{
+                                from{
+                                    font-size:1rem;
+                                }
+                                to{
+                                    font-size:0rem;
+                                }
+                               }
         
                                &:hover {
                                    border: 0.2rem solid #443f3f;

@@ -5,6 +5,7 @@ import { signinReducer } from "./signin/signin.reducer";
 import { latestProductReducer } from "./latestproduct/latestproductreducer";
 import { mobileMenuReducer } from "./mobilemenu/mobilemenu.reducer";
 import { twoReducer } from "./two/two.reducer";
+import { viewCartReducer } from "./viewcart/viewcart.reducer";
 
 
 
@@ -15,5 +16,6 @@ export const rootReducer = combineReducers({
     latest: latestProductReducer,
     mobileMenu: mobileMenuReducer,
     two:twoReducer,
+    viewCarts:viewCartReducer,
 
 })

@@ -678,6 +678,29 @@
         }
     }
 
+        .checkout {
+            width: 100%;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            background: #08111f;
+            border: none;
+            outline: none;
+            transition: all 0.50s ease-in-out;
+            cursor: pointer;
+            color: #fff;
+    
+            &:hover {
+                background: rgb(3, 163, 238);
+            }
+    
+        }
+
     }
 
 }
@@ -814,6 +837,29 @@
 
             }
         }
+        .checkout{
+            width:100%;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            background:#08111f;
+            border:none;
+            outline:none;
+            transition: all 0.50s ease-in-out;
+            cursor: pointer;
+            color:#fff;
+            
+            &:hover{
+                background:rgb(3, 163, 238);
+            }
+
+        }
+    
 
     }
     

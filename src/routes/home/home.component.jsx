@@ -2,7 +2,7 @@ import './home.scss';
 import Rolexes from '../../assets/ROLEXES.jpg';
 import Cartiers from '../../assets/CARTIERS.jpg';
 import Rolex from '../../assets/rolex datejust custom 2500ctw diamond 41mm watch.jpg';
-import Patek from '../../assets/Patek Philippe, reference 1938P.jpg';
+import Patek from '../../assets/NEWPATEKWATCH.jpg';
 import Cartier from '../../assets/Ballon Blanc de Cartier in steel.jpg';
 import Richard from '../../assets/Richard Mille RM66 Flying Tourbillon.webp';
 import {useState, useEffect} from 'react';
