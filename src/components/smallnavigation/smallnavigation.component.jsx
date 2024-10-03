@@ -8,7 +8,11 @@ import { setSearch } from '../../store/search/searchaction';
 import { searchSelector } from '../../store/search/searchselector';
 import { setMobileMenu } from '../../store/mobilemenu/mobilemenu.action';
 import SmallMenu from '../smallmenu/smallmenu.component';
-import { mobileMenuSelector } from '../../store/mobilemenu/mobilemenu.selector';  
+import { mobileMenuSelector } from '../../store/mobilemenu/mobilemenu.selector';
+import {setViewCart} from '../../store/viewcart/viewcart.action';
+import { viewCartSelector } from '../../store/viewcart/viewcart.selector';
+import YoursCart from '../yourscart/yourscart.component';
+
 
 
 
@@ -19,6 +23,10 @@ const SmallNavigation = ()=>{
     const dispatch = useDispatch();
     const displaySearch = useSelector(searchSelector);
     const decideMenu = useSelector(mobileMenuSelector);
+    const decideCart = useSelector(viewCartSelector);
+    const cartNames = ["firstCart", "middleCart", "lastCart"]
+
+
     const displayHandler = ()=>{
             if(displaySearch<=1){
                 dispatch(setSearch(2))
@@ -32,6 +40,10 @@ const SmallNavigation = ()=>{
 
     const mobileHandler = ()=>{
         dispatch(setMobileMenu(1))
+    }
+
+    const cartHandler = ()=>{
+        dispatch(setViewCart(1));
     }
 
     
@@ -64,12 +76,13 @@ const SmallNavigation = ()=>{
                     </Link>
                 </div>
 
-                <div className='mobilemenus'>
+                <div className='mobilemenus' onClick={cartHandler}>
                     <CartIcon/>
 
                 </div>
 
                 <SmallMenu className={menuNames[decideMenu]}/>
+                <YoursCart className={cartNames[decideCart]} dir="rtl"/>
 
                  
             </div>

@@ -1,287 +1,1171 @@
-/*THIS IS THE STYLING FOR THE DEVICE WITH WIDTH 769PX TILL 1024PX*/
-@media only screen and (min-width:769px) and (max-width:1024px){
-        .firstCart {
-                display: none;
-            }
-        
-            .middleCart {
-                width: 100%;
-                position: absolute;
-                background: #00000071;
-                height: 1000%;
-                left: 0;
-                top: -10rem;
-                z-index: 2004;
-                display: block;
-        
-                .cartback {
-                    width: 0%;
-                    height: 120%;
-                    position: fixed;
-                    top: 0rem;
-                    background: #fff;
-                    animation-name: whiteanime;
-                    animation-duration: 1s;
-                    animation-fill-mode: forwards;
-        
-                    @keyframes whiteanime {
-        
-                        from {
-                            width: 0%;
-                        }
-        
-                        to {
-                            width: 50%;
-                        }
-                    }
-                }
-        
-                .cartfix {
-                    width: 92%;
-                    margin: 0 auto;
-        
-                }
-        
-                .carthead {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 1.5rem 0 1rem 0;
-        
-                    h4 {
-                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                        font-size: 0.8rem;
-                        letter-spacing: 2px;
-                        font-weight: 550;
-                        color: #1d1b1b;
-                    }
-        
-                    .cartClose {
-                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                        font-size: 1.4rem;
-                    }
-        
-        
-                }
-        
-                .cartfix2 {
-        
-                    width: 92%;
-                    margin: 1rem auto 0;
-        
-                    .cartitemshold {
-                        height: 31.5rem;
-                        width: 100%;
-                        overflow: auto;
-        
-                        .cartcontent {
-        
-                            h2 {
-                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                                font-size: 0.9rem;
-                            }
-        
-                            p {
-                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                margin: 0.5rem 0 0 0;
-                                font-size: 0.8rem;
-                            }
-        
-        
-        
-                        }
-        
-                    }
-        
-        
-        
-                }
-        
-                .btn {
-                    width: 97%;
-                    margin: 0.8rem auto 0;
-                }
-        
-            }
-        
-            .lastCart {
-        
-                display: block;
-                width: 100%;
-                position: absolute;
-                background: #00000071;
-                height: 1000%;
-                right: 0;
-                top: -10rem;
-                z-index: 2004;
-                animation-name: animeclose;
-                animation-duration: 0.30s;
+/*THIS IS THE STYLING FOR THE DEVICE WITH THE WIDTH OF 320PX TILL 480PX*/
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .firstCart {
+            display: none;
+        }
+    
+        .middleCart {
+            width: 100%;
+            position: absolute;
+            background: #00000071;
+            height: 2000%;
+            left: 0;
+            top: -10rem;
+            z-index: 2004;
+            display: block;
+    
+            .cartback {
+                width: 0%;
+                height: 120%;
+                position: fixed;
+                top: 0rem;
+                background: #fff;
+                animation-name: whiteanime;
+                animation-duration: 1s;
                 animation-fill-mode: forwards;
-        
+    
+    
+                @keyframes whiteanime {
+    
+                    from {
+                        width: 0%;
+                    }
+    
+                    to {
+                        width: 90%;
+                    }
+                }
+            }
+    
+            .cartfix {
+                width: 92%;
+                margin: 0 auto;
+    
+            }
+    
+            .carthead {
+                display: flex;
+                justify-content: space-between;
+                margin: 1.5rem 0 1rem 0;
+    
+                h4 {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
+                    font-weight: 550;
+                    color: #1d1b1b;
+                }
+    
+                .cartClose {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 1.4rem;
+    
+                }
+    
+    
+            }
+    
+            .cartfix2 {
+    
+                width: 92%;
+                margin: 1rem auto 0;
+    
+                .cartitemshold {
+                    position: relative;
+                    height: 77vh;
+                    width: 100%;
+                    overflow: auto;
+    
+                    .cartcontent {
+    
+                        h2 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 0.85rem;
+                        }
+    
+                        p {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.7rem;
+                        }
+    
+    
+    
+                    }
+    
+                }
+    
+    
+    
+            }
+    
+            .btn {
+                width: 97%;
+                margin: 0.8rem auto 0;
+            }
+    
+        }
+    
+        .lastCart {
+    
+            display: block;
+            width: 100%;
+            position: absolute;
+            background: #00000071;
+            height: 2000%;
+            right: 0;
+            top: -10rem;
+            z-index: 2004;
+            animation-name: animeclose;
+            animation-duration: 0.30s;
+            animation-fill-mode: forwards;
+    
+            @keyframes animeclose {
+                from {
+                    display: block;
+                }
+    
+                to {
+                    display: none;
+                }
+            }
+    
+            .cartback {
+                width: 50%;
+                height: 120%;
+                position: fixed;
+                top: 0rem;
+                background: #fff;
+                animation-name: animeclose;
+                animation-duration: 0.50s;
+                animation-fill-mode: forwards;
+    
                 @keyframes animeclose {
                     from {
-                        display: block;
+                        width: 90%;
                     }
-        
+    
                     to {
-                        display: none;
+                        width: 0%;
                     }
                 }
-        
-                .cartback {
-                    width: 50%;
-                    height: 120%;
-                    position: fixed;
-                    top: 0rem;
-                    background: #fff;
-                    animation-name: animeclose;
-                    animation-duration: 0.50s;
-                    animation-fill-mode: forwards;
-        
-                    @keyframes animeclose {
-                        from {
-                            width: 50%;
-                        }
-        
-                        to {
-                            width: 0%;
-                        }
-                    }
-                }
-        
-                .cartfix {
-                    width: 92%;
-                    margin: 0 auto;
-                }
-        
-                .carthead {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 1.5rem 0 1rem 0;
-        
-                    h4 {
-                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                        font-size: 0.8rem;
-                        letter-spacing: 2px;
-                        font-weight: 550;
-                        color: #1d1b1b;
-                        animation-name: shrink-text;
-                        animation-duration: 0.40s;
-                        animation-fill-mode: forwards;
-        
-                        @keyframes shrink-text {
-                            from {
-                                font-size: 0.8rem;
-                            }
-        
-                            to {
-                                font-size: 0rem;
-                            }
-                        }
-                    }
-        
-                    .cartClose {
-                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                        font-size: 1.4rem;
-                        animation-name: shrink-close;
-                        animation-duration: 0.40s;
-                        animation-fill-mode: forwards;
-        
-                        @keyframes shrink-close {
-                            from {
-                                font-size: 1.4rem;
-                            }
-        
-                            to {
-                                font-size: 0rem;
-                            }
-                        }
-                    }
-        
-        
-                }
-        
-                .cartfix2 {
-        
-                    width: 92%;
-                    margin: 1rem auto 0;
-        
-                    .cartitemshold {
-                        height: 31.5rem;
-                        width: 100%;
-                        overflow: auto;
-        
-        
-                        .cartcontent {
-        
-                            h2 {
-                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                                font-size: 1rem;
-                                animation-name: shrink-content;
-                                animation-duration: 0.40s;
-                                animation-fill-mode: forwards;
-        
-                                @keyframes shrink-content {
-        
-                                    from {
-                                        font-size: 1rem;
-                                    }
-        
-                                    to {
-                                        font-size: 0rem;
-                                    }
-                                }
-                            }
-        
-                            p {
-                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                                margin: 0.5rem 0 0 0;
-                                font-size: 0.9rem;
-                                animation-name: para-shrink;
-                                animation-duration: 0.40s;
-                                animation-fill-mode: forwards;
-        
-                                @keyframes para-shrink {
-                                    from {
-                                        font-size: 0.9rem;
-                                    }
-        
-                                    to {
-                                        font-size: 0rem;
-                                    }
-                                }
-                            }
-        
-        
-        
-                        }
-        
-                    }
-        
-        
-        
-                }
-        
-                .btn {
-                    width: 97%;
-                    margin: 0.8rem auto 0;
-                    animation-name: shrink-button;
+            }
+    
+            .cartfix {
+                width: 92%;
+                margin: 0 auto;
+            }
+    
+            .carthead {
+                display: flex;
+                justify-content: space-between;
+                margin: 1.5rem 0 1rem 0;
+    
+                h4 {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
+                    font-weight: 550;
+                    color: #1d1b1b;
+                    animation-name: shrink-text;
                     animation-duration: 0.40s;
                     animation-fill-mode: forwards;
-        
-                    @keyframes shrink-button {
+    
+                    @keyframes shrink-text {
                         from {
-                            width: 97%;
+                            font-size: 0.8rem;
                         }
-        
+    
                         to {
-                            width: 0%;
+                            font-size: 0rem;
                         }
                     }
                 }
-        
-        
+    
+                .cartClose {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 1.4rem;
+                    animation-name: shrink-close;
+                    animation-duration: 0.40s;
+                    animation-fill-mode: forwards;
+    
+                    @keyframes shrink-close {
+                        from {
+                            font-size: 1.4rem;
+                        }
+    
+                        to {
+                            font-size: 0rem;
+                        }
+                    }
+                }
+    
+    
             }
+    
+            .cartfix2 {
+    
+                width: 92%;
+                margin: 1rem auto 0;
+    
+                .cartitemshold {
+                    position: relative;
+                    height: 77vh;
+                    width: 100%;
+                    overflow: auto;
+    
+    
+                    .cartcontent {
+    
+                        h2 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 0.85rem;
+                            animation-name: shrink-content;
+                            animation-duration: 0.40s;
+                            animation-fill-mode: forwards;
+    
+                            @keyframes shrink-content {
+    
+                                from {
+                                    font-size: 0.85rem;
+                                }
+    
+                                to {
+                                    font-size: 0rem;
+                                }
+                            }
+                        }
+    
+                        p {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.7rem;
+                            animation-name: para-shrink;
+                            animation-duration: 0.40s;
+                            animation-fill-mode: forwards;
+    
+                            @keyframes para-shrink {
+                                from {
+                                    font-size: 0.7rem;
+                                }
+    
+                                to {
+                                    font-size: 0rem;
+                                }
+                            }
+                        }
+    
+    
+    
+                    }
+    
+                }
+    
+    
+    
+            }
+    
+            .btn {
+                width: 97%;
+                margin: 0.8rem auto 0;
+                animation-name: shrink-button;
+                animation-duration: 0.40s;
+                animation-fill-mode: forwards;
+    
+                @keyframes shrink-button {
+                    from {
+                        width: 97%;
+                    }
+    
+                    to {
+                        width: 0%;
+                    }
+                }
+            }
+    
+    
+        }
+
+    
 }
+
+/*THIS IS THE STYLING FOR THE DEVICE WITH  THE WIDTH OF 481PX TILL 599PX*/
+
+@media only screen and (min-width:481px) and (max-width:599px){
+
+    .firstCart {
+            display: none;
+        }
+    
+        .middleCart {
+            width: 100%;
+            position: absolute;
+            background: #00000071;
+            height: 2000%;
+            left: 0;
+            top: -10rem;
+            z-index: 2004;
+            display: block;
+    
+            .cartback {
+                width: 0%;
+                height: 120%;
+                position: fixed;
+                top: 0rem;
+                background: #fff;
+                animation-name: whiteanime;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+    
+    
+                @keyframes whiteanime {
+    
+                    from {
+                        width: 0%;
+                    }
+    
+                    to {
+                        width: 90%;
+                    }
+                }
+            }
+    
+            .cartfix {
+                width: 92%;
+                margin: 0 auto;
+    
+            }
+    
+            .carthead {
+                display: flex;
+                justify-content: space-between;
+                margin: 1.5rem 0 1rem 0;
+    
+                h4 {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
+                    font-weight: 550;
+                    color: #1d1b1b;
+                }
+    
+                .cartClose {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 1.4rem;
+                    
+                }
+    
+    
+            }
+    
+            .cartfix2 {
+    
+                width: 92%;
+                margin: 1rem auto 0;
+    
+                .cartitemshold {
+                    position: relative;
+                    height: 80vh;
+                    width: 100%;
+                    overflow: auto;
+    
+                    .cartcontent {
+    
+                        h2 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 0.85rem;
+                        }
+    
+                        p {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.7rem;
+                        }
+    
+    
+    
+                    }
+    
+                }
+    
+    
+    
+            }
+    
+            .btn {
+                width: 97%;
+                margin: 0.8rem auto 0;
+            }
+    
+        }
+    
+        .lastCart {
+    
+            display: block;
+            width: 100%;
+            position: absolute;
+            background: #00000071;
+            height: 2000%;
+            right: 0;
+            top: -10rem;
+            z-index: 2004;
+            animation-name: animeclose;
+            animation-duration: 0.30s;
+            animation-fill-mode: forwards;
+    
+            @keyframes animeclose {
+                from {
+                    display: block;
+                }
+    
+                to {
+                    display: none;
+                }
+            }
+    
+            .cartback {
+                width: 50%;
+                height: 120%;
+                position: fixed;
+                top: 0rem;
+                background: #fff;
+                animation-name: animeclose;
+                animation-duration: 0.50s;
+                animation-fill-mode: forwards;
+    
+                @keyframes animeclose {
+                    from {
+                        width: 90%;
+                    }
+    
+                    to {
+                        width: 0%;
+                    }
+                }
+            }
+    
+            .cartfix {
+                width: 92%;
+                margin: 0 auto;
+            }
+    
+            .carthead {
+                display: flex;
+                justify-content: space-between;
+                margin: 1.5rem 0 1rem 0;
+    
+                h4 {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
+                    font-weight: 550;
+                    color: #1d1b1b;
+                    animation-name: shrink-text;
+                    animation-duration: 0.40s;
+                    animation-fill-mode: forwards;
+    
+                    @keyframes shrink-text {
+                        from {
+                            font-size: 0.8rem;
+                        }
+    
+                        to {
+                            font-size: 0rem;
+                        }
+                    }
+                }
+    
+                .cartClose {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 1.4rem;
+                    animation-name: shrink-close;
+                    animation-duration: 0.40s;
+                    animation-fill-mode: forwards;
+    
+                    @keyframes shrink-close {
+                        from {
+                            font-size: 1.4rem;
+                        }
+    
+                        to {
+                            font-size: 0rem;
+                        }
+                    }
+                }
+    
+    
+            }
+    
+            .cartfix2 {
+    
+                width: 92%;
+                margin: 1rem auto 0;
+    
+                .cartitemshold {
+                    position: relative;
+                    height: 80vh;
+                    width: 100%;
+                    overflow: auto;
+    
+    
+                    .cartcontent {
+    
+                        h2 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 0.85rem;
+                            animation-name: shrink-content;
+                            animation-duration: 0.40s;
+                            animation-fill-mode: forwards;
+    
+                            @keyframes shrink-content {
+    
+                                from {
+                                    font-size: 0.85rem;
+                                }
+    
+                                to {
+                                    font-size: 0rem;
+                                }
+                            }
+                        }
+    
+                        p {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.7rem;
+                            animation-name: para-shrink;
+                            animation-duration: 0.40s;
+                            animation-fill-mode: forwards;
+    
+                            @keyframes para-shrink {
+                                from {
+                                    font-size: 0.7rem;
+                                }
+    
+                                to {
+                                    font-size: 0rem;
+                                }
+                            }
+                        }
+    
+    
+    
+                    }
+    
+                }
+    
+    
+    
+            }
+    
+            .btn {
+                width: 97%;
+                margin: 0.8rem auto 0;
+                animation-name: shrink-button;
+                animation-duration: 0.40s;
+                animation-fill-mode: forwards;
+    
+                @keyframes shrink-button {
+                    from {
+                        width: 97%;
+                    }
+    
+                    to {
+                        width: 0%;
+                    }
+                }
+            }
+    
+    
+        }
+
+
+}
+/*THIS IS THE STYLING FOR THE DEVICE WITH THE WIDTH OF 600PX TILL 768PX*/
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .firstCart {
+            display: none;
+        }
+    
+        .middleCart {
+            width: 100%;
+            position: absolute;
+            background: #00000071;
+            height: 2000%;
+            left: 0;
+            top: -10rem;
+            z-index: 2004;
+            display: block;
+    
+            .cartback {
+                width: 0%;
+                height: 120%;
+                position: fixed;
+                top: 0rem;
+                background: #fff;
+                animation-name: whiteanime;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                
+    
+                @keyframes whiteanime {
+    
+                    from {
+                        width: 0%;
+                    }
+    
+                    to {
+                        width: 85%;
+                    }
+                }
+            }
+    
+            .cartfix {
+                width: 92%;
+                margin: 0 auto;
+    
+            }
+    
+            .carthead {
+                display: flex;
+                justify-content: space-between;
+                margin: 1.5rem 0 1rem 0;
+    
+                h4 {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
+                    font-weight: 550;
+                    color: #1d1b1b;
+                }
+    
+                .cartClose {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 1.4rem;
+                }
+    
+    
+            }
+    
+            .cartfix2 {
+    
+                width: 92%;
+                margin: 1rem auto 0;
+    
+                .cartitemshold {
+                    position:relative;
+                    height: 85vh;
+                    width: 100%;
+                    overflow: auto;
+    
+                    .cartcontent {
+    
+                        h2 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 0.85rem;
+                        }
+    
+                        p {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.7rem;
+                        }
+    
+    
+    
+                    }
+    
+                }
+    
+    
+    
+            }
+    
+            .btn {
+                width: 97%;
+                margin: 0.8rem auto 0;
+            }
+    
+        }
+    
+        .lastCart {
+    
+            display: block;
+            width: 100%;
+            position: absolute;
+            background: #00000071;
+            height: 2000%;
+            right: 0;
+            top: -10rem;
+            z-index: 2004;
+            animation-name: animeclose;
+            animation-duration: 0.30s;
+            animation-fill-mode: forwards;
+    
+            @keyframes animeclose {
+                from {
+                    display: block;
+                }
+    
+                to {
+                    display: none;
+                }
+            }
+    
+            .cartback {
+                width: 50%;
+                height: 120%;
+                position: fixed;
+                top: 0rem;
+                background: #fff;
+                animation-name: animeclose;
+                animation-duration: 0.50s;
+                animation-fill-mode: forwards;
+    
+                @keyframes animeclose {
+                    from {
+                        width: 85%;
+                    }
+    
+                    to {
+                        width: 0%;
+                    }
+                }
+            }
+    
+            .cartfix {
+                width: 92%;
+                margin: 0 auto;
+            }
+    
+            .carthead {
+                display: flex;
+                justify-content: space-between;
+                margin: 1.5rem 0 1rem 0;
+    
+                h4 {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
+                    font-weight: 550;
+                    color: #1d1b1b;
+                    animation-name: shrink-text;
+                    animation-duration: 0.40s;
+                    animation-fill-mode: forwards;
+    
+                    @keyframes shrink-text {
+                        from {
+                            font-size: 0.8rem;
+                        }
+    
+                        to {
+                            font-size: 0rem;
+                        }
+                    }
+                }
+    
+                .cartClose {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 1.4rem;
+                    animation-name: shrink-close;
+                    animation-duration: 0.40s;
+                    animation-fill-mode: forwards;
+    
+                    @keyframes shrink-close {
+                        from {
+                            font-size: 1.4rem;
+                        }
+    
+                        to {
+                            font-size: 0rem;
+                        }
+                    }
+                }
+    
+    
+            }
+    
+            .cartfix2 {
+    
+                width: 92%;
+                margin: 1rem auto 0;
+    
+                .cartitemshold {
+                    position:relative;
+                    height: 85vh;
+                    width: 100%;
+                    overflow: auto;
+    
+    
+                    .cartcontent {
+    
+                        h2 {
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 0.85rem;
+                            animation-name: shrink-content;
+                            animation-duration: 0.40s;
+                            animation-fill-mode: forwards;
+    
+                            @keyframes shrink-content {
+    
+                                from {
+                                    font-size: 0.85rem;
+                                }
+    
+                                to {
+                                    font-size: 0rem;
+                                }
+                            }
+                        }
+    
+                        p {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            margin: 0.5rem 0 0 0;
+                            font-size: 0.7rem;
+                            animation-name: para-shrink;
+                            animation-duration: 0.40s;
+                            animation-fill-mode: forwards;
+    
+                            @keyframes para-shrink {
+                                from {
+                                    font-size: 0.7rem;
+                                }
+    
+                                to {
+                                    font-size: 0rem;
+                                }
+                            }
+                        }
+    
+    
+    
+                    }
+    
+                }
+    
+    
+    
+            }
+    
+            .btn {
+                width: 97%;
+                margin: 0.8rem auto 0;
+                animation-name: shrink-button;
+                animation-duration: 0.40s;
+                animation-fill-mode: forwards;
+    
+                @keyframes shrink-button {
+                    from {
+                        width: 97%;
+                    }
+    
+                    to {
+                        width: 0%;
+                    }
+                }
+            }
+    
+    
+        }
+
+}
+
+
+/*THIS IS THE STYLING FOR THE DEVICE WITH WIDTH 769PX TILL 1024PX*/
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+.firstCart{
+        display: none;
+    }
+.middleCart {
+    width: 100%;
+    position: absolute;
+    background: #00000071;
+    height: 1000%;
+    left: 0;
+    top: -10rem;
+    z-index: 2004;
+    display: block;
+
+    .cartback {
+        width: 0%;
+        height: 120%;
+        position: fixed;
+        top: 0rem;
+        background: #fff;
+        animation-name: whiteanime;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
+        @keyframes whiteanime {
+
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: 50%;
+            }
+        }
+    }
+
+    .cartfix {
+        width: 92%;
+        margin: 0 auto;
+
+    }
+
+    .carthead {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0 1rem 0;
+
+        h4 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-weight: 550;
+            color: #1d1b1b;
+        }
+
+        .cartClose {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.4rem;
+        }
+
+
+    }
+
+    .cartfix2 {
+
+        width: 92%;
+        margin: 1rem auto 0;
+
+        .cartitemshold {
+            position:relative;
+            height:78vh;
+            width: 100%;
+            overflow: auto;
+
+            .cartcontent {
+
+                h2 {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 0.85rem;
+                }
+
+                p {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0.5rem 0 0 0;
+                    font-size: 0.7rem;
+                }
+
+
+
+            }
+
+        }
+
+
+
+    }
+
+    .btn {
+        width: 97%;
+        margin: 0.8rem auto 0;
+    }
+
+}
+
+.lastCart {
+
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: #00000071;
+    height: 1000%;
+    right: 0;
+    top: -10rem;
+    z-index: 2004;
+    animation-name: animeclose;
+    animation-duration: 0.30s;
+    animation-fill-mode: forwards;
+
+    @keyframes animeclose {
+        from {
+            display: block;
+        }
+
+        to {
+            display: none;
+        }
+    }
+
+    .cartback {
+        width: 50%;
+        height: 120%;
+        position: fixed;
+        top: 0rem;
+        background: #fff;
+        animation-name: animeclose;
+        animation-duration: 0.50s;
+        animation-fill-mode: forwards;
+
+        @keyframes animeclose {
+            from {
+                width: 50%;
+            }
+
+            to {
+                width: 0%;
+            }
+        }
+    }
+
+    .cartfix {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .carthead {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0 1rem 0;
+
+        h4 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-weight: 550;
+            color: #1d1b1b;
+            animation-name: shrink-text;
+            animation-duration: 0.40s;
+            animation-fill-mode: forwards;
+
+            @keyframes shrink-text {
+                from {
+                    font-size: 0.8rem;
+                }
+
+                to {
+                    font-size: 0rem;
+                }
+            }
+        }
+
+        .cartClose {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.4rem;
+            animation-name: shrink-close;
+            animation-duration: 0.40s;
+            animation-fill-mode: forwards;
+
+            @keyframes shrink-close {
+                from {
+                    font-size: 1.4rem;
+                }
+
+                to {
+                    font-size: 0rem;
+                }
+            }
+        }
+
+
+    }
+
+    .cartfix2 {
+
+        width: 92%;
+        margin: 1rem auto 0;
+
+        .cartitemshold {
+            position: relative;
+            height: 78vh;
+            width: 100%;
+            overflow: auto;
+
+
+            .cartcontent {
+
+                h2 {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 0.85rem;
+                    animation-name: shrink-content;
+                    animation-duration: 0.40s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes shrink-content {
+
+                        from {
+                            font-size: 0.85rem;
+                        }
+
+                        to {
+                            font-size: 0rem;
+                        }
+                    }
+                }
+
+                p {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0.5rem 0 0 0;
+                    font-size: 0.7rem;
+                    animation-name: para-shrink;
+                    animation-duration: 0.40s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes para-shrink {
+                        from {
+                            font-size: 0.7rem;
+                        }
+
+                        to {
+                            font-size: 0rem;
+                        }
+                    }
+                }
+
+
+
+            }
+
+        }
+
+
+
+    }
+
+    .btn {
+        width: 97%;
+        margin: 0.8rem auto 0;
+        animation-name: shrink-button;
+        animation-duration: 0.40s;
+        animation-fill-mode: forwards;
+
+        @keyframes shrink-button {
+            from {
+                width: 97%;
+            }
+
+            to {
+                width: 0%;
+            }
+        }
+    }
+
+
+}
+
+    
+
+
+}
+
 
 
 /*THIS IS THE STYLING FOR THE DEVICE WITH WIDTH 1025PX TILL 1200PX*/
@@ -356,7 +1240,8 @@
           margin: 1rem auto 0;
 
           .cartitemshold {
-              height: 31.5rem;
+                position:relative;
+              height: 79vh;
               width: 100%;
               overflow: auto;
 
@@ -491,7 +1376,8 @@
         margin: 1rem auto 0;
 
         .cartitemshold {
-            height: 31.5rem;
+            position: relative;
+            height: 79rem;
             width: 100%;
             overflow: auto;
             
@@ -500,7 +1386,7 @@
 
                 h2 {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     animation-name:shrink-content;
                     animation-duration:0.40s;
                     animation-fill-mode: forwards;
@@ -508,7 +1394,7 @@
                     @keyframes shrink-content{
 
                         from{
-                            font-size:1rem;
+                            font-size:0.9rem;
                         }
                         to{
                             font-size:0rem;
@@ -519,14 +1405,14 @@
                 p {
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     margin: 0.5rem 0 0 0;
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                     animation-name:para-shrink;
                     animation-duration:0.40s;
                     animation-fill-mode:forwards;
 
                     @keyframes para-shrink{
                         from{
-                            font-size:0.9rem;
+                            font-size:0.8rem;
                         }
                         to{
                             font-size:0rem;
@@ -565,7 +1451,7 @@
 }
 }
 
-/*THIS IS THE STYLING FOR THE DEVICE WITH WIDTH 1201PC TILL ...*/
+/*THIS IS THE STYLING FOR THE DEVICE WITH WIDTH 1201PX TILL ...*/
 
 @media only screen and (min-width:1201px){
 
@@ -636,7 +1522,8 @@
                 margin:1rem auto 0;
 
                 .cartitemshold{
-                    height:31.5rem;
+                    position:relative;
+                    height:79vh;
                     width:100%;
                     overflow:auto;
 
@@ -771,9 +1658,11 @@
                 margin: 1rem auto 0;
                 
                 .cartitemshold {
-                    height: 31.5rem;
+                    position: relative;
+                    height: 79vh;
                     width: 100%;
                     overflow: auto;
+                    border:1px solid brown;s
                 
                 .cartcontent {
                 

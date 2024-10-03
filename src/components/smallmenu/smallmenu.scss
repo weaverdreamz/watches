@@ -31,11 +31,11 @@
     
             .menuwidth {
     
-                width: 95%;
+                width: 100%;
                 margin: 0 auto;
     
                 hr {
-                    border-color: rgb(190, 245, 242);
+                    border-color: rgb(248, 236, 236);
                     margin: 0.8rem 0 0.8rem 0;
                 }
     
@@ -72,6 +72,7 @@
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                         font-size: 1.2rem;
                         font-weight: 300;
+                        margin:0 4% 0 0;
     
                     }
     
@@ -89,14 +90,14 @@
                 }
     
                 .signandRegister {
-                    width: 75%;
+                    width: 90%;
                     margin: 0 auto;
     
                     .mobilesign {
                         width: 100%;
                         height: 2rem;
                         background: #161616;
-                        border: 0.2rem solid #161616;
+                        border: 2px solid #161616;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -108,7 +109,7 @@
                         transition: all 0.45s ease-in-out;
     
                         &:hover {
-                            border: 0.2rem solid #4d4a4a;
+                            border: 2px solid #4d4a4a;
                             background: #4d4a4a;
                         }
                     }
@@ -117,7 +118,7 @@
                         width: 100%;
                         margin: 0.8rem 0 0 0;
                         height: 2rem;
-                        border: 0.2rem solid #4d4a4a;
+                        border: 2px solid #4d4a4a;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -130,7 +131,7 @@
                         
     
                         &:hover {
-                            border: 0.2rem solid #443f3f;
+                            border: 2px solid #443f3f;
                             background: #443f3f;
                         }
     
@@ -169,12 +170,12 @@
     
                    .menuwidth {
         
-                       width: 95%;
+                       width: 100%;
                        margin: 0 auto;                       
                        
         
                        hr {
-                           border-color: rgb(190, 245, 242);
+                           border-color: rgb(248, 236, 236);
                            margin: 0.8rem 0 0.8rem 0;
                            width:100%;
                            animation-name:hrule;
@@ -248,6 +249,7 @@
                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                                font-size: 1.2rem;
                                font-weight: 300;
+                               margin:0 4% 0 0;
                                animation-name:close;
                                animation-duration:0.35s;
                                animation-fill-mode:forwards;
@@ -292,14 +294,14 @@
                        }
         
                        .signandRegister {
-                           width: 75%;
+                           width: 90%;
                            margin: 0 auto;
         
                            .mobilesign {
                                width: 100%;
                                height: 2rem;
                                background: #161616;
-                               border: 0.2rem solid #161616;
+                               border: 2px solid #161616;
                                display: flex;
                                justify-content: center;
                                align-items: center;
@@ -327,7 +329,7 @@
                                }
         
                                &:hover {
-                                   border: 0.2rem solid #4d4a4a;
+                                   border: 2px solid #4d4a4a;
                                    background: #4d4a4a;
                                }
                            }
@@ -336,7 +338,7 @@
                                width: 100%;
                                margin: 0.8rem 0 0 0;
                                height: 2rem;
-                               border: 0.2rem solid #4d4a4a;
+                               border: 2px solid #4d4a4a;
                                display: flex;
                                justify-content: center;
                                align-items: center;
@@ -362,7 +364,7 @@
                                }
         
                                &:hover {
-                                   border: 0.2rem solid #443f3f;
+                                   border: 2px solid #443f3f;
                                    background: #443f3f;
                                }
         
@@ -409,11 +411,11 @@
     
             .menuwidth {
     
-                width: 95%;
+                width: 100%;
                 margin: 0 auto;
     
                 hr {
-                    border-color: rgb(190, 245, 242);
+                    border-color: rgb(248, 236, 236);
                     margin: 1.2rem 0 1.2rem 0;
                 }
     
@@ -450,6 +452,7 @@
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                         font-size: 1.2rem;
                         font-weight: 300;
+                        margin:0 4% 0 0;
     
                     }
     
@@ -467,14 +470,14 @@
                 }
     
                 .signandRegister {
-                    width: 70%;
+                    width: 85%;
                     margin: 0 auto;
     
                     .mobilesign {
                         width: 100%;
                         height: 3rem;
                         background: #161616;
-                        border: 0.2rem solid #161616;
+                        border: 2px solid #161616;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -486,7 +489,7 @@
                         transition: all 0.45s ease-in-out;
     
                         &:hover {
-                            border: 0.2rem solid #4d4a4a;
+                            border: 2px solid #4d4a4a;
                             background: #4d4a4a;
                         }
                     }
@@ -495,7 +498,7 @@
                         width: 100%;
                         margin: 1.5rem 0 0 0;
                         height: 3rem;
-                        border: 0.2rem solid #4d4a4a;
+                        border: 2px solid #4d4a4a;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -507,7 +510,7 @@
                         transition: all 0.45s ease-in-out;
     
                         &:hover {
-                            border: 0.2rem solid #443f3f;
+                            border: 2px solid #443f3f;
                             background: #443f3f;
                         }
     
@@ -546,11 +549,11 @@
     
             .menuwidth {
     
-                width: 95%;
+                width: 100%;
                 margin: 0 auto;
     
                 hr {
-                    border-color: rgb(190, 245, 242);
+                    border-color: rgb(248, 236, 236);
                     margin: 1.2rem 0 1.2rem 0;
                     width:100%;
                     animation-name:hrule;
@@ -626,6 +629,7 @@
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                         font-size: 1.3rem;
                         font-weight: 300;
+                        margin:0 4% 0 0;
                         animation-name:closetext;
                         animation-duration:0.35s;
                         animation-fill-mode: forwards;
@@ -670,14 +674,14 @@
                 }
     
                 .signandRegister {
-                    width: 70%;
+                    width: 85%;
                     margin: 0 auto;
     
                     .mobilesign {
                         width: 100%;
                         height: 3rem;
                         background: #161616;
-                        border: 0.2rem solid #161616;
+                        border: 2px solid #161616;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -701,7 +705,7 @@
                         }
     
                         &:hover {
-                            border: 0.2rem solid #4d4a4a;
+                            border: 2px solid #4d4a4a;
                             background: #4d4a4a;
                         }
                     }
@@ -710,7 +714,7 @@
                         width: 100%;
                         margin: 1.5rem 0 0 0;
                         height: 3rem;
-                        border: 0.2rem solid #4d4a4a;
+                        border: 2px solid #4d4a4a;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -734,7 +738,7 @@
                         }
     
                         &:hover {
-                            border: 0.2rem solid #443f3f;
+                            border: 2px solid #443f3f;
                             background: #443f3f;
                         }
     
@@ -781,11 +785,11 @@
 
          .menuwidth{
 
-            width:95%;
+            width:100%;
             margin:0 auto;
 
             hr{
-                border-color:rgb(190, 245, 242);
+                border-color: rgb(248, 236, 236);
                 margin:1.5rem 0 1.5rem 0;
             }
 
@@ -822,6 +826,7 @@
                     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                     font-size:1.4rem;
                     font-weight:300;
+                    margin:0 4% 0 0;
                     
                 }
 
@@ -839,14 +844,14 @@
             }
 
             .signandRegister{
-                width:65%;
+                width:75%;
                 margin:0 auto;
 
                 .mobilesign{
                     width:100%;
                     height:3.5rem;
                     background:#161616;
-                    border:0.2rem solid #161616;
+                    border:2px solid #161616;
                     display:flex;
                     justify-content: center;
                     align-items: center;
@@ -858,7 +863,7 @@
                     transition:all 0.45s ease-in-out;
 
                     &:hover{
-                        border: 0.2rem solid #4d4a4a;
+                        border: 2px solid #4d4a4a;
                         background:#4d4a4a;
                     }
                 }
@@ -867,7 +872,7 @@
                         width: 100%;
                         margin:1.5rem 0 0 0;
                         height: 3.5rem;
-                        border: 0.2rem solid #4d4a4a;
+                        border: 2px solid #4d4a4a;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -879,7 +884,7 @@
                         transition:all 0.45s ease-in-out;
 
                         &:hover{
-                            border:0.2rem solid #443f3f;
+                            border:2px solid #443f3f;
                             background: #443f3f;
                         }
 
@@ -907,22 +912,22 @@
         
             @keyframes easyhide {
                 from {
-                    width: 0%;
+                    width: 100%;
                 }
         
                 to {
-                    width: 100%;
+                    width: 0%;
                     display:none;
                 }
             }
         
             .menuwidth {
         
-                width: 95%;
+                width: 100%;
                 margin: 0 auto;
         
                 hr {
-                    border-color: rgb(190, 245, 242);
+                    border-color: rgb(248, 236, 236);
                     margin: 1.5rem 0 1.5rem 0;
                     width:100%;
                     animation-name:hrule;
@@ -997,6 +1002,7 @@
                         animation-name:closetext;
                         animation-duration:0.35s;
                         animation-fill-mode:forwards;
+                        margin:0 4% 0 0;
 
                         @keyframes closetext{
                             from{
@@ -1037,14 +1043,14 @@
                 }
         
                 .signandRegister {
-                    width: 65%;
+                    width: 75%;
                     margin: 0 auto;
         
                     .mobilesign {
                         width: 100%;
                         height: 3.5rem;
                         background: #161616;
-                        border: 0.2rem solid #161616;
+                        border: 2px solid #161616;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -1069,7 +1075,7 @@
                         }
         
                         &:hover {
-                            border: 0.2rem solid #4d4a4a;
+                            border: 2px solid #4d4a4a;
                             background: #4d4a4a;
                         }
                     }
@@ -1078,7 +1084,7 @@
                         width: 100%;
                         margin: 1.5rem 0 0 0;
                         height: 3.5rem;
-                        border: 0.2rem solid #4d4a4a;
+                        border: 2px solid #4d4a4a;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -1102,7 +1108,7 @@
                         }
         
                         &:hover {
-                            border: 0.2rem solid #443f3f;
+                            border: 2px solid #443f3f;
                             background: #443f3f;
                         }
         
