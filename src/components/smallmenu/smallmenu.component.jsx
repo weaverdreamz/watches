@@ -1,6 +1,8 @@
 import './smallmenu.scss';
 import {useDispatch} from 'react-redux';
 import { setMobileMenu } from '../../store/mobilemenu/mobilemenu.action';
+import { SetSignIn } from '../../store/signin/signin.action';
+import { setTwo } from '../../store/two/two.action';
 
 const SmallMenu = ({...otherProps})=>{
 
@@ -9,7 +11,21 @@ const dispatch = useDispatch()
 
 const closeHandler = ()=>{
 
-dispatch(setMobileMenu(2))
+dispatch(setMobileMenu(2));
+
+}
+
+const loginHandler = ()=>{
+
+    dispatch(setMobileMenu(0));
+    dispatch(SetSignIn(1));
+
+}
+
+const signupHandler = ()=>{
+    dispatch(setMobileMenu(0));
+    dispatch(SetSignIn(1));
+    dispatch(setTwo(1));
 
 }
 
@@ -49,11 +65,11 @@ dispatch(setMobileMenu(2))
 
                 <div className='signandRegister'>
 
-                    <div className='mobilesign'>
+                    <div className='mobilesign' onClick={loginHandler}>
                         SIGN IN
 
                     </div>
-                    <div className='mobileregister'>
+                    <div className='mobileregister' onClick={signupHandler}>
                         CREATE ACCOUNT
 
                     </div>

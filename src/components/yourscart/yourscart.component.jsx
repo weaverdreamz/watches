@@ -1,7 +1,6 @@
 import "./yourscart.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { countSelector } from "../../store/cart/cartselector";
-import Button from "../Button/button.component"
 import { setViewCart } from "../../store/viewcart/viewcart.action";
 
 
@@ -56,7 +55,10 @@ const YoursCart  = ({...otherProps})=>{
 
                  <div className='btn'>
 
-                    <Button type='button' className='checkout' children='Go To Checkout'/>
+                    <button type='button' className='checkout'>
+
+                        Go To Checkout
+                    </button>
 
 
                  </div>

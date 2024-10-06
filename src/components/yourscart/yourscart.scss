@@ -62,6 +62,7 @@
                 .cartClose {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 1.4rem;
+                    margin:-0.6rem 0 0 0;
     
                 }
     
@@ -105,6 +106,30 @@
             .btn {
                 width: 97%;
                 margin: 0.8rem auto 0;
+
+                .checkout {
+                        width: 100%;
+                        height: 2.1rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        background: none;
+                        font-weight: bold;
+                        font-size: 0.95rem;
+                        background: #08111f;
+                        border: none;
+                        outline: none;
+                        transition: all 0.50s ease-in-out;
+                        cursor: pointer;
+                        color: #fff;
+                
+                
+                        &:hover {
+                            background: rgb(3, 163, 238);
+                        }
+                
+                    }
             }
     
         }
@@ -187,6 +212,7 @@
     
                 .cartClose {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    margin: -0.6rem 0 0 0;
                     font-size: 1.4rem;
                     animation-name: shrink-close;
                     animation-duration: 0.40s;
@@ -284,6 +310,45 @@
                         width: 0%;
                     }
                 }
+
+
+
+                .checkout {
+                        width: 100%;
+                        height: 2.1rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        background: none;
+                        font-weight: bold;
+                        font-size: 0.95rem;
+                        background: #08111f;
+                        border: none;
+                        outline: none;
+                        transition: all 0.50s ease-in-out;
+                        cursor: pointer;
+                        color: #fff;
+                        animation-name:shrink-check;
+                        animation-duration:0.40s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes shrink-check{
+
+                            from{
+                                font-size:0.95rem
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
+                
+                
+                        &:hover {
+                            background: rgb(3, 163, 238);
+                            }
+                
+                    }
             }
     
     
@@ -355,6 +420,7 @@
                 .cartClose {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 1.4rem;
+                    margin:-0.6rem 0 0 0;
                     
                 }
     
@@ -398,6 +464,29 @@
             .btn {
                 width: 97%;
                 margin: 0.8rem auto 0;
+
+                .checkout {
+                        width: 100%;
+                        height: 2.3rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        background: none;
+                        font-weight: bold;
+                        font-size: 0.95rem;
+                        background: #08111f;
+                        border: none;
+                        outline: none;
+                        transition: all 0.50s ease-in-out;
+                        cursor: pointer;
+                        color: #fff;
+                
+                        &:hover {
+                            background: rgb(3, 163, 238);
+                        }
+                
+                    }
             }
     
         }
@@ -481,6 +570,7 @@
                 .cartClose {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 1.4rem;
+                    margin:-0.6rem 0 0 0;
                     animation-name: shrink-close;
                     animation-duration: 0.40s;
                     animation-fill-mode: forwards;
@@ -577,6 +667,44 @@
                         width: 0%;
                     }
                 }
+
+
+                .checkout {
+                        width: 100%;
+                        height: 2.3rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        background: none;
+                        font-weight: bold;
+                        font-size: 0.95rem;
+                        background: #08111f;
+                        border: none;
+                        outline: none;
+                        transition: all 0.50s ease-in-out;
+                        cursor: pointer;
+                        color: #fff;
+                        animation-name:shrink-check;
+                        animation-duration:0.40s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes shrink-check{
+
+                            from{
+                                font-size:0.95rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
+
+                
+                        &:hover {
+                            background: rgb(3, 163, 238);
+                                }
+                
+                        }
             }
     
     
@@ -647,6 +775,7 @@
                 .cartClose {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 1.4rem;
+                    margin:-0.6rem 0 0 0;
                 }
     
     
@@ -689,6 +818,30 @@
             .btn {
                 width: 97%;
                 margin: 0.8rem auto 0;
+
+
+                .checkout {
+                        width: 100%;
+                        height: 2.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        background: none;
+                        font-weight: bold;
+                        font-size: 0.95rem;
+                        background: #08111f;
+                        border: none;
+                        outline: none;
+                        transition: all 0.50s ease-in-out;
+                        cursor: pointer;
+                        color: #fff;
+                
+                        &:hover {
+                            background: rgb(3, 163, 238);
+                        }
+                
+                    }
             }
     
         }
@@ -772,6 +925,7 @@
                 .cartClose {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 1.4rem;
+                    margin:-0.6rem 0 0 0;
                     animation-name: shrink-close;
                     animation-duration: 0.40s;
                     animation-fill-mode: forwards;
@@ -868,6 +1022,43 @@
                         width: 0%;
                     }
                 }
+
+
+                .checkout {
+                        width: 100%;
+                        height: 2.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        background: none;
+                        font-weight: bold;
+                        font-size: 0.95rem;
+                        background: #08111f;
+                        border: none;
+                        outline: none;
+                        transition: all 0.50s ease-in-out;
+                        cursor: pointer;
+                        color: #fff;
+                        animation-name:shrink-check;
+                        animation-duration:0.40s;
+                        animation-fill-mode: forwards;
+
+                        @keyframes shrink-check{
+
+                            from{
+                                font-size:0.95rem;
+                            }
+                            to{
+                                font-size:0rem;
+                            }
+                        }
+                
+                        &:hover {
+                                background: rgb(3, 163, 238);
+                            }
+                
+                        }
             }
     
     
@@ -936,6 +1127,7 @@
         .cartClose {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 1.4rem;
+            margin:-0.6rem 0 0 0;
         }
 
 
@@ -978,6 +1170,29 @@
     .btn {
         width: 97%;
         margin: 0.8rem auto 0;
+
+        .checkout {
+                width: 100%;
+                height: 2.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: none;
+                font-weight: bold;
+                font-size: 0.95rem;
+                background: #08111f;
+                border: none;
+                outline: none;
+                transition: all 0.50s ease-in-out;
+                cursor: pointer;
+                color: #fff;
+        
+                &:hover {
+                    background: rgb(3, 163, 238);
+                }
+        
+            }
     }
 
 }
@@ -1061,6 +1276,7 @@
         .cartClose {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 1.4rem;
+            margin:-0.6rem 0 0 0;
             animation-name: shrink-close;
             animation-duration: 0.40s;
             animation-fill-mode: forwards;
@@ -1157,6 +1373,42 @@
                 width: 0%;
             }
         }
+
+
+                .checkout {
+                    width: 100%;
+                    height: 2.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    background: none;
+                    font-weight: bold;
+                    font-size: 0.95rem;
+                    background: #08111f;
+                    border: none;
+                    outline: none;
+                    transition: all 0.50s ease-in-out;
+                    cursor: pointer;
+                    color: #fff;
+                    animation-name:shrink-check;
+                    animation-duration:0.40s;
+                    animation-fill-mode:forwards;
+
+                    @keyframes shrink-check{
+                        from{
+                            font-size:0.95rem
+                        }
+                        to{
+                            font-size:0rem;
+                        }
+                    }
+        
+                    &:hover {
+                        background: rgb(3, 163, 238);
+                    }
+        
+                }
     }
 
 
@@ -1230,6 +1482,7 @@
           .cartClose {
               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
               font-size: 1.4rem;
+              margin:-0.6rem 0 0 0;
           }
 
 
@@ -1272,6 +1525,29 @@
       .btn {
           width: 97%;
           margin: 0.8rem auto 0;
+
+        .checkout {
+                width: 100%;
+                height: 2.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: none;
+                font-weight: bold;
+                font-size: 0.95rem;
+                background: #08111f;
+                border: none;
+                outline: none;
+                transition: all 0.50s ease-in-out;
+                cursor: pointer;
+                color: #fff;
+        
+                &:hover {
+                    background: rgb(3, 163, 238);
+                }
+        
+            }
       }
 
   }
@@ -1354,6 +1630,7 @@
         .cartClose {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 1.4rem;
+            margin:-0.6rem 0 0 0;
             animation-name:shrink-close;
             animation-duration:0.40s;
             animation-fill-mode:forwards;
@@ -1446,6 +1723,43 @@
                 width:0%;
             }
         }
+
+
+                .checkout {
+                    width: 100%;
+                    height: 2.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    background: none;
+                    font-weight: bold;
+                    font-size: 0.95rem;
+                    background: #08111f;
+                    border: none;
+                    outline: none;
+                    transition: all 0.50s ease-in-out;
+                    cursor: pointer;
+                    color: #fff;
+                    animation-name:shrink-check;
+                    animation-duration:0.40s;
+                    animation-fill-mode:forwards;
+
+                    @keyframes shrink-check{
+
+                        from{
+                            font-size:0.95rem;
+                        }
+                        to{
+                            font-size:0rem;
+                        }
+                    }
+        
+                    &:hover {
+                        background: rgb(3, 163, 238);
+                    }
+        
+                }
     }
 
 
@@ -1512,6 +1826,7 @@
                 .cartClose{
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 1.4rem;
+                    margin:-0.6rem 0 0 0;
                 }
 
                
@@ -1553,7 +1868,30 @@
 
             .btn {
                 width: 97%;
-                margin:0.8rem auto 0;
+                margin:0.8rem auto 0;.checkout {
+                width: 100%;
+                height: 2.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: none;
+                font-weight: bold;
+                font-size: 0.95rem;
+                background: #08111f;
+                border: none;
+                outline: none;
+                transition: all 0.50s ease-in-out;
+                cursor: pointer;
+                color: #fff;
+                
+                &:hover {
+                    background: rgb(3, 163, 238);
+                    }
+                
+                    }
+
+
             }
 
     }
@@ -1634,6 +1972,7 @@
                 .cartClose {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 1.4rem;
+                    margin:0.6rem 0 0 0;
                     animation-name: shrink-close;
                     animation-duration: 0.40s;
                     animation-fill-mode: forwards;
@@ -1663,7 +2002,6 @@
                     height: 78vh;
                     width: 100%;
                     overflow: auto;
-                    border:1px solid brown;s
                 
                 .cartcontent {
                 
@@ -1731,6 +2069,42 @@
                         width: 0%;
                     }
                 }
+
+
+                            .checkout {
+                                    width: 100%;
+                                    height: 2.5rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                    background: none;
+                                    font-weight: bold;
+                                    font-size: 0.95rem;
+                                    background: #08111f;
+                                    border: none;
+                                    outline: none;
+                                    transition: all 0.50s ease-in-out;
+                                    cursor: pointer;
+                                    color: #fff;
+                                    animation-name:shrink-check;
+                                    animation-duration:0.40s;
+                                    animation-fill-mode: forwards;
+
+                                    @keyframes shrink-check{
+                                        from{
+                                            font-size:0.95rem;
+                                        }
+                                        to{
+                                            font-size:0rem;
+                                        }
+                                    }
+                
+                                    &:hover {
+                                        background: rgb(3, 163, 238);
+                                    }
+                
+                                }
         }
 
                         
