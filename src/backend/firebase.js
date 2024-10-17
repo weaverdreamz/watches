@@ -70,3 +70,20 @@ const firebaseConfig = {
     return latestMap.docs.map((docSnapshot)=>docSnapshot.data())
   
   }
+
+  //THIS CODE BELOW IS FOR MY GOOGLE SIGNIN AUTHENTICATION
+
+  const provider = new GoogleAuthProvider();
+
+  provider.setCustomParameters({
+    prompt:"select_account"
+  });
+
+  export const auth = getAuth();
+
+  export const signInWithGooglePopup = ()=>signInWithPopup(auth, provider);
+
+  //THIS CODE BELOW IS FOR CREATING MY USER ACCOUNT
+
+
+  

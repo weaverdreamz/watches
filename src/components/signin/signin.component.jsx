@@ -7,6 +7,7 @@ import { SetSignIn } from '../../store/signin/signin.action';
 import { signInSelector } from '../../store/signin/signin.selector';
 import {setTwo} from '../../store/two/two.action';
 import { twoSelector } from '../../store/two/two.selector';
+import { signInWithGooglePopup } from '../../backend/firebase';
 
 
 
@@ -67,6 +68,12 @@ const Signin = ({...otherProps})=>{
         dispatch(setTwo(0))
 
     }
+
+    const googleSignInHandler = async()=>{
+
+        const {user} = await signInWithGooglePopup()
+
+    } 
 
     
 
@@ -191,7 +198,7 @@ const Signin = ({...otherProps})=>{
                 <h4>Forgot Password?</h4>
 
                 <Button type="submit" className='login' children="Sign In"/>
-                <Button type="button" className='google' children="Sign In With Google"/>
+                <Button type="button" className='google' onClick={googleSignInHandler} children="Sign In With Google"/>
 
                 </form>
 
