@@ -1,5 +1,5 @@
 import {initializeApp} from 'firebase/app';
-import {getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider} from 'firebase/auth';
+import {getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider,  createUserWithEmailAndPassword, signOut, onAuthStateChanged, signInWithEmailAndPassword} from 'firebase/auth';
 import {getFirestore, doc, setDoc, getDoc, writeBatch, query, collection, getDocs} from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -70,5 +70,16 @@ const firebaseConfig = {
     return latestMap.docs.map((docSnapshot)=>docSnapshot.data())
   
   }
+
+
+  //THIS CODE BELOW IS FOR MY GOOGLE SIGNIN AUTHENTICATIO
+
+  const provider  = new GoogleAuthProvider();
+
+  provider.setCustomParameters({prompt:"select_account"});
+
+  const auth = getAuth();
+
+  export const signInUserWithPopUp = signInWithPopup(auth, provider);
 
  
