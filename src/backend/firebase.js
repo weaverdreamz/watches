@@ -1,6 +1,6 @@
-import {initializeApp} from 'firebase/app';
-import {getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider,  createUserWithEmailAndPassword, signOut, onAuthStateChanged, signInWithEmailAndPassword} from 'firebase/auth';
+import {initializeApp} from 'firebase/app'
 import {getFirestore, doc, setDoc, getDoc, writeBatch, query, collection, getDocs} from 'firebase/firestore';
+import { getAuth, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged, GoogleAuthProvider, } from 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: "AIzaSyAanqTA6Tq3DPLB1Y7bSEy1LKvNI5e6h0s",
@@ -13,6 +13,20 @@ const firebaseConfig = {
   };
 
   const app = initializeApp(firebaseConfig);
+
+
+
+const provider = new GoogleAuthProvider();
+
+provider.setCustomParameters({
+  prompt:"select_account"
+});
+
+export const auth = getAuth();
+
+export const signInWithGooglePopup = ()=>signInWithPopup(auth, provider);
+
+
 
   const database = getFirestore();
 
@@ -71,19 +85,10 @@ const firebaseConfig = {
   
   }
 
-  //THIS CODE BELOW IS FOR MY GOOGLE SIGNIN AUTHENTICATION
 
-  const provider = new GoogleAuthProvider();
 
-  provider.setCustomParameters({
-    prompt:"select_account"
-  });
 
-  export const auth = getAuth();
 
-  export const signInWithGooglePopup = ()=>signInWithPopup(auth, provider);
-
-  //THIS CODE BELOW IS FOR CREATING MY USER ACCOUNT
 
 
   
