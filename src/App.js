@@ -19,7 +19,7 @@ const App = ()=>{
                 createUserDocument(user)
             }
 
-            dispatch(setUser);
+            dispatch(setUser(user));
 
             
 
