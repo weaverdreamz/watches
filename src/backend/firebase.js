@@ -1,6 +1,6 @@
 import {initializeApp} from 'firebase/app'
 import {getFirestore, doc, setDoc, getDoc, writeBatch, query, collection, getDocs} from 'firebase/firestore';
-import { getAuth, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged, GoogleAuthProvider, } from 'firebase/auth';
+import { getAuth, signInWithPopup, createUserWithEmailAndPassword, signOut, onAuthStateChanged, GoogleAuthProvider, signInWithEmailAndPassword } from 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: "AIzaSyAanqTA6Tq3DPLB1Y7bSEy1LKvNI5e6h0s",
@@ -13,6 +13,9 @@ const firebaseConfig = {
   };
 
   const app = initializeApp(firebaseConfig);
+
+
+  //THIS FIREBASE BELOW IS FOR FIREBASE GOOGLE SIGNIN AUTHENTICATION
 
 
 
@@ -28,7 +31,82 @@ export const signInWithGooglePopup = ()=>signInWithPopup(auth, provider);
 
 
 
+
+//THIS FIREBASE CODE BELOW IS FOR FIREBASE REGISTRATION AUTHENTICATION
+
+
+export const createUserUsingEmailAndPassword = async(email, password)=>{
+
+  if(!email||!password){
+    return;
+  }
+  await createUserWithEmailAndPassword(auth, email, password)
+}
+
+
+
+//THIS FIREBASE BELOW IS FOR FIREBASE SIGNIN AUTHENTICATION
+
+export const signUserWithEmailAndPassword = async(email, password)=>{
+
+  if(!email||!password){
+    return;
+  }
+  await signInWithEmailAndPassword(auth, email, password)
+
+}
+
+
+//THIS IS THE FIREBASE CODE FOR SIGNOUT
+export const Signout = async()=>await signOut(auth);
+
+
+//THIS IS THE FIREBASE CODE FOR WHEN AUTHENTICATION STATE CHANGED
+
+export const whenAuthStateChange = (callback)=>onAuthStateChanged(auth, callback);
+
+
+
   const database = getFirestore();
+
+
+
+  export const createUserDocument = async(userAuth, otherInfo={})=>{
+  const docRef = doc(database,"users",userAuth.uid);
+  const docSnapshot = await getDoc(docRef);
+
+  if(!docSnapshot.exists()){
+
+    const date = new Date();
+    const{email, displayName}=userAuth;
+
+    try{
+      await setDoc(
+
+        {
+        email,
+        displayName,
+        date,
+        }
+
+      )
+        
+      
+
+    }
+   catch(error){
+
+    console.log(error.message)
+
+   }
+    
+
+  }
+  return docRef;
+
+}
+
+
 
   export const setNewProduct = async (productkey, productdata)=>{
 

@@ -7,24 +7,35 @@ import { SetSignIn } from '../../store/signin/signin.action';
 import { signInSelector } from '../../store/signin/signin.selector';
 import {setTwo} from '../../store/two/two.action';
 import { twoSelector } from '../../store/two/two.selector';
-import { signInWithGooglePopup } from '../../backend/firebase';
+import { signInWithGooglePopup, createUserUsingEmailAndPassword, signUserWithEmailAndPassword, createUserDocument} from '../../backend/firebase';
+
 
 
 
 const valueDefault = {email:"", password:""};
 
-const regDefault   = {firstname:"", lastname:"", regpassword:"", regemail:"",  male:"Male", female:"Female", other:"Other"}
+const regDefault   = {firstname:"", lastname:"", regpassword:"", regemail:"",  male:"Male", female:"Female", other:"Other"};
+
+const defaultSignWarn = "";
+const defaultWarn = "";
+
+
 
 
 const Signin = ({...otherProps})=>{
+
+    let genderHolder;
     
 
     const dispatch = useDispatch();
-    const collectSign = useSelector(signInSelector)
-    const displayReg = useSelector(twoSelector)
+    const collectSign = useSelector(signInSelector);
+    const displayReg = useSelector(twoSelector);
+    const [warn, setWarn] = useState(defaultWarn);
+    const [signWarn, setSignWarn] = useState(defaultSignWarn);
 
     const [formInput, setFormInput] = useState(valueDefault);
     const [regInput, setRegInput] = useState(regDefault);
+    const [able, setAble] = useState(false);
 
     const {email, password} = formInput;
 
@@ -36,16 +47,23 @@ const Signin = ({...otherProps})=>{
     }
 
     const sexHandler = (event)=>{
-        let genderHolder = event.target.value;
+        genderHolder = event.target.value;
 
-        console.log(genderHolder)
+        
     }
 
 
     const closeHandler = ()=>{
 
+        setRegInput(regDefault);
+        setFormInput(valueDefault);
+
+        setSignWarn(defaultSignWarn);
+        setWarn(defaultWarn);
+
         dispatch(SetSignIn(2));
-         dispatch(setTwo(0))
+         dispatch(setTwo(0));
+        
 
     }
 
@@ -71,9 +89,100 @@ const Signin = ({...otherProps})=>{
 
     const googleSignInHandler = async()=>{
 
-        const {user} = await signInWithGooglePopup()
+        setAble(true);
 
-    } 
+        try{
+            const {user} = await signInWithGooglePopup();
+            setAble(true)
+
+        }
+        catch(error){
+            console.log(error.code);
+            setAble(false);
+        }
+
+        
+
+    }
+
+
+    const RegistrationHandler = async(event)=>{
+        
+        event.preventDefault();
+        setAble(able)
+
+       
+
+        if(regpassword.length<=8){
+
+            setWarn("! your password is not strong enough");
+            setAble(false);
+            return;
+        }
+        if(genderHolder===undefined){
+             setWarn("! select a gender");
+             setAble(false);
+             return;
+        }
+
+        try{
+
+            const {user} = await createUserUsingEmailAndPassword(regpassword, regemail); 
+            await createUserDocument(user, {password:regpassword, sex:genderHolder, firstname:firstname, lastname:lastname});
+             setAble(true);
+
+
+        }
+
+        catch(error){
+
+             if(error.code==="auth/email-already-in-use"){
+                setWarn("! email already in use");
+                 setAble(false);
+            }
+            else{
+                console.log("error encountered while creating user", error.message);
+                 setAble(false);
+            }
+
+        }
+
+
+    }
+
+
+    const signInAuth = async(event)=>{
+
+        event.preventDefault();
+        setAble(true);
+
+        try{
+
+            const {user} = await signUserWithEmailAndPassword(email,password);
+            setAble(true);
+
+
+        }
+
+        catch(error){
+
+        if(error.code==="auth/invalid-login-credentials"){
+            setSignWarn("! Wrong Sign In Credentials");
+            setAble(false);
+        
+        }
+
+        else{
+            console.log(error.code);
+            setAble(false);
+        }
+                    
+
+        }
+
+        
+
+    }
 
     
 
@@ -102,7 +211,11 @@ const Signin = ({...otherProps})=>{
                         
                     </div>
 
-                    <form>
+                      <h5 id='warn'>{warn}</h5>
+
+                    <form onSubmit={RegistrationHandler}>
+
+                      
 
                         <div className='doublefield'>
 
@@ -138,12 +251,12 @@ const Signin = ({...otherProps})=>{
 
                         <div class='gender'>
 
-                           <input type='radio' name='sex' value={male}/>&nbsp;  Male    &nbsp;
-                           <input type='radio' name='sex' value={female}/>&nbsp; Female&nbsp;
-                           <input type='radio' name='sex' value={other}/>&nbsp; Other
+                           <input type='radio' name='sex' value={male} onClick={sexHandler}/>&nbsp;  Male    &nbsp;
+                           <input type='radio' name='sex' value={female} onClick={sexHandler}/>&nbsp; Female&nbsp;
+                           <input type='radio' name='sex' value={other} onClick={sexHandler}/>&nbsp; Other
                         </div>
 
-                        <Button type="submit" className='login' children="Create Account"/>
+                        <Button type="submit" className='login' children="Create Account"  disabled={able}/>
 
                        
 
@@ -177,9 +290,15 @@ const Signin = ({...otherProps})=>{
 
             </div>
 
-            <div className="contents">
+           
 
-                <form>
+            <div className="contents">
+                 <h5 id='warn'>{signWarn}</h5>
+                
+
+                <form onSubmit={signInAuth}>
+
+                    
 
                     <fieldset>
                         <legend>Email Address</legend>
@@ -197,8 +316,8 @@ const Signin = ({...otherProps})=>{
 
                 <h4>Forgot Password?</h4>
 
-                <Button type="submit" className='login' children="Sign In"/>
-                <Button type="button" className='google' onClick={googleSignInHandler} children="Sign In With Google"/>
+                <Button type="submit" className='login' children="Sign In" disabled={able}/>
+                <Button type="button" className='google' onClick={googleSignInHandler} children="Sign In With Google" disabled={able}/>
 
                 </form>
 
