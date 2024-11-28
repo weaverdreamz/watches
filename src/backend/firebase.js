@@ -72,21 +72,25 @@ export const whenAuthStateChange = (callback)=>onAuthStateChanged(auth, callback
 
 
   export const createUserDocument = async(userAuth, otherInfo={})=>{
-  const docRef = doc(database,"users",userAuth.uid);
-  const docSnapshot = await getDoc(docRef);
 
-  if(!docSnapshot.exists()){
+  if(!userAuth){
+    return
+  };
 
-    const date = new Date();
-    const{email, displayName}=userAuth;
+  const docRef = doc(database,"users", userAuth.uid);
+  const userSnapshot = await getDoc(docRef);
+
+  if(!userSnapshot.exists()){
+
+    const createdAt = new Date();
+    const{displayName, email}=userAuth;
 
     try{
-      await setDoc(
-
-        {
+      await setDoc(docRef,{
         email,
         displayName,
-        date,
+        createdAt,
+        ...otherInfo
         }
 
       )
@@ -96,7 +100,7 @@ export const whenAuthStateChange = (callback)=>onAuthStateChanged(auth, callback
     }
    catch(error){
 
-    console.log(error.message)
+     console.log('Problem creatin user', error.message)
 
    }
     

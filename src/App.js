@@ -21,8 +21,6 @@ const App = ()=>{
 
             dispatch(setUser(user));
 
-            
-
         })
 
         return unSubscribed

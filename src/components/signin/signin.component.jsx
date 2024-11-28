@@ -19,12 +19,13 @@ const regDefault   = {firstname:"", lastname:"", regpassword:"", regemail:"",  m
 const defaultSignWarn = "";
 const defaultWarn = "";
 
+let genderHolder="";
+
 
 
 
 const Signin = ({...otherProps})=>{
 
-    let genderHolder;
     
 
     const dispatch = useDispatch();
@@ -47,10 +48,14 @@ const Signin = ({...otherProps})=>{
     }
 
     const sexHandler = (event)=>{
-        genderHolder = event.target.value;
 
         
+        genderHolder = event.target.value;
+        console.log(genderHolder);
+        
     }
+
+
 
 
     const closeHandler = ()=>{
@@ -119,18 +124,19 @@ const Signin = ({...otherProps})=>{
             setAble(false);
             return;
         }
-        if(genderHolder===undefined){
+        if(genderHolder===""){
              setWarn("! select a gender");
              setAble(false);
              return;
         }
 
+
         try{
 
-            const {user} = await createUserUsingEmailAndPassword(regpassword, regemail); 
-            await createUserDocument(user, {password:regpassword, sex:genderHolder, firstname:firstname, lastname:lastname});
-             setAble(true);
-
+            let doneauth = await createUserUsingEmailAndPassword(regemail,regpassword);
+            console.log(doneauth);
+            await createUserDocument(doneauth.user, {userEmail:regemail, userPassword:regpassword, userName:firstname+" "+lastname, gender:genderHolder})
+            setRegInput(regDefault);
 
         }
 
@@ -141,7 +147,8 @@ const Signin = ({...otherProps})=>{
                  setAble(false);
             }
             else{
-                console.log("error encountered while creating user", error.message);
+                
+                console.log("error encountered while creating user", error.message)
                  setAble(false);
             }
 
@@ -169,11 +176,12 @@ const Signin = ({...otherProps})=>{
         if(error.code==="auth/invalid-login-credentials"){
             setSignWarn("! Wrong Sign In Credentials");
             setAble(false);
+
         
         }
 
         else{
-            console.log(error.code);
+            setSignWarn(error.code);
             setAble(false);
         }
                     
@@ -191,7 +199,7 @@ const Signin = ({...otherProps})=>{
 
             {
 
-                displayReg==1?(<div className={`notShow ${displayReg==1?'regnow':'notShow'}`}>
+                displayReg===1?(<div className={`notShow ${displayReg===1?'regnow':'notShow'}`}>
 
                 <div className='regfixwidth'>
 
@@ -249,11 +257,11 @@ const Signin = ({...otherProps})=>{
 
                         </div>
 
-                        <div class='gender'>
+                        <div className='gender'>
 
-                           <input type='radio' name='sex' value={male} onClick={sexHandler}/>&nbsp;  Male    &nbsp;
-                           <input type='radio' name='sex' value={female} onClick={sexHandler}/>&nbsp; Female&nbsp;
-                           <input type='radio' name='sex' value={other} onClick={sexHandler}/>&nbsp; Other
+                           <input type='radio' name='sex' value={male} onChange={sexHandler}/>&nbsp;  Male    &nbsp;
+                           <input type='radio' name='sex' value={female} onChange={sexHandler}/>&nbsp; Female&nbsp;
+                           <input type='radio' name='sex' value={other} onChange={sexHandler}/>&nbsp; Other
                         </div>
 
                         <Button type="submit" className='login' children="Create Account"  disabled={able}/>
